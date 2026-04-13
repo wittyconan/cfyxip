@@ -1,0 +1,36 @@
+digitalocean.com:443#▼ 优选域名 | 关注YouTube@真香定律 ▼
+pages.dev:443#CF官方 | Pages
+r2.dev:443#CF官方 | R2
+cdnjs.com:443#CF官方 | CDNJS
+static.cloudflareinsights.com:443#CF官方 | Analytics
+cloudflare-dns.com:443#CF官方 | DNS
+cloudflare-ech.com:443#CF官方 | ECH
+visa.com:443#企业级 | VISA
+shopify.com:443#企业级 | Shopify
+digitalocean.com:443#企业级 | DigitalOcean
+hongkongairport.com:443#企业级 | 香港机场
+glassdoor.com:443#企业级 | Glassdoor
+udemy.com:443#企业级 | Udemy
+store.ubi.com:443#育碧商城
+www.visa.cn:443#VISA中国
+cdn.jsdelivr.net:443#jsDelivr
+www.speedtest.net:443#SpeedTest
+icook.hk:443#爱料理香港
+www.visa.com.hk:443#VISA香港
+usa.visa.com:443#VISA美国
+livescore.co.kr:443#LiveScore
+csgo.com:443#CSGO
+ln.edu.hk:443#岭南大学
+biomaterials.ust.hk:443#香港科大
+www.ox.ac.uk:443#牛津大学
+www.researchgate.net:443#ResearchGate
+time.is:443#TimeIs
+ip.sb:443#IP.SB
+cloudflare.182682.xyz:443#WeTest
+skk.moe:443#大佬维护 | Sukka
+cf.tencentapp.cn:443#大佬维护 | KTFF
+saas.sin.fan:443#大佬维护 | MIYU
+cf.090227.xyz:443#大佬维护 | CMLiu
+bestcf.030101.xyz:443#大佬维护 | MingYu
+ip.cf.cname.vvhan.com:443#大佬维护 | vvHan
+hongkongairport.com:443#▲ 每月更新域名 | YouTube@真香定律 ▲

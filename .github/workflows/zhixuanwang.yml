@@ -1,0 +1,44 @@
+name: zhixuanwang
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  process-ips:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Fetch and Format IPs
+        run: |
+          # 1. 创建目标文件夹
+          mkdir -p zhixuanwang
+          
+          # 2. 获取数据并处理
+          # curl 获取原始逗号分隔字符串
+          # tr ',' '\n' 将所有逗号替换为换行符
+          # sed '/^$/d' 删除可能出现的空行
+          curl -s https://raw.githubusercontent.com/ZhiXuanWang/cf-speed-dns/refs/heads/main/ipTop10.html | tr ',' '\n' | sed '/^$/d' > zhixuanwang/all.txt
+          
+          echo "数据已处理并保存至 zhixuanwang/all.txt"
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add zhixuanwang/all.txt
+          
+          if git diff --staged --quiet; then
+            echo "IP 数据未发生变化，跳过提交。"
+          else
+            git commit -m "Auto Update ZhiXuan IPs: $(date +'%Y-%m-%d %H:%M:%S')"
+            git pull --rebase origin main
+            git push origin main
+          fi
