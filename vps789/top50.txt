@@ -1,4 +1,4 @@
-hongkongairport.com:443#▼ 优选域名 TOP50 | 04-18 01:32 | YouTube@真香定律
+hongkongairport.com:443#▼ 优选域名 TOP50 | 04-18 02:02 | YouTube@真香定律
 cdn.091224.xyz:443#cdn.091224.xyz
 uac.cf.3666888.xyz:443#uac.cf.3666888.xyz
 10.cf.3666888.xyz:443#10.cf.3666888.xyz
@@ -16,26 +16,25 @@ cf.cf.3666888.xyz:443#cf.cf.3666888.xyz
 cf.xnet.ren:443#cf.xnet.ren
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
 www.nexusmods.com:443#www.nexusmods.com
-www.swowd.com:443#www.swowd.com
 www.cdzxdz.com:443#www.cdzxdz.com
 01-qq.com:443#01-qq.com
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
-cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 cloudflare.182682.xyz:443#cloudflare.182682.xyz
 openai.com:443#openai.com
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 bbs.alipansou.com:443#bbs.alipansou.com
 a.lma.de5.net:443#a.lma.de5.net
 cf-ip-node.vov.moe:443#cf-ip-node.vov.moe
-cf.727672.xyz:443#cf.727672.xyz
+www.swowd.com:443#www.swowd.com
 www.xiaoshuofen.com:443#www.xiaoshuofen.com
 www.mfyx.cn:443#www.mfyx.cn
 cnllm.com:443#cnllm.com
 www.mlkj888.com:443#www.mlkj888.com
 markmonitor.com:443#markmonitor.com
 cf.zhetengsha.eu.org:443#cf.zhetengsha.eu.org
-www.ntu.edu.sg:443#www.ntu.edu.sg
+cf.v8.longsays.com:443#cf.v8.longsays.com
 dnew.cc:443#dnew.cc
+cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 cu.877774.xyz:443#cu.877774.xyz
 cfsaas.080112.xyz:443#cfsaas.080112.xyz
 store.ubi.com:443#store.ubi.com
@@ -44,9 +43,10 @@ www.sage.com:443#www.sage.com
 www.jimdo.com:443#www.jimdo.com
 us.cloudflare.cnae.top:443#us.cloudflare.cnae.top
 yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
+cf.727672.xyz:443#cf.727672.xyz
 baka.fun:443#baka.fun
 ys2046.cv:443#ys2046.cv
-cf.v8.longsays.com:443#cf.v8.longsays.com
+www.ntu.edu.sg:443#www.ntu.edu.sg
 www.fastsoso.cn:443#www.fastsoso.cn
-youxuan.cf.636949.xyz:443#youxuan.cf.636949.xyz
+jobsdb.com:443#jobsdb.com
 r2.dev:443#▲ 优选域名 | Youtube@zhenxiangdinglv | VPS789 7*24监测
