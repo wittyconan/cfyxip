@@ -27,6 +27,7 @@ www.researchgate.net:443#ResearchGate
 time.is:443#TimeIs
 ip.sb:443#IP.SB
 cloudflare.182682.xyz:443#WeTest
+bestcf.top:443#VPS789
 skk.moe:443#大佬维护 | Sukka
 saas.sin.fan:443#大佬维护 | MIYU
 cu.877774.xyz:443#大佬维护 | QMS
