@@ -46,26 +46,25 @@
     <div class="container">
         <h1>404</h1>
         <p>抱歉，您访问的页面不存在。</p>
-        <p>将在 <span id="countdown" class="timer">8</span> 秒后自动跳转至 真香定律 YouTube 频道...</p>
-        <p>或者 <a href="https://www.youtube.com/@zhenxiangdinglv">点击此处立即跳转</a></p>
+        <p>将在 <span id="countdown" class="timer">8</span> 秒后自动跳转至首页</p>
+        <p>或者 <a href="/">点击此处立即跳转</a></p>
     </div>
 
-    <script>
-        // 设置目标 URL
-        const targetUrl = "https://www.youtube.com/@zhenxiangdinglv";
-        // 设置初始倒计时秒数
+<script>
+        const targetUrl = "/";
         let seconds = 8;
         
         const countdownElement = document.getElementById('countdown');
 
-        // 创建定时器，每 1000 毫秒（1秒）运行一次
         const timer = setInterval(() => {
             seconds--;
-            countdownElement.textContent = seconds;
+            if (countdownElement) {
+                countdownElement.textContent = seconds;
+            }
 
             if (seconds <= 0) {
-                clearInterval(timer); // 停止定时器
-                window.location.href = targetUrl; // 执行跳转
+                clearInterval(timer);
+                window.location.replace(targetUrl); 
             }
         }, 1000);
     </script>
