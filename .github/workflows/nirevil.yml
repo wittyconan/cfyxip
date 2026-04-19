@@ -16,59 +16,69 @@ jobs:
       - name: Fetch and Process Data
         run: |
           mkdir -p nirevil
-          
-          # 1. 将新抓取的中间节点内容存入临时文件
-          # 注意：这里只存 IP 数据，不含首尾时间戳行
-          curl -s https://raw.githubusercontent.com/NiREvil/vless/refs/heads/main/sub/Cf-ipv4.json | jq -r '
-            .[] | 
-            (if .line == "CM" then "移动" 
-             elif .line == "CU" then "联通" 
-             elif .line == "CT" then "电信" 
-             else .line end) as $label |
-            "\(.ip):443#\($label) | \(.colo) | \(.latency)ms | \(.speed)mbps"
-          ' > nirevil_new_nodes.tmp
+          BJ_TIME=$(date -d "+8 hours" "+%m-%d %H:%M")
+          HAS_CHANGES=false
 
-          # 2. 对比逻辑
-          OLD_FILE="nirevil/all.txt"
-          SHOULD_UPDATE=false
-
-          if [ -f "$OLD_FILE" ]; then
-            # 提取旧文件中间部分（去掉第1行和最后1行）
-            sed '1d;$d' "$OLD_FILE" > nirevil_old_nodes.tmp
+          # 定义处理函数
+          process_data() {
+            local type=$1 # v4 或 v6
+            local url=$2
+            local target_file="nirevil/ip$type.txt"
+            local tmp_new="new_nodes_$type.tmp"
+            local tmp_old="old_nodes_$type.tmp"
             
-            # 使用 diff 对比临时文件
-            if ! diff -q nirevil_old_nodes.tmp nirevil_new_nodes.tmp > /dev/null; then
-              echo "检测到 IP 节点内容有更新。"
-              SHOULD_UPDATE=true
-            else
-              echo "IP 节点内容无变化，跳过写入。"
-              SHOULD_UPDATE=false
-            fi
-          else
-            echo "初次创建文件。"
-            SHOULD_UPDATE=true
-          fi
+            # 使用 jq 处理数据
+            # 如果是 v6，则在 IP 两端加上 []
+            curl -s "$url" | jq -r --arg type "$type" '
+              .[] | 
+              (if .line == "CM" then "移动" 
+               elif .line == "CU" then "联通" 
+               elif .line == "CT" then "电信" 
+               else .line end) as $label |
+              (if $type == "v6" then "[\(.ip)]:443#\($label) | \(.colo) | \(.latency)ms | \(.speed)mbps"
+               else "\(.ip):443#\($label) | \(.colo) | \(.latency)ms | \(.speed)mbps" end)
+            ' > "$tmp_new"
 
-          # 3. 如果有变化，则重新构建正式文件
-          if [ "$SHOULD_UPDATE" = true ]; then
-            BJ_TIME=$(date -d "+8 hours" "+%m-%d %H:%M")
-            echo "saas.sin.fan:443#▼ 优选IP | ${BJ_TIME} | YouTube@真香定律" > nirevil/all.txt
-            cat nirevil_new_nodes.tmp >> nirevil/all.txt
-            echo "bestcf.030101.xyz:443#▲ 优选IP | 分享优选网 bestcf.pages.dev | 感谢NiREvil" >> nirevil/all.txt
-            echo "has_changes=true" >> $GITHUB_ENV
-          else
-            echo "has_changes=false" >> $GITHUB_ENV
-          fi
+            # 对比逻辑
+            local should_write=false
+            if [ -f "$target_file" ]; then
+              sed '1d;$d' "$target_file" > "$tmp_old"
+              if ! diff -q "$tmp_old" "$tmp_new" > /dev/null; then
+                should_write=true
+              fi
+            else
+              should_write=true
+            fi
+
+            # 写入文件
+            if [ "$should_write" = true ]; then
+              local label_name="IPv4"
+              if [ "$type" == "v6" ]; then label_name="IPv6"; fi
+              
+              echo "saas.sin.fan:443#▼ 优选$label_name | $BJ_TIME | YouTube@真香定律" > "$target_file"
+              cat "$tmp_new" >> "$target_file"
+              echo "bestcf.030101.xyz:443#▲ 优选$label_name | 分享优选网 bestcf.pages.dev | 感谢NiREvil" >> "$target_file"
+              HAS_CHANGES=true
+            fi
+          }
+
+          # 执行 v4 处理
+          process_data "v4" "https://raw.githubusercontent.com/NiREvil/vless/refs/heads/main/sub/Cf-ipv4.json"
+          
+          # 执行 v6 处理
+          process_data "v6" "https://raw.githubusercontent.com/NiREvil/vless/refs/heads/main/sub/Cf-ipv6.json"
+
+          echo "has_changes=$HAS_CHANGES" >> $GITHUB_ENV
 
       - name: Commit and Push
         run: |
           if [ "${{ env.has_changes }}" = "true" ]; then
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
-            git add nirevil/all.txt
-            git commit -m "Auto Update nirevil IPs: $(date -d "+8 hours" '+%Y-%m-%d %H:%M:%S')"
+            git add nirevil/*.txt
+            git commit -m "Auto Update NiREvil IPv4/IPv6: $(date -d "+8 hours" '+%Y-%m-%d %H:%M:%S')"
             git pull --rebase origin main
             git push origin main
           else
-            echo "没有实质性内容变化，不执行 Git 提交。"
+            echo "内容无实质变化，跳过提交。"
           fi
