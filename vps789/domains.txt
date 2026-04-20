@@ -31,6 +31,7 @@ cf.090227.xyz
 cloudflare.cfgo.cc
 cloudflare.cnae.top
 bbs.alipansou.com
+dnew.cc
 cfyx.qdqqd.com
 6.cf.3666888.xyz
 cdn.2158.cc
@@ -40,7 +41,6 @@ cnllm.com
 101yaoye.com
 y508.com
 ping.ctrl.li
-01-cctv.com
 cdn.2020111.xyz
 cf.zhetengsha.eu.org
 nexusmods.com
@@ -53,11 +53,11 @@ nrt.xxxxxxxx.nyc.mn
 openai.com
 staticdelivery.nexusmods.com
 cdn.262832.xyz
-dnew.cc
 1.cf.3666888.xyz
 yg9.ygkkk.dpdns.org
 www.cdzxdz.com
 ys2046.cv
+01-cctv.com
 markmonitor.com
 www.trump.com
 fenliu.072103.xyz
@@ -66,7 +66,6 @@ jp.cf.3666888.xyz
 123.cf.3666888.xyz
 3.cf.3666888.xyz
 cf.3666888.xyz
-youxuan.cf.3666888.xyz
 vip.cf.3666888.xyz
 7.cf.3666888.xyz
 yg11.ygkkk.dpdns.org
@@ -74,6 +73,7 @@ eii.at
 baka.fun
 qocu.cf.3666888.xyz
 cnamefuckxxs.yuchen.icu
+youxuan.cf.3666888.xyz
 keji.cf.3666888.xyz
 9.cf.3666888.xyz
 11.cf.3666888.xyz
@@ -97,6 +97,7 @@ snipaste5.speedip.eu.org
 cf.cf.3666888.xyz
 cf1s.cf.3666888.xyz
 eteaf.cf.3666888.xyz
+stackoverflow.com
 isp.254301.xyz
 cf.duun.eu.cc
 cfvip.cf.3666888.xyz
@@ -104,17 +105,17 @@ cfvip.cf.3666888.xyz
 china-mobile.cname.cloudflare.468123.xyz
 ct.721660.xyz
 cmcc.877774.xyz
-stackoverflow.com
-uac.cf.3666888.xyz
 www.swowd.com
 777.ai7777777.xyz
 cdn.555586.xyz
 fw8je9.cf.3666888.xyz
 yg6.ygkkk.dpdns.org
+run.254301.xyz
 www.6i5.com
 qy.cf.727672.xyz
 stlouiscountymo.gov
 d.lma.de5.net
+uac.cf.3666888.xyz
 cf.877774.xyz
 bestcfv4.030101.xyz
 www.speedtest.net
@@ -123,19 +124,18 @@ cmcc.vvvv.ee
 da.mfa.gov.ua
 www.wuduanyun.com
 serviceshub.samsclub.com
-envato.com
 cdn.cf.3666888.xyz
 cf.998866.top
 yg7.ygkkk.dpdns.org
-run.254301.xyz
 cf.727672.xyz
 mfa.gov.ua
 go1.dematic.com
 mskcc.org
 www.trumpinternationalrealty.com
 digitalocean.com
-bestcf.top
+visa.com
 ct.877774.xyz
+envato.com
 yg3.ygkkk.dpdns.org
 cfgo.timelate.com
 cfip.1323123.xyz
@@ -145,7 +145,7 @@ www.whoer.net
 racerseseries.sky.com
 www.5h.com
 store.ubisoft.com
-visa.com
+bestcf.top
 www.visa.com.tw
 www.visa.cn
 ping.pe
@@ -161,7 +161,6 @@ kniu.cc
 cloudflare-dl.cnae.top
 email.lg.com
 cf1.v8.longsays.com
-x.com
 jobsdb.com
 china.mfa.gov.ua
 yg4.ygkkk.dpdns.org
@@ -174,6 +173,7 @@ bestcf.030101.xyz
 yongboss.cloudflare.byoip.top
 a.cf.cnae.top
 animal.nuaa.tech
+x.com
 sunkist.com
 encryptedsni.com
 themeisle.com
@@ -189,8 +189,6 @@ emos.prlo.de
 www.4429.com.cn
 hzytjy.cn
 uspto.gov
-jellyfin.roddy.eu.cc
-ctsg.cfyx.aliyun.20237737.xyz
 flightradar24.com
 china-unicom.cname.cloudflare.468123.xyz
 b3.cfyx.20237737.xyz
@@ -198,3 +196,5 @@ cloudflare-dl.byoip.top
 ddk.cfyx.20237737.xyz
 www.leics.police.uk
 saas.072159.xyz
+investor.apple.com
+jellyfin.roddy.eu.cc
