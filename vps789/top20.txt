@@ -1,20 +1,20 @@
-saas.sin.fan:443#▼ 优选域名 TOP20 | 04-20 09:02 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP20 | 04-20 09:32 | YouTube@真香定律
+cdn.7zz.cn:443#cdn.7zz.cn
 cloudflare.cfgo.cc:443#cloudflare.cfgo.cc
 www.shopify.com:443#www.shopify.com
 test.509666.xyz:443#test.509666.xyz
-123.cf.3666888.xyz:443#123.cf.3666888.xyz
-www.sage.com:443#www.sage.com
 3.cf.3666888.xyz:443#3.cf.3666888.xyz
+www.sage.com:443#www.sage.com
 www.bangbenjiaju.com:443#www.bangbenjiaju.com
 cloudflare.468123.xyz:443#cloudflare.468123.xyz
 www.5199dy.com:443#www.5199dy.com
 zeas.top:443#zeas.top
+cf.godns.cc:443#cf.godns.cc
 5.cf.3666888.xyz:443#5.cf.3666888.xyz
 www.sofi.com:443#www.sofi.com
-cf.090227.xyz:443#cf.090227.xyz
-www.swowd.com:443#www.swowd.com
 saas.sin.fan:443#saas.sin.fan
 cf-ip-node.vov.moe:443#cf-ip-node.vov.moe
+01-cctv.com:443#01-cctv.com
 store.ubi.com:443#store.ubi.com
 2.cf.3666888.xyz:443#2.cf.3666888.xyz
 yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
