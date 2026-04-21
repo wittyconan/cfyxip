@@ -5,7 +5,6 @@ cfsaas.080112.xyz
 cdn.262832.xyz
 youxuan.cf.636949.xyz
 cdn.2158.cc
-www.cdzxdz.com
 zeas.top
 freeyx.cloudflare88.eu.org
 openai.com
@@ -45,6 +44,7 @@ www.sage.com
 10.cf.3666888.xyz
 baka.fun
 www.ntu.edu.sg
+www.cdzxdz.com
 yxip.xxxxxxxx.tk
 www.mc.js.cool
 2.cf.3666888.xyz
@@ -53,6 +53,7 @@ china-mobile.cname.cloudflare.468123.xyz
 cloudflare.182682.xyz
 www.visa.com.hk
 www.5h.com
+a.lma.de5.net
 jp.cf.3666888.xyz
 www.sofi.com
 www.mlkj888.com
@@ -65,6 +66,7 @@ snipaste5.speedip.eu.org
 dynadot.com
 redis.io
 mskcc.org
+cf1s.cf.3666888.xyz
 3.cf.3666888.xyz
 yg7.ygkkk.dpdns.org
 ys2046.cv
@@ -72,8 +74,7 @@ www.visa.com
 cloudflare.idc.rocks
 www.xiaoshuofen.com
 yapuyapu.com
-a.lma.de5.net
-cf1s.cf.3666888.xyz
+adnjv.cf.3666888.xyz
 yg1.ygkkk.dpdns.org
 yg6.ygkkk.dpdns.org
 www.nexusmods.com
@@ -90,22 +91,20 @@ da.mfa.gov.ua
 nexusmods.com
 cf.affection.dpdns.org
 d.lma.de5.net
-adnjv.cf.3666888.xyz
 11.cf.3666888.xyz
 yg3.ygkkk.dpdns.org
 yg12.ygkkk.dpdns.org
 kniu.cc
+china-telecom.cname.cloudflare.468123.xyz
 visa.com.tw
 cloudflare-dl.cnae.top
 1.cf.3666888.xyz
 www.visa.cn
 bestcfv4.030101.xyz
-p.etime.vip
 racerseseries.sky.com
 jobsdb.com
 e.lma.de5.net
 ping.ctrl.li
-china-telecom.cname.cloudflare.468123.xyz
 www.whoer.net
 us.cloudflare.cnae.top
 123.cf.3666888.xyz
@@ -123,6 +122,7 @@ www.visa.com.tw
 i.111666.best
 mfa.gov.ua
 777.ai7777777.xyz
+cfyx.aliyun.20237737.xyz
 www.wuduanyun.com
 qocu.cf.3666888.xyz
 8.cf.3666888.xyz
@@ -132,7 +132,7 @@ markmonitor.com
 yg9.ygkkk.dpdns.org
 cf.877774.xyz
 b3.cfyx.20237737.xyz
-cfyx.aliyun.20237737.xyz
+p.etime.vip
 email.lg.com
 www.swowd.com
 cfdl.3666888.xyz
@@ -151,7 +151,6 @@ cdn.2x.nz
 qualitytraining.zeiss.com
 7.cf.3666888.xyz
 www.trump.com
-cfyx.dnspod.20237737.xyz
 stlouiscountymo.gov
 serviceshub.samsclub.com
 cf-ip-node.vov.moe
@@ -168,7 +167,6 @@ hzytjy.cn
 www.trumpinternationalrealty.com
 www.visa.com.sg
 virtualcommtraining.verizon.com
-kuaidianlian.com.cn
 yg4.ygkkk.dpdns.org
 shanghai.mfa.gov.ua
 nrt.xxxxxxxx.nyc.mn
@@ -195,6 +193,8 @@ cf.877771.xyz
 cf.tencentapp.cn
 1757760858.tencentapp.cn
 cf.130519.xyz
+tajikistan.mfa.gov.ua
 snipaste1.speedip.eu.org
+ddk.cfyx.20237737.xyz
 animal.nuaa.tech
 spring.io
