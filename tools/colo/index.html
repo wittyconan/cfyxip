@@ -149,16 +149,16 @@
     const mainContent = document.getElementById('mainContent');
     const toast = document.getElementById('toast');
 
-    function showToast(text) {
+	function showToast(text) {
+        // 提示信息也显示整行内容，方便确认
         toast.innerText = `已复制 ${text}`;
         toast.style.display = 'block';
         setTimeout(() => toast.style.display = 'none', 1500);
     }
 
     function handleCopy(item) {
-        // 提取 " - " 之后的所有内容，即 "XXX, XX"
-        const codes = item.split(' - ').pop().trim();
-        navigator.clipboard.writeText(codes).then(() => showToast(codes));
+        // 修改点：直接复制整行文本 (例如: "香港, 中国 - HKG, HK")
+        navigator.clipboard.writeText(item).then(() => showToast(item));
     }
 
     function render(filter = '') {
