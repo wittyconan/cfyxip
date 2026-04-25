@@ -43,9 +43,9 @@ jobs:
 
           # 3. 写入文件
           if [ "$HAS_CHANGES" = true ]; then
-            echo "saas.sin.fan:443#▼ 优选IPv4 | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
+            echo "saas.sin.fan:443#▼ 优选IP | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
             cat "$TMP_NEW" >> "$TARGET_FILE"
-            echo "bestcf.030101.xyz:443#▲ 优选IPv4 | 分享优选网 bestcf.pages.dev | 感谢xinyitang3" >> "$TARGET_FILE"
+            echo "bestcf.030101.xyz:443#▲ 优选IP | 分享优选网 bestcf.pages.dev | 感谢xinyitang3" >> "$TARGET_FILE"
           fi
 
           echo "has_changes=$HAS_CHANGES" >> $GITHUB_ENV
