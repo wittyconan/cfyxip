@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 04-27 06:37 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 04-27 07:07 | YouTube@真香定律
 dnew.cc:443#dnew.cc
 nexusmods.com:443#nexusmods.com
 cfyx.qdqqd.com:443#cfyx.qdqqd.com
@@ -21,11 +21,10 @@ hk.cf.3666888.xyz:443#hk.cf.3666888.xyz
 youxuan.cf.636949.xyz:443#youxuan.cf.636949.xyz
 www.nexusmods.com:443#www.nexusmods.com
 cdn.7zz.cn:443#cdn.7zz.cn
+i.111666.best:443#i.111666.best
 cf.godns.cc:443#cf.godns.cc
 www.5h.com:443#www.5h.com
 qocu.cf.3666888.xyz:443#qocu.cf.3666888.xyz
-cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
-i.111666.best:443#i.111666.best
 virtualcommtraining.verizon.com:443#virtualcommtraining.verizon.com
 cf.cf.3666888.xyz:443#cf.cf.3666888.xyz
 3.cf.3666888.xyz:443#3.cf.3666888.xyz
@@ -45,8 +44,9 @@ www.epicgames.com:443#www.epicgames.com
 ddk.cfyx.20237737.xyz:443#ddk.cfyx.20237737.xyz
 redis.io:443#redis.io
 so.360832.xyz:443#so.360832.xyz
+cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 cfsaas.080112.xyz:443#cfsaas.080112.xyz
 cloudflare.cnae.top:443#cloudflare.cnae.top
 cloudflare.idc.rocks:443#cloudflare.idc.rocks
-zero-trust-client.cloudflareclient.com:443#zero-trust-client.cloudflareclient.com
+nrtcfdns.zone.id:443#nrtcfdns.zone.id
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 bestcf.pages.dev | VPS789 7*24监测
