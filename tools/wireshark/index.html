@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireshark 进阶过滤规则 - 真香定律</title>
+    <style>
+        :root { --bg-color: #0f172a; --card-bg: rgba(30, 41, 59, 0.7); --accent-blue: #3b82f6; --text-main: #f1f5f9; --text-muted: #94a3b8; --border-color: rgba(255, 255, 255, 0.08); --code-bg: rgba(15, 23, 42, 0.6); }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg-color); background-image: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.18) 0%, transparent 600px); background-repeat: no-repeat; color: var(--text-main); line-height: 1.6; padding: 50px 20px; }
+        .container { max-width: 850px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 50px; }
+        h1 { font-size: 2.2rem; margin-bottom: 20px; font-weight: 800; letter-spacing: -0.02em; background: linear-gradient(to right, #ffffff, var(--accent-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        section { margin-bottom: 50px; }
+        h2 { font-size: 1.7rem; margin-bottom: 25px; color: #fff; display: flex; align-items: center; }
+        h2::before { content: ""; width: 5px; height: 1.4rem; background: var(--accent-blue); margin-right: 15px; border-radius: 10px; box-shadow: 0 0 15px var(--accent-blue), 0 0 5px rgba(59, 130, 246, 0.5); }
+        .group-card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; padding: 26px; margin-bottom: 25px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .item-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+        .item-title { font-weight: 700; color: #fff; font-size: 1.05rem; line-height: 1; }
+        .tag { display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; padding: 0 5px; height: 18px; border-radius: 4px; font-weight: 600; color: var(--accent-blue); border: 1px solid rgba(59, 130, 246, 0.4); line-height: 1; background: rgba(59, 130, 246, 0.1); vertical-align: middle; }
+        .item-desc { display: block; font-size: 0.8rem; color: #94a3b8; line-height: 1.4; margin: 4px 0 12px 0; font-weight: normal; }
+        .url-box { width: 100%; background-color: var(--code-bg); padding: 0 16px; height: 42px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; cursor: pointer; transition: 0.3s; position: relative; overflow: hidden; margin-bottom: 15px; }
+        .url-box:last-child { margin-bottom: 0; }
+        .url-box:hover { background-color: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3); }
+        .url-box.success { background-color: rgba(16, 185, 129, 0.2); border-color: #10b981; }
+        .url-text { font-family: ui-monospace, SFMono-Regular, Monaco, Consolas, monospace; font-size: 0.95rem; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; user-select: all; width: 100%; }
+        footer { text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--border-color); }
+        .ad-button { display: inline-block; background: linear-gradient(135deg, rgba(59, 130, 246, 0.8), rgba(37, 99, 235, 0.8)); color: #fff; padding: 10px 28px; border-radius: 50px; text-decoration: none; font-size: 0.95rem; font-weight: 700; transition: 0.3s; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); backdrop-filter: blur(5px); margin: 0 10px; }
+        .ad-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3); }
+        @media (max-width: 600px) { .url-text { font-size: 0.8rem !important; } .group-card { padding: 18px; } }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header><h1>Wireshark 进阶过滤规则</h1></header>
+
+    <section>
+        <h2>1. DNS & 泄露</h2>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">标准 53 端口流量</span><span class="tag">基础</span></div>
+            <span class="item-desc">捕获所有常规 DNS 请求。</span>
+            <div class="url-box" onclick="copy(this, 'udp.port == 53 || tcp.port == 53')"><span class="url-text">udp.port == 53 || tcp.port == 53</span></div>
+        </div>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">特定域名/泄露识别</span><span class="tag">最常用</span></div>
+            <span class="item-desc">检查是否向国内服务器查询了敏感域名。</span>
+            <div class="url-box" onclick="copy(this, 'dns.qry.name contains &quot;google&quot; || dns.qry.name contains &quot;github&quot;')"><span class="url-text">dns.qry.name contains "google" || dns.qry.name contains "github"</span></div>
+        </div>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">DoH/DoT 加密流量</span><span class="tag">加密 DNS</span></div>
+            <span class="item-desc">识别发往主流加密 DNS 服务的流量。</span>
+            <div class="url-box" onclick="copy(this, 'tls && (ip.addr == 8.8.8.8 || ip.addr == 1.1.1.1 || tcp.port == 853)')"><span class="url-text">tls && (ip.addr == 8.8.8.8 || ip.addr == 1.1.1.1 || tcp.port == 853)</span></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. TLS / SNI / Reality</h2>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">SNI 域名嗅探</span><span class="tag">核心规则</span></div>
+            <span class="item-desc">查看 HTTPS 握手中的真实目标地址。</span>
+            <div class="url-box" onclick="copy(this, 'tls.handshake.extensions_server_name')"><span class="url-text">tls.handshake.extensions_server_name</span></div>
+        </div>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">ECH 加密检测</span><span class="tag">进阶</span></div>
+            <span class="item-desc">判断 SNI 是否被 ECH (0xfe0d) 强制隐藏。</span>
+            <div class="url-box" onclick="copy(this, 'tls.handshake.extension.type == 0xfe0d')"><span class="url-text">tls.handshake.extension.type == 0xfe0d</span></div>
+        </div>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">Reality 协议探测</span><span class="tag">协议识别</span></div>
+            <span class="item-desc">识别 TLS 1.3 且不含 SNI 的异常流量（常见于 Reality 偷跑）。</span>
+            <div class="url-box" onclick="copy(this, 'tls.handshake.type == 1 && !tls.handshake.extensions_server_name')"><span class="url-text">tls.handshake.type == 1 && !tls.handshake.extensions_server_name</span></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. 隧道协议 & gRPC</h2>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">QUIC (HTTP/3)</span><span class="tag">UDP 隧道</span></div>
+            <span class="item-desc">Hysteria2 / TUIC 等协议底层过滤。</span>
+            <div class="url-box" onclick="copy(this, 'quic')"><span class="url-text">quic</span></div>
+        </div>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">gRPC / HTTP2 帧分析</span><span class="tag">现代代理</span></div>
+            <span class="item-desc">筛选包含 DATA 帧的 HTTP/2 流量（常见于 gRPC 节点）。</span>
+            <div class="url-box" onclick="copy(this, 'http2.type == 0')"><span class="url-text">http2.type == 0</span></div>
+        </div>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">WebSocket 握手</span><span class="tag">Web 代理</span></div>
+            <span class="item-desc">筛选通过 101 Switching Protocols 建立的连接。</span>
+            <div class="url-box" onclick="copy(this, 'http.upgrade == &quot;websocket&quot;')"><span class="url-text">http.upgrade == "websocket"</span></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. 故障排查 & MTU</h2>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">TCP RST 重置记录</span><span class="tag">墙拦截</span></div>
+            <span class="item-desc">查找被防火墙强制断开的连接。</span>
+            <div class="url-box" onclick="copy(this, 'tcp.flags.reset == 1')"><span class="url-text">tcp.flags.reset == 1</span></div>
+        </div>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">ICMP 需要分片</span><span class="tag">MTU 问题</span></div>
+            <span class="item-desc">排查由于分片导致的网页加载缓慢或打不开。</span>
+            <div class="url-box" onclick="copy(this, 'icmp.type == 3 && icmp.code == 4')"><span class="url-text">icmp.type == 3 && icmp.code == 4</span></div>
+        </div>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">TCP 重传分析</span><span class="tag">优选 IP 评估</span></div>
+            <span class="item-desc">通过重传率判断优选 IP 链路的真实质量。</span>
+            <div class="url-box" onclick="copy(this, 'tcp.analysis.retransmission')"><span class="url-text">tcp.analysis.retransmission</span></div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://www.wireshark.org/download/" target="_blank" class="ad-button">下载 Wireshark</a><br><br>
+        <a href="https://www.youtube.com/@zhenxiangdinglv" target="_blank" class="ad-button">YouTube @真香定律</a>
+    </footer>
+</div>
+<script>
+    async function copy(el, text) {
+        try {
+            await navigator.clipboard.writeText(text);
+            el.classList.add('success');
+            const span = el.querySelector('.url-text');
+            const originalText = span.innerText;
+            span.innerText = '已成功复制规则';
+            setTimeout(() => { span.innerText = originalText; el.classList.remove('success'); }, 1000);
+        } catch (err) { console.error('失败', err); }
+    }
+</script>
+</body>
+</html>
