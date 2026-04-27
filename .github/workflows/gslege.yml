@@ -20,57 +20,50 @@ jobs:
           HAS_CHANGES=false
           
           # 定义数据源
-          declare -A SOURCES=(
-            ["https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/Cfxyz.txt"]="Cfxyz.txt"
-            ["https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/JP.txt"]="JP.txt"
-            ["https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/NL.txt"]="NL.txt"
-            ["https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/US.txt"]="US.txt"
-            ["https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/DE.txt"]="DE.txt"
-            ["https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/SG.txt"]="SG.txt"
+          URLS=(
+            "https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/Cfxyz.txt"
+            "https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/JP.txt"
+            "https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/NL.txt"
+            "https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/US.txt"
+            "https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/DE.txt"
+            "https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/SG.txt"
           )
 
-          for URL in "${!SOURCES[@]}"; do
-            FILENAME=${SOURCES[$URL]}
+          for URL in "${URLS[@]}"; do
+            FILENAME=$(basename "$URL")
             TARGET_FILE="gslege/$FILENAME"
             TMP_NEW="new_${FILENAME}.tmp"
             TMP_OLD="old_${FILENAME}.tmp"
             
-            # 初始化临时文件，防止 grep 没匹配到内容导致文件不存在
-            touch "$TMP_NEW"
+            # 下载并直接处理，避免子 Shell 丢失数据
+            # 格式化逻辑：原内容 | IP:端口
+            curl -s "$URL" | grep ":" | sed 's/\r//g' | while read -r line; do
+              ip_port=$(echo "$line" | cut -d'#' -f1)
+              echo "$line | $ip_port"
+            done > "$TMP_NEW"
 
-            # 1. 下载并处理数据
-            # 增加对空内容的检查
-            CONTENT=$(curl -s "$URL")
-            if [ -n "$CONTENT" ]; then
-              echo "$CONTENT" | grep ":" | while read -r line; do
-                ip_port=$(echo "$line" | cut -d'#' -f1)
-                echo "$line | $ip_port" >> "$TMP_NEW"
-              done
-            fi
-
-            # 2. 对比逻辑
             FILE_CHANGED=false
-            if [ -f "$TARGET_FILE" ]; then
-              # 排除首尾行进行比对
-              sed '1d;$d' "$TARGET_FILE" > "$TMP_OLD"
-              if ! diff -q "$TMP_OLD" "$TMP_NEW" > /dev/null; then
-                FILE_CHANGED=true
-                HAS_CHANGES=true
-              fi
+            if [ ! -f "$TARGET_FILE" ]; then
+                # 如果文件不存在且新文件不为空，说明是首次创建
+                if [ -s "$TMP_NEW" ]; then
+                    FILE_CHANGED=true
+                    HAS_CHANGES=true
+                    echo "首次创建文件: $FILENAME"
+                fi
             else
-              # 如果目标文件不存在，且新抓取到了内容，则标记为有变化
-              if [ -s "$TMP_NEW" ]; then
-                FILE_CHANGED=true
-                HAS_CHANGES=true
-              fi
+                # 如果文件存在，对比中间部分
+                sed '1d;$d' "$TARGET_FILE" > "$TMP_OLD"
+                if ! diff -q "$TMP_OLD" "$TMP_NEW" > /dev/null; then
+                    FILE_CHANGED=true
+                    HAS_CHANGES=true
+                    echo "文件内容有更新: $FILENAME"
+                fi
             fi
 
-            # 3. 写入文件
             if [ "$FILE_CHANGED" = true ]; then
               echo "saas.sin.fan:443#▼ 优选IP | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
               cat "$TMP_NEW" >> "$TARGET_FILE"
               echo "bestcf.030101.xyz:443#▲ 优选IP | 分享优选网 bestcf.pages.dev | 感谢Gslege" >> "$TARGET_FILE"
-              echo "已更新文件: $TARGET_FILE"
             fi
             
             rm -f "$TMP_NEW" "$TMP_OLD"
@@ -83,10 +76,11 @@ jobs:
           if [ "${{ env.has_changes }}" = "true" ]; then
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
-            git add gslege/*.txt
+            # 强制添加目录
+            git add gslege/
             git commit -m "gslege update $(date -d "+8 hours" '+%Y-%m-%d %H:%M:%S')"
             git pull --rebase origin main
             git push origin main
           else
-            echo "所有文件内容均无实质变化，跳过提交。"
+            echo "未检测到数据更新，跳过提交。"
           fi
