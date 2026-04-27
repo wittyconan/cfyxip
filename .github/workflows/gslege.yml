@@ -19,7 +19,6 @@ jobs:
           BJ_TIME=$(date -d "+8 hours" "+%m-%d %H:%M")
           HAS_CHANGES=false
           
-          # 数据源列表
           URLS=(
             "https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/Cfxyz.txt"
             "https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/JP.txt"
@@ -37,27 +36,40 @@ jobs:
             
             echo "正在处理: $FILENAME"
             
-            # 1. 下载并格式化
-            # 兼容处理：如果行内没有端口，自动补充 :443 (或者根据需要修改)
-            # 逻辑：去除换行符 -> 忽略空行 -> 格式化为 "原始行 | IP部分"
+            # 核心处理逻辑
             curl -sL "$URL" | awk '{
                 gsub(/\r/, "", $0);
                 if (length($0) > 0) {
-                    split($1, a, "#"); # 处理可能存在的备注
-                    ip_part = a[1];
-                    # 如果 IP 部分不含冒号，默认补上 :443（参考 xinyitang 逻辑）
-                    if (ip_part !~ /:/) { ip_part = ip_part ":443" }
-                    print $0 " | " ip_part
+                    # 以 # 为分隔符，a[1] 是 IP(含端口)，a[2] 是备注
+                    n = split($0, a, "#");
+                    ip_full = a[1];
+                    remark = a[2];
+
+                    # 提取纯 IP (去掉可能存在的端口) 用于末尾展示
+                    split(ip_full, b, ":");
+                    pure_ip = b[1];
+
+                    # 逻辑判断：如果原 IP 部分不含冒号，则补全 :443
+                    if (ip_full !~ /:/) {
+                        output_head = ip_full ":443"
+                    } else {
+                        output_head = ip_full
+                    }
+
+                    # 重新拼接：处理后的首部 # 备注 | 纯IP
+                    if (n > 1) {
+                        print output_head "#" remark " | " pure_ip
+                    } else {
+                        print output_head " | " pure_ip
+                    }
                 }
             }' > "$TMP_NEW"
 
-            # 2. 检查抓取结果
             if [ ! -s "$TMP_NEW" ]; then
-              echo "错误: 无法从 $URL 获取有效内容。"
+              echo "错误: 无法获取有效内容。"
               continue
             fi
 
-            # 3. 对比变更
             FILE_CHANGED=false
             if [ ! -f "$TARGET_FILE" ]; then
                 FILE_CHANGED=true
@@ -72,7 +84,6 @@ jobs:
                 fi
             fi
 
-            # 4. 写入带广告行的正式文件
             if [ "$FILE_CHANGED" = true ]; then
               echo "saas.sin.fan:443#▼ 优选IP | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
               cat "$TMP_NEW" >> "$TARGET_FILE"
@@ -93,6 +104,4 @@ jobs:
             git commit -m "gslege update $(date -d "+8 hours" '+%Y-%m-%d %H:%M:%S')"
             git pull --rebase origin main
             git push origin main
-          else
-            echo "所有数据源均无变化，无需提交。"
           fi
