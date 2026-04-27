@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 04-27 13:37 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 04-27 14:07 | YouTube@真香定律
 dnew.cc:443#dnew.cc
 sanwang.cf.3666888.xyz:443#sanwang.cf.3666888.xyz
 isp.254301.xyz:443#isp.254301.xyz
@@ -7,11 +7,11 @@ www.swowd.com:443#www.swowd.com
 youxuan.cf.636949.xyz:443#youxuan.cf.636949.xyz
 cu.877774.xyz:443#cu.877774.xyz
 hk.cf.3666888.xyz:443#hk.cf.3666888.xyz
-cnllm.com:443#cnllm.com
 5.cf.3666888.xyz:443#5.cf.3666888.xyz
+cnllm.com:443#cnllm.com
 y508.com:443#y508.com
-yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
 www.mc.js.cool:443#www.mc.js.cool
+yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
 3.cf.3666888.xyz:443#3.cf.3666888.xyz
 www.shopify.com:443#www.shopify.com
 redis.io:443#redis.io
@@ -31,11 +31,14 @@ bbs.alipansou.com:443#bbs.alipansou.com
 nexusmods.com:443#nexusmods.com
 www.jimdo.com:443#www.jimdo.com
 us.cloudflare.cnae.top:443#us.cloudflare.cnae.top
+yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
 cf-ip-node.vov.moe:443#cf-ip-node.vov.moe
 cf.1o.ee:443#cf.1o.ee
 www.xiaoshuofen.com:443#www.xiaoshuofen.com
+www.cdzxdz.com:443#www.cdzxdz.com
 www.mfyx.cn:443#www.mfyx.cn
 101yaoye.com:443#101yaoye.com
+01-qq.com:443#01-qq.com
 zeas.top:443#zeas.top
 store.ubi.com:443#store.ubi.com
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
@@ -44,9 +47,6 @@ da.mfa.gov.ua:443#da.mfa.gov.ua
 www.leics.police.uk:443#www.leics.police.uk
 vip.cf.3666888.xyz:443#vip.cf.3666888.xyz
 cdn.2158.cc:443#cdn.2158.cc
-yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
-www.cdzxdz.com:443#www.cdzxdz.com
-01-qq.com:443#01-qq.com
-cdn.31514926.xyz:443#cdn.31514926.xyz
+ping.ctrl.li:443#ping.ctrl.li
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
