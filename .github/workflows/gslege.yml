@@ -19,7 +19,7 @@ jobs:
           BJ_TIME=$(date -d "+8 hours" "+%m-%d %H:%M")
           HAS_CHANGES=false
           
-          # 定义数据源
+          # 数据源列表
           URLS=(
             "https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/Cfxyz.txt"
             "https://raw.githubusercontent.com/gslege/CloudflareIP/refs/heads/main/JP.txt"
@@ -37,36 +37,42 @@ jobs:
             
             echo "正在处理: $FILENAME"
             
-            # 使用 awk 一次性完成：去换行符 -> 过滤包含冒号的内容 -> 格式化输出
-            # 这种方式比 while 循环稳健得多，不会丢失变量
-            curl -sL "$URL" | awk -F'#' '/:/{
+            # 1. 下载并格式化
+            # 兼容处理：如果行内没有端口，自动补充 :443 (或者根据需要修改)
+            # 逻辑：去除换行符 -> 忽略空行 -> 格式化为 "原始行 | IP部分"
+            curl -sL "$URL" | awk '{
                 gsub(/\r/, "", $0);
-                split($1, a, " "); 
-                print $0 " | " a[1]
+                if (length($0) > 0) {
+                    split($1, a, "#"); # 处理可能存在的备注
+                    ip_part = a[1];
+                    # 如果 IP 部分不含冒号，默认补上 :443（参考 xinyitang 逻辑）
+                    if (ip_part !~ /:/) { ip_part = ip_part ":443" }
+                    print $0 " | " ip_part
+                }
             }' > "$TMP_NEW"
 
-            # 检查 TMP_NEW 是否真的抓到了内容
+            # 2. 检查抓取结果
             if [ ! -s "$TMP_NEW" ]; then
-              echo "警告: $FILENAME 抓取内容为空，跳过此文件。"
-              rm -f "$TMP_NEW"
+              echo "错误: 无法从 $URL 获取有效内容。"
               continue
             fi
 
+            # 3. 对比变更
             FILE_CHANGED=false
             if [ ! -f "$TARGET_FILE" ]; then
                 FILE_CHANGED=true
                 HAS_CHANGES=true
-                echo "检测到新文件: $FILENAME"
+                echo "-> 发现新文件"
             else
-                # 排除旧文件的首尾广告行进行比对
                 sed '1d;$d' "$TARGET_FILE" > "$TMP_OLD"
                 if ! diff -q "$TMP_OLD" "$TMP_NEW" > /dev/null; then
                     FILE_CHANGED=true
                     HAS_CHANGES=true
-                    echo "检测到内容变更: $FILENAME"
+                    echo "-> 内容已更新"
                 fi
             fi
 
+            # 4. 写入带广告行的正式文件
             if [ "$FILE_CHANGED" = true ]; then
               echo "saas.sin.fan:443#▼ 优选IP | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
               cat "$TMP_NEW" >> "$TARGET_FILE"
@@ -83,11 +89,10 @@ jobs:
           if [ "${{ env.has_changes }}" = "true" ]; then
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
-            # 强制添加整个目录，确保首次运行能提交
             git add gslege/
             git commit -m "gslege update $(date -d "+8 hours" '+%Y-%m-%d %H:%M:%S')"
             git pull --rebase origin main
             git push origin main
           else
-            echo "未检测到任何数据更新，跳过提交。"
+            echo "所有数据源均无变化，无需提交。"
           fi
