@@ -34,29 +34,33 @@ jobs:
             TMP_NEW="new_${FILENAME}.tmp"
             TMP_OLD="old_${FILENAME}.tmp"
             
-            echo "正在处理: $FILENAME"
+            # --- 新增：地区标签识别逻辑 ---
+            if [ "$FILENAME" = "Cfxyz.txt" ]; then
+                REGION="Speed"
+            else
+                # 提取文件名（去掉 .txt）作为地区代码，并转换为大写
+                REGION=$(echo "${FILENAME%.*}" | tr '[:lower:]' '[:upper:]')
+            fi
+            
+            echo "正在处理: $FILENAME (地区: $REGION)"
             
             # 核心处理逻辑
             curl -sL "$URL" | awk '{
                 gsub(/\r/, "", $0);
                 if (length($0) > 0) {
-                    # 以 # 为分隔符，a[1] 是 IP(含端口)，a[2] 是备注
                     n = split($0, a, "#");
                     ip_full = a[1];
                     remark = a[2];
 
-                    # 提取纯 IP (去掉可能存在的端口) 用于末尾展示
                     split(ip_full, b, ":");
                     pure_ip = b[1];
 
-                    # 逻辑判断：如果原 IP 部分不含冒号，则补全 :443
                     if (ip_full !~ /:/) {
                         output_head = ip_full ":443"
                     } else {
                         output_head = ip_full
                     }
 
-                    # 重新拼接：处理后的首部 # 备注 | 纯IP
                     if (n > 1) {
                         print output_head "#" remark " | " pure_ip
                     } else {
@@ -85,7 +89,8 @@ jobs:
             fi
 
             if [ "$FILE_CHANGED" = true ]; then
-              echo "saas.sin.fan:443#▼ 优选IP | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
+              # --- 修改：首行加入动态地区变量 $REGION ---
+              echo "saas.sin.fan:443#▼ 优选IP $REGION | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
               cat "$TMP_NEW" >> "$TARGET_FILE"
               echo "bestcf.030101.xyz:443#▲ 优选IP | 分享优选网 bestcf.pages.dev | 感谢Gslege" >> "$TARGET_FILE"
             fi
@@ -101,7 +106,7 @@ jobs:
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add gslege/
-            git commit -m "gslege update $(date -d "+8 hours" '+%Y-%m-%d %H:%M:%S')"
+            git commit -m "Gslege $(date -d "+8 hours" '+%Y-%m-%d %H:%M:%S')"
             git pull --rebase origin main
             git push origin main
           fi
