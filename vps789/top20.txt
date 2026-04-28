@@ -1,13 +1,11 @@
-saas.sin.fan:443#▼ 优选域名 TOP20 | 04-29 06:07 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP20 | 04-29 06:36 | YouTube@真香定律
 www.jimdo.com:443#www.jimdo.com
 zeas.top:443#zeas.top
 dongbanghong.com:443#dongbanghong.com
 yg5.ygkkk.dpdns.org:443#yg5.ygkkk.dpdns.org
 prompt.gzcrtw.com:443#prompt.gzcrtw.com
 markmonitor.com:443#markmonitor.com
-freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
-cu.877774.xyz:443#cu.877774.xyz
 cf.godns.cc:443#cf.godns.cc
 www.leics.police.uk:443#www.leics.police.uk
 01-qq.com:443#01-qq.com
@@ -15,8 +13,10 @@ www.mc.js.cool:443#www.mc.js.cool
 cfsaas.080112.xyz:443#cfsaas.080112.xyz
 ahblog.cn:443#ahblog.cn
 cnllm.com:443#cnllm.com
-cdns.doon.eu.org:443#cdns.doon.eu.org
 eason.cf.lma.de5.net:443#eason.cf.lma.de5.net
 cf.1o.ee:443#cf.1o.ee
-bestcfv4.030101.xyz:443#bestcfv4.030101.xyz
+jobsdb.com:443#jobsdb.com
+www.sofi.com:443#www.sofi.com
+cdn.091224.xyz:443#cdn.091224.xyz
+cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
