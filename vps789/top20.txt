@@ -1,6 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP20 | 04-29 07:07 | YouTube@真香定律
-www.jimdo.com:443#www.jimdo.com
-zeas.top:443#zeas.top
+saas.sin.fan:443#▼ 优选域名 TOP20 | 04-29 07:37 | YouTube@真香定律
 dongbanghong.com:443#dongbanghong.com
 yg5.ygkkk.dpdns.org:443#yg5.ygkkk.dpdns.org
 prompt.gzcrtw.com:443#prompt.gzcrtw.com
@@ -14,9 +12,11 @@ ahblog.cn:443#ahblog.cn
 da.mfa.gov.ua:443#da.mfa.gov.ua
 cnllm.com:443#cnllm.com
 eason.cf.lma.de5.net:443#eason.cf.lma.de5.net
-cf.1o.ee:443#cf.1o.ee
+www.jimdo.com:443#www.jimdo.com
 jobsdb.com:443#jobsdb.com
 www.sofi.com:443#www.sofi.com
+cf.1o.ee:443#cf.1o.ee
 cdn.091224.xyz:443#cdn.091224.xyz
 cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
+saas.sin.fan:443#saas.sin.fan
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
