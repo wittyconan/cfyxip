@@ -14,7 +14,6 @@ kniu.cc
 101yaoye.com
 www.giannidelprete.it
 www.mlkj888.com
-cdn.2158.cc
 cf.zhetengsha.eu.org
 fw8je9.cf.3666888.xyz
 yg11.ygkkk.dpdns.org
@@ -26,9 +25,9 @@ www.ntu.edu.sg
 cf-ip-node.vov.moe
 cfgo.timelate.com
 cloudflare.cfgo.cc
+cf.cf.3666888.xyz
 cf.727672.xyz
 cdn.2020111.xyz
-cf.cf.3666888.xyz
 cnllm.com
 yidong.19931101.xyz
 cu.877774.xyz
@@ -100,6 +99,7 @@ eason.cf.lma.de5.net
 cf.mubaiovo.top
 jp.cf.3666888.xyz
 cfvip.cf.3666888.xyz
+cdn.2158.cc
 run.254301.xyz
 01-cctv.com
 www.trumpgolf.com
@@ -125,13 +125,13 @@ cfsaas.080112.xyz
 cfyx.aliyun.20237737.xyz
 www.ox.ac.uk
 a.lma.de5.net
-isp.254301.xyz
 test.509666.xyz
 markmonitor.com
 www.xflash.vip
 go1.dematic.com
 2.cf.3666888.xyz
 envato.com
+isp.254301.xyz
 ping.ctrl.li
 imooo.de
 china-telecom.cname.cloudflare.468123.xyz
@@ -180,12 +180,12 @@ bestbuyfillers.com
 123.cf.3666888.xyz
 www.6i5.com
 cdn.tzpro.xyz
-cfdl.3666888.xyz
 6.cf.3666888.xyz
 www.sofi.com
 dianxin.19931101.xyz
 i.111666.best
 encryptedsni.com
+cfdl.3666888.xyz
 adnjv.cf.3666888.xyz
 sunkist.com
 eteaf.cf.3666888.xyz
