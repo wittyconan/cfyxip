@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 04-29 10:37 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 04-29 11:07 | YouTube@真香定律
 dongbanghong.com:443#dongbanghong.com
 yg5.ygkkk.dpdns.org:443#yg5.ygkkk.dpdns.org
 01-qq.com:443#01-qq.com
@@ -39,6 +39,7 @@ cmcc.cc.cd:443#cmcc.cc.cd
 markmonitor.com:443#markmonitor.com
 nexusmods.com:443#nexusmods.com
 baka.fun:443#baka.fun
+www.trumpgolf.com:443#www.trumpgolf.com
 api.gzcrtw.com:443#api.gzcrtw.com
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 store.ubi.com:443#store.ubi.com
@@ -48,5 +49,4 @@ yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
 cf-ip-node.vov.moe:443#cf-ip-node.vov.moe
 cf.1o.ee:443#cf.1o.ee
 www.cdzxdz.com:443#www.cdzxdz.com
-cdn.091224.xyz:443#cdn.091224.xyz
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
