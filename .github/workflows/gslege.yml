@@ -32,70 +32,59 @@ jobs:
             FILENAME=$(basename "$URL")
             TARGET_FILE="gslege/$FILENAME"
             TMP_NEW="new_${FILENAME}.tmp"
-            TMP_OLD="old_${FILENAME}.tmp"
             
-            # --- 新增：地区标签识别逻辑 ---
             if [ "$FILENAME" = "Cfxyz.txt" ]; then
                 REGION="Speed"
             else
-                # 提取文件名（去掉 .txt）作为地区代码，并转换为大写
                 REGION=$(echo "${FILENAME%.*}" | tr '[:lower:]' '[:upper:]')
             fi
             
             echo "正在处理: $FILENAME (地区: $REGION)"
             
-            # 核心处理逻辑
-            curl -sL "$URL" | awk '{
+            # 使用 -H 禁用缓存，确保获取最新数据
+            curl -sL -H "Cache-Control: no-cache" "$URL" | awk '{
                 gsub(/\r/, "", $0);
                 if (length($0) > 0) {
                     n = split($0, a, "#");
                     ip_full = a[1];
                     remark = a[2];
-
                     split(ip_full, b, ":");
                     pure_ip = b[1];
-
-                    if (ip_full !~ /:/) {
-                        output_head = ip_full ":443"
-                    } else {
-                        output_head = ip_full
-                    }
-
-                    if (n > 1) {
-                        print output_head "#" remark " | " pure_ip
-                    } else {
-                        print output_head " | " pure_ip
-                    }
+                    if (ip_full !~ /:/) { output_head = ip_full ":443" } else { output_head = ip_full }
+                    if (n > 1) { print output_head "#" remark " | " pure_ip } else { print output_head " | " pure_ip }
                 }
-            }' > "$TMP_NEW"
+            }' | sort -u > "$TMP_NEW"
 
             if [ ! -s "$TMP_NEW" ]; then
-              echo "错误: 无法获取有效内容。"
+              echo "跳过: $FILENAME 内容为空"
+              rm -f "$TMP_NEW"
               continue
             fi
 
             FILE_CHANGED=false
             if [ ! -f "$TARGET_FILE" ]; then
                 FILE_CHANGED=true
-                HAS_CHANGES=true
-                echo "-> 发现新文件"
             else
-                sed '1d;$d' "$TARGET_FILE" > "$TMP_OLD"
-                if ! diff -q "$TMP_OLD" "$TMP_NEW" > /dev/null; then
+                # 关键修正：将当前目标文件也临时处理（去头尾+去回车+排序）后再对比
+                # 这样对比的是“纯数据”，不受首行时间戳影响
+                sed '1d;$d' "$TARGET_FILE" | sed 's/\r//g' | sort -u > old_clean.tmp
+                if ! diff -q old_clean.tmp "$TMP_NEW" > /dev/null; then
                     FILE_CHANGED=true
-                    HAS_CHANGES=true
-                    echo "-> 内容已更新"
                 fi
+                rm -f old_clean.tmp
             fi
 
             if [ "$FILE_CHANGED" = true ]; then
-              # --- 修改：首行加入动态地区变量 $REGION ---
-              echo "saas.sin.fan:443#▼ 优选IP $REGION | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
-              cat "$TMP_NEW" >> "$TARGET_FILE"
-              echo "bestcf.030101.xyz:443#▲ 优选IP | 分享优选网 BestCF.pages.dev | 感谢Gslege" >> "$TARGET_FILE"
+                HAS_CHANGES=true
+                echo "-> 检测到实际内容变更，正在更新文件"
+                echo "saas.sin.fan:443#▼ 优选IP $REGION | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
+                cat "$TMP_NEW" >> "$TARGET_FILE"
+                echo "bestcf.030101.xyz:443#▲ 优选IP | 分享优选网 BestCF.pages.dev | 感谢Gslege" >> "$TARGET_FILE"
+            else
+                echo "-> 内容无实质变化，跳过"
             fi
             
-            rm -f "$TMP_NEW" "$TMP_OLD"
+            rm -f "$TMP_NEW"
           done
 
           echo "has_changes=$HAS_CHANGES" >> $GITHUB_ENV
@@ -106,7 +95,12 @@ jobs:
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add gslege/
-            git commit -m "Gslege $(date -d "+8 hours" '+%Y-%m-%d %H:%M:%S')"
-            git pull --rebase origin main
-            git push origin main
+            # 检查是否有文件真正被 git 识别为变化
+            if git diff --staged --quiet; then
+              echo "Git 未检测到文件变化，取消提交。"
+            else
+              git commit -m "Gslege $(date -d "+8 hours" '+%Y-%m-%d %H:%M:%S')"
+              git pull --rebase origin main
+              git push origin main
+            fi
           fi
