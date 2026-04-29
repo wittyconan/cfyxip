@@ -3,7 +3,6 @@ name: xinyitang3
 on:
   workflow_dispatch:
 
-# 必须有写入权限
 permissions:
   contents: write
 
@@ -16,58 +15,68 @@ jobs:
 
       - name: Process and Compare
         run: |
-          # 1. 环境准备
           mkdir -p xinyitang3
           TARGET_FILE="xinyitang3/ipv4.txt"
           TMP_NEW="new_processed.tmp"
           
-          # 2. 获取并校验数据 (带重试机制)
           echo "正在从 xinyitang3 抓取数据..."
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+          URL="https://sub.xinyitang.dpdns.org/sub?host=123&uuid=456"
+          
           MAX_RETRIES=3
           RETRY_COUNT=0
           response=""
 
           while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
-            response=$(curl -f -s "https://sub.xinyitang.dpdns.org/sub?host=123&uuid=456")
+            # 去掉了 -f，改用获取状态码的方式，防止直接 Exit 22
+            http_code=$(curl -s -o response.txt -w "%{http_code}" -H "User-Agent: $UA" "$URL")
             
-            if [ $? -eq 0 ] && [ -n "$response" ]; then
-              echo "✅ 数据抓取成功！"
-              break
-            else
-              RETRY_COUNT=$((RETRY_COUNT + 1))
-              echo "⚠️ 抓取失败，正在重试 ($RETRY_COUNT/$MAX_RETRIES)..."
-              sleep 3
+            if [ "$http_code" -eq 200 ]; then
+              response=$(cat response.txt)
+              if [ -n "$response" ]; then
+                echo "✅ 数据抓取成功！"
+                break
+              fi
             fi
+            
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            echo "⚠️ 抓取失败 (HTTP $http_code)，正在重试 ($RETRY_COUNT/$MAX_RETRIES)..."
+            sleep 5
           done
 
           if [ -z "$response" ]; then
-            echo "❌ 无法获取数据，跳过本次任务。"
+            echo "❌ 无法获取有效数据，当前状态码: $http_code"
             echo "has_changes=false" >> $GITHUB_ENV
             exit 0
           fi
 
-          # 3. 解码并提取 IP:Port
-          # 解码 Base64 并通过正则提取 @ 之后 ? 之前的地址部分
-          decoded_data=$(echo "$response" | base64 -d 2>/dev/null)
+          # 尝试解码 Base64
+          # 使用 tr 过滤掉可能存在的换行符或非法字符
+          decoded_data=$(echo "$response" | tr -d '\n\r' | base64 -d 2>/dev/null)
           
+          if [[ ! "$decoded_data" =~ "vless://" ]]; then
+            echo "❌ 数据解码失败或格式不是有效的 vless 订阅"
+            echo "has_changes=false" >> $GITHUB_ENV
+            exit 0
+          fi
+
+          # 提取逻辑
           echo "$decoded_data" | while IFS= read -r line; do
             if [[ -z "$line" ]]; then continue; fi
             
             # 提取 IP:Port
             ip_port=$(echo "$line" | grep -oP '(?<=@).*?(?=\?)')
-            # 提取标签 (#后面的内容)
-            tag=$(echo "$line" | awk -F'#' '{print $2}')
+            # 提取标签（#号后的部分），并去除可能存在的 URL 编码转义
+            tag=$(echo "$line" | awk -F'#' '{print $2}' | sed 's/%20/ /g')
             
             if [[ -n "$ip_port" ]]; then
-              # 按照原来的格式输出: 节点标签 | IP:端口
               echo "${tag} | ${ip_port}" >> "$TMP_NEW"
             fi
           done
 
-          # 4. 对比逻辑
+          # 对比与写入逻辑
           HAS_CHANGES=false
           if [ -f "$TARGET_FILE" ]; then
-            # 排除首尾广告行进行比对
             sed '1d;$d' "$TARGET_FILE" > old_nodes.tmp
             if ! diff -q old_nodes.tmp "$TMP_NEW" > /dev/null; then
               HAS_CHANGES=true
@@ -76,14 +85,12 @@ jobs:
             HAS_CHANGES=true
           fi
 
-          # 5. 构建最终文件
           if [ "$HAS_CHANGES" = true ]; then
             BJ_TIME=$(TZ='Asia/Shanghai' date +'%m-%d %H:%M')
             echo "saas.sin.fan:443#▼ 优选IP | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
             cat "$TMP_NEW" >> "$TARGET_FILE"
-            echo "bestcf.030101.xyz:443#▲ 优选IP | 分享优选网 BestCF.pages.dev | 感谢Mia" >> "$TARGET_FILE"
-            
-            echo "COMMIT_MSG=Xinyitang3 $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')" >> $GITHUB_ENV
+            echo "bestcf.030101.xyz:443#▲ 优选IP | 分享优选网 BestCF.pages.dev | 感谢xinyitang3" >> "$TARGET_FILE"
+            echo "COMMIT_MSG=xinyitang3 $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')" >> $GITHUB_ENV
           fi
 
           echo "has_changes=$HAS_CHANGES" >> $GITHUB_ENV
