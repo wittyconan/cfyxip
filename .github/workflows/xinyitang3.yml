@@ -2,83 +2,60 @@ name: xinyitang3
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 */12 * * *'
 
 permissions:
   contents: write
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps
+
+      - name: Fetch Data using Playwright
+        run: python xinyitang3/fetch_xinyitang.py
+
       - name: Process and Compare
         run: |
-          mkdir -p xinyitang3
+          # 路径变量指向 xinyitang3 目录
           TARGET_FILE="xinyitang3/ipv4.txt"
+          TMP_DECODED="xinyitang3/decoded_nodes.tmp"
           TMP_NEW="new_processed.tmp"
           
-          echo "正在以 Clash 身份尝试抓取数据..."
-          UA="Clash/1.18.0 (Windows; amd64)"
-          URL="https://sub.xinyitang.dpdns.org/sub?host=123&uuid=456"
-          
-          MAX_RETRIES=3
-          RETRY_COUNT=0
-          response=""
-
-          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
-            # 增加 -L 处理重定向，增加 Clash 头部
-            http_code=$(curl -s -L -o response.txt -w "%{http_code}" \
-              -H "User-Agent: $UA" \
-              -H "Accept: */*" \
-              "$URL")
-            
-            if [ "$http_code" -eq 200 ]; then
-              response=$(cat response.txt)
-              if [ -n "$response" ]; then
-                echo "✅ 数据抓取成功！"
-                break
-              fi
-            fi
-            
-            RETRY_COUNT=$((RETRY_COUNT + 1))
-            echo "⚠️ 抓取失败 (HTTP $http_code)，正在重试 ($RETRY_COUNT/$MAX_RETRIES)..."
-            # 如果是 403，尝试换一个 UA
-            if [ "$http_code" -eq 403 ]; then
-              UA="v2rayN/6.33"
-            fi
-            sleep 5
-          done
-
-          if [ -z "$response" ]; then
-            echo "❌ 依然无法获取数据。可能该域名屏蔽了 GitHub Actions 的机房 IP。"
+          if [ ! -f "$TMP_DECODED" ]; then
+            echo "没有获取到数据，跳过。"
             echo "has_changes=false" >> $GITHUB_ENV
             exit 0
           fi
 
-          # 尝试解码 Base64
-          decoded_data=$(echo "$response" | tr -d '\n\r' | base64 -d 2>/dev/null)
-          
-          if [[ ! "$decoded_data" =~ "vless://" ]]; then
-            echo "❌ 数据解码失败，收到的内容可能不是有效的订阅。"
-            echo "has_changes=false" >> $GITHUB_ENV
-            exit 0
-          fi
-
-          # 提取逻辑
-          echo "$decoded_data" | while IFS= read -r line; do
+          # 提取 IP:Port 和 标签
+          while IFS= read -r line; do
             if [[ -z "$line" ]]; then continue; fi
             ip_port=$(echo "$line" | grep -oP '(?<=@).*?(?=\?)')
             tag=$(echo "$line" | awk -F'#' '{print $2}' | sed 's/%20/ /g')
             if [[ -n "$ip_port" ]]; then
               echo "${tag} | ${ip_port}" >> "$TMP_NEW"
             fi
-          done
+          done < "$TMP_DECODED"
 
-          # 对比与写入逻辑
+          # 对比逻辑
           HAS_CHANGES=false
           if [ -f "$TARGET_FILE" ]; then
+            # 排除页首页尾进行比对
             sed '1d;$d' "$TARGET_FILE" > old_nodes.tmp
             if ! diff -q old_nodes.tmp "$TMP_NEW" > /dev/null; then
               HAS_CHANGES=true
@@ -87,6 +64,7 @@ jobs:
             HAS_CHANGES=true
           fi
 
+          # 写入文件
           if [ "$HAS_CHANGES" = true ]; then
             BJ_TIME=$(TZ='Asia/Shanghai' date +'%m-%d %H:%M')
             echo "saas.sin.fan:443#▼ 优选IP | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
@@ -102,5 +80,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "${{ env.COMMIT_MSG }}"
+          # 仅提交 txt 文件，不提交脚本和临时文件
           file_pattern: 'xinyitang3/*.txt'
-          skip_dirty_check: true
