@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 04-30 00:37 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 04-30 01:07 | YouTube@真香定律
 cf.godns.cc:443#cf.godns.cc
 dnew.cc:443#dnew.cc
 dongbanghong.com:443#dongbanghong.com
@@ -12,25 +12,26 @@ www.speedtest.net:443#www.speedtest.net
 eii.at:443#eii.at
 cdn.2020111.xyz:443#cdn.2020111.xyz
 cu.877774.xyz:443#cu.877774.xyz
+cfyx.qdqqd.com:443#cfyx.qdqqd.com
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
+bestcfv4.030101.xyz:443#bestcfv4.030101.xyz
 serviceshub.samsclub.com:443#serviceshub.samsclub.com
 www.cdzxdz.com:443#www.cdzxdz.com
+cdn.7zz.cn:443#cdn.7zz.cn
 cf.duun.eu.cc:443#cf.duun.eu.cc
-cfyx.qdqqd.com:443#cfyx.qdqqd.com
 www.swowd.com:443#www.swowd.com
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
 cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
-openai.com:443#openai.com
-bestcfv4.030101.xyz:443#bestcfv4.030101.xyz
 redis.io:443#redis.io
-www.mc.js.cool:443#www.mc.js.cool
 cdn.091224.xyz:443#cdn.091224.xyz
 api.gzcrtw.com:443#api.gzcrtw.com
 cloudflare.182682.xyz:443#cloudflare.182682.xyz
+openai.com:443#openai.com
 saas.sin.fan:443#saas.sin.fan
 www.fastsoso.cn:443#www.fastsoso.cn
 cdn.262832.xyz:443#cdn.262832.xyz
 cloudflare.idc.rocks:443#cloudflare.idc.rocks
+www.mc.js.cool:443#www.mc.js.cool
 jobsdb.com:443#jobsdb.com
 youxuan.cf.3666888.xyz:443#youxuan.cf.3666888.xyz
 youxuan.cf.636949.xyz:443#youxuan.cf.636949.xyz
@@ -39,14 +40,13 @@ ahblog.cn:443#ahblog.cn
 cmcc.cc.cd:443#cmcc.cc.cd
 zeas.top:443#zeas.top
 www.shopify.com:443#www.shopify.com
+www.xiaoshuofen.com:443#www.xiaoshuofen.com
 fk.hshwk.org:443#fk.hshwk.org
 cdns.doon.eu.org:443#cdns.doon.eu.org
+cloudflare.cfgo.cc:443#cloudflare.cfgo.cc
 store.ubi.com:443#store.ubi.com
 bbs.alipansou.com:443#bbs.alipansou.com
 nexusmods.com:443#nexusmods.com
 www.jimdo.com:443#www.jimdo.com
 yg5.ygkkk.dpdns.org:443#yg5.ygkkk.dpdns.org
-yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
-www.nexusmods.com:443#www.nexusmods.com
-101yaoye.com:443#101yaoye.com
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
