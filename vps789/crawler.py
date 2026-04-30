@@ -17,7 +17,7 @@ def run():
             # 同时将超时手动延长到 60 秒，给网络波动留出余地
             page.goto("https://vps789.com/cfip/?remarks=domain", 
                       wait_until="domcontentloaded", 
-                      timeout=60000)
+                      timeout=20000)
             
             # 3. 精准等待：只要表格行出现就代表数据出来了
             print("等待表格数据渲染...")
