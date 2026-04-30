@@ -158,9 +158,3 @@ jobs:
           file_pattern: 'tiancheng/*.txt tiancheng/old/*.txt'
           skip_dirty_check: true
           disable_globbing: false
-       
-      - name: Trigger next
-        if: always()
-        run: sleep 10 && gh workflow run gslege.yml --ref main
-        env:
-          GH_TOKEN: ${{ github.token }}
