@@ -1,33 +1,30 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-02 16:39 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-02 17:09 | YouTube@真香定律
 openai.com:443#openai.com
 www.sloomb.com:443#www.sloomb.com
 yyurl.cc:443#yyurl.cc
-www.sage.com:443#www.sage.com
 www.visa.com.sg:443#www.visa.com.sg
+www.sage.com:443#www.sage.com
 cmcc.cc.cd:443#cmcc.cc.cd
 chrono24.com:443#chrono24.com
-nexusmods.com:443#nexusmods.com
-www.leics.police.uk:443#www.leics.police.uk
 yg6.ygkkk.dpdns.org:443#yg6.ygkkk.dpdns.org
+nexusmods.com:443#nexusmods.com
 yidong.19931101.xyz:443#yidong.19931101.xyz
 www.5199dy.com:443#www.5199dy.com
-cf.1o.ee:443#cf.1o.ee
 cdn.091224.xyz:443#cdn.091224.xyz
-www.visa.com:443#www.visa.com
+www.leics.police.uk:443#www.leics.police.uk
 cfyx.qdqqd.com:443#cfyx.qdqqd.com
 7.cf.3666888.xyz:443#7.cf.3666888.xyz
 cf-ip-node.vov.moe:443#cf-ip-node.vov.moe
 ys2046.cv:443#ys2046.cv
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
 cloudflare.cnae.top:443#cloudflare.cnae.top
-cf.mubaiovo.top:443#cf.mubaiovo.top
 test.509666.xyz:443#test.509666.xyz
+cf.1o.ee:443#cf.1o.ee
 cf.v8.longsays.com:443#cf.v8.longsays.com
-cdn.262832.xyz:443#cdn.262832.xyz
+www.visa.com:443#www.visa.com
 dnew.cc:443#dnew.cc
 www.jimdo.com:443#www.jimdo.com
 cdn.cf.3666888.xyz:443#cdn.cf.3666888.xyz
-cf.cf.3666888.xyz:443#cf.cf.3666888.xyz
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
 eii.at:443#eii.at
 www.swowd.com:443#www.swowd.com
@@ -41,12 +38,15 @@ store.ubi.com:443#store.ubi.com
 cf.godns.cc:443#cf.godns.cc
 www.fastsoso.cn:443#www.fastsoso.cn
 cloudflare.idc.rocks:443#cloudflare.idc.rocks
-cdns.doon.eu.org:443#cdns.doon.eu.org
+cf.mubaiovo.top:443#cf.mubaiovo.top
 cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
 saas.sin.fan:443#saas.sin.fan
-cu.877774.xyz:443#cu.877774.xyz
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 cf.3666888.xyz:443#cf.3666888.xyz
 bbs.alipansou.com:443#bbs.alipansou.com
+cdn.262832.xyz:443#cdn.262832.xyz
 www.mc.js.cool:443#www.mc.js.cool
+hk.cf.3666888.xyz:443#hk.cf.3666888.xyz
+cf.cf.3666888.xyz:443#cf.cf.3666888.xyz
+us.cloudflare.cnae.top:443#us.cloudflare.cnae.top
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
