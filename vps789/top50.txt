@@ -1,10 +1,7 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-03 10:09 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-03 10:39 | YouTube@真香定律
 cf.godns.cc:443#cf.godns.cc
-ys2046.cv:443#ys2046.cv
 cloudflare.cnae.top:443#cloudflare.cnae.top
 bbs.alipansou.com:443#bbs.alipansou.com
-www.nexusmods.com:443#www.nexusmods.com
-www.xiaoshuofen.com:443#www.xiaoshuofen.com
 cf-ip-node.vov.moe:443#cf-ip-node.vov.moe
 cf.mubaiovo.top:443#cf.mubaiovo.top
 run.254301.xyz:443#run.254301.xyz
@@ -19,14 +16,13 @@ nexusmods.com:443#nexusmods.com
 cf.v8.longsays.com:443#cf.v8.longsays.com
 yidong.19931101.xyz:443#yidong.19931101.xyz
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
-y508.com:443#y508.com
 cdns.doon.eu.org:443#cdns.doon.eu.org
-tajikistan.mfa.gov.ua:443#tajikistan.mfa.gov.ua
 www.fastsoso.cn:443#www.fastsoso.cn
 virtualcommtraining.verizon.com:443#virtualcommtraining.verizon.com
 www.leics.police.uk:443#www.leics.police.uk
 cfdl.3666888.xyz:443#cfdl.3666888.xyz
-www.sofi.com:443#www.sofi.com
+y508.com:443#y508.com
+ys2046.cv:443#ys2046.cv
 saas.sin.fan:443#saas.sin.fan
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
@@ -39,14 +35,18 @@ yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
 yg11.ygkkk.dpdns.org:443#yg11.ygkkk.dpdns.org
 baka.fun:443#baka.fun
 cmcc.cc.cd:443#cmcc.cc.cd
-yyurl.cc:443#yyurl.cc
 ping.pe:443#ping.pe
-cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
 cu.877774.xyz:443#cu.877774.xyz
+cf.3666888.xyz:443#cf.3666888.xyz
 cfyx.qdqqd.com:443#cfyx.qdqqd.com
 yg5.ygkkk.dpdns.org:443#yg5.ygkkk.dpdns.org
 dongbanghong.com:443#dongbanghong.com
 www.giannidelprete.it:443#www.giannidelprete.it
 store.ubi.com:443#store.ubi.com
 cloudflare.idc.rocks:443#cloudflare.idc.rocks
+www.sage.com:443#www.sage.com
+www.jimdo.com:443#www.jimdo.com
+mogas.com:443#mogas.com
+a.lma.de5.net:443#a.lma.de5.net
+cdn.555586.xyz:443#cdn.555586.xyz
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
