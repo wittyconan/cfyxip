@@ -1,9 +1,11 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-04 04:10 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-04 04:40 | YouTube@真香定律
 jp.cf.3666888.xyz:443#jp.cf.3666888.xyz
 yg5.ygkkk.dpdns.org:443#yg5.ygkkk.dpdns.org
+yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
 openai.com:443#openai.com
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 bbs.alipansou.com:443#bbs.alipansou.com
+youxuan.cf.3666888.xyz:443#youxuan.cf.3666888.xyz
 keji.cf.3666888.xyz:443#keji.cf.3666888.xyz
 sanwang.cf.3666888.xyz:443#sanwang.cf.3666888.xyz
 youxuan.cf.636949.xyz:443#youxuan.cf.636949.xyz
@@ -16,6 +18,7 @@ cloudflare.468123.xyz:443#cloudflare.468123.xyz
 ys2046.cv:443#ys2046.cv
 www.giannidelprete.it:443#www.giannidelprete.it
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
+cdns.doon.eu.org:443#cdns.doon.eu.org
 www.shopify.com:443#www.shopify.com
 cf.3666888.xyz:443#cf.3666888.xyz
 dnew.cc:443#dnew.cc
@@ -27,7 +30,9 @@ yg11.ygkkk.dpdns.org:443#yg11.ygkkk.dpdns.org
 eii.at:443#eii.at
 y508.com:443#y508.com
 www.sloomb.com:443#www.sloomb.com
+dongbanghong.com:443#dongbanghong.com
 cmcc.cc.cd:443#cmcc.cc.cd
+cf.zhetengsha.eu.org:443#cf.zhetengsha.eu.org
 saas.sin.fan:443#saas.sin.fan
 www.fastsoso.cn:443#www.fastsoso.cn
 cloudflare.idc.rocks:443#cloudflare.idc.rocks
@@ -36,17 +41,12 @@ hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
 cdn.262832.xyz:443#cdn.262832.xyz
 isp.254301.xyz:443#isp.254301.xyz
 nexusmods.com:443#nexusmods.com
+cloudflare.182682.xyz:443#cloudflare.182682.xyz
 cmcc.877774.xyz:443#cmcc.877774.xyz
 cf.1o.ee:443#cf.1o.ee
+ahblog.cn:443#ahblog.cn
 01-qq.com:443#01-qq.com
 d.lma.de5.net:443#d.lma.de5.net
 cf.xnet.ren:443#cf.xnet.ren
 4.cf.3666888.xyz:443#4.cf.3666888.xyz
-yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
-www.xiaoshuofen.com:443#www.xiaoshuofen.com
-www.vastnovel.com:443#www.vastnovel.com
-prompt.gzcrtw.com:443#prompt.gzcrtw.com
-athome.com:443#athome.com
-www.epicgames.com:443#www.epicgames.com
-store.epicgames.com:443#store.epicgames.com
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
