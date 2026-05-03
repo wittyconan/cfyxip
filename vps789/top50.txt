@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-03 13:10 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-03 13:40 | YouTube@真香定律
 cloudflare.cnae.top:443#cloudflare.cnae.top
 cf.mubaiovo.top:443#cf.mubaiovo.top
 run.254301.xyz:443#run.254301.xyz
@@ -8,13 +8,11 @@ yyurl.cc:443#yyurl.cc
 www.mc.js.cool:443#www.mc.js.cool
 cdn.091224.xyz:443#cdn.091224.xyz
 chrono24.com:443#chrono24.com
-yidong.19931101.xyz:443#yidong.19931101.xyz
 www.visa.com.sg:443#www.visa.com.sg
-store.ubi.com:443#store.ubi.com
+yidong.19931101.xyz:443#yidong.19931101.xyz
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 nexusmods.com:443#nexusmods.com
 y508.com:443#y508.com
-cdns.doon.eu.org:443#cdns.doon.eu.org
 cf.godns.cc:443#cf.godns.cc
 www.fastsoso.cn:443#www.fastsoso.cn
 virtualcommtraining.verizon.com:443#virtualcommtraining.verizon.com
@@ -22,11 +20,13 @@ yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
 yg11.ygkkk.dpdns.org:443#yg11.ygkkk.dpdns.org
 ys2046.cv:443#ys2046.cv
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
+cdns.doon.eu.org:443#cdns.doon.eu.org
 openai.com:443#openai.com
 saas.sin.fan:443#saas.sin.fan
 bbs.alipansou.com:443#bbs.alipansou.com
 sanwang.cf.3666888.xyz:443#sanwang.cf.3666888.xyz
 cdn.555586.xyz:443#cdn.555586.xyz
+6.cf.3666888.xyz:443#6.cf.3666888.xyz
 test.509666.xyz:443#test.509666.xyz
 yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
@@ -37,16 +37,16 @@ www.xiaoshuofen.com:443#www.xiaoshuofen.com
 cmcc.cc.cd:443#cmcc.cc.cd
 cfyx.qdqqd.com:443#cfyx.qdqqd.com
 www.giannidelprete.it:443#www.giannidelprete.it
+cf.zhetengsha.eu.org:443#cf.zhetengsha.eu.org
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
 cu.877774.xyz:443#cu.877774.xyz
+store.ubi.com:443#store.ubi.com
 cloudflare.idc.rocks:443#cloudflare.idc.rocks
+www.sage.com:443#www.sage.com
 www.jimdo.com:443#www.jimdo.com
 mogas.com:443#mogas.com
-6.cf.3666888.xyz:443#6.cf.3666888.xyz
+yg5.ygkkk.dpdns.org:443#yg5.ygkkk.dpdns.org
+cf-ip-node.vov.moe:443#cf-ip-node.vov.moe
 cfgo.timelate.com:443#cfgo.timelate.com
-markmonitor.com:443#markmonitor.com
-zeas.top:443#zeas.top
-www.sloomb.com:443#www.sloomb.com
-cf.553314.xyz:443#cf.553314.xyz
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
