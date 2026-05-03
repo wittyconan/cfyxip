@@ -1,11 +1,10 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-03 09:39 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-03 10:09 | YouTube@真香定律
 cf.godns.cc:443#cf.godns.cc
 ys2046.cv:443#ys2046.cv
 cloudflare.cnae.top:443#cloudflare.cnae.top
 bbs.alipansou.com:443#bbs.alipansou.com
 www.nexusmods.com:443#www.nexusmods.com
 www.xiaoshuofen.com:443#www.xiaoshuofen.com
-cf.553314.xyz:443#cf.553314.xyz
 cf-ip-node.vov.moe:443#cf-ip-node.vov.moe
 cf.mubaiovo.top:443#cf.mubaiovo.top
 run.254301.xyz:443#run.254301.xyz
@@ -21,6 +20,7 @@ cf.v8.longsays.com:443#cf.v8.longsays.com
 yidong.19931101.xyz:443#yidong.19931101.xyz
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 y508.com:443#y508.com
+cdns.doon.eu.org:443#cdns.doon.eu.org
 tajikistan.mfa.gov.ua:443#tajikistan.mfa.gov.ua
 www.fastsoso.cn:443#www.fastsoso.cn
 virtualcommtraining.verizon.com:443#virtualcommtraining.verizon.com
@@ -31,6 +31,7 @@ saas.sin.fan:443#saas.sin.fan
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 openai.com:443#openai.com
+sanwang.cf.3666888.xyz:443#sanwang.cf.3666888.xyz
 test.509666.xyz:443#test.509666.xyz
 yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
 yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
@@ -46,7 +47,6 @@ cfyx.qdqqd.com:443#cfyx.qdqqd.com
 yg5.ygkkk.dpdns.org:443#yg5.ygkkk.dpdns.org
 dongbanghong.com:443#dongbanghong.com
 www.giannidelprete.it:443#www.giannidelprete.it
-cdns.doon.eu.org:443#cdns.doon.eu.org
 store.ubi.com:443#store.ubi.com
 cloudflare.idc.rocks:443#cloudflare.idc.rocks
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
