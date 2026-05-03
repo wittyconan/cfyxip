@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-03 08:39 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-03 09:09 | YouTube@真香定律
 cf.godns.cc:443#cf.godns.cc
 ys2046.cv:443#ys2046.cv
 openai.com:443#openai.com
@@ -10,28 +10,26 @@ cf.553314.xyz:443#cf.553314.xyz
 cf-ip-node.vov.moe:443#cf-ip-node.vov.moe
 cfsaas.080112.xyz:443#cfsaas.080112.xyz
 cf.mubaiovo.top:443#cf.mubaiovo.top
+run.254301.xyz:443#run.254301.xyz
 cf.zhetengsha.eu.org:443#cf.zhetengsha.eu.org
 4.cf.3666888.xyz:443#4.cf.3666888.xyz
-run.254301.xyz:443#run.254301.xyz
-adnjv.cf.3666888.xyz:443#adnjv.cf.3666888.xyz
 www.mfyx.cn:443#www.mfyx.cn
+adnjv.cf.3666888.xyz:443#adnjv.cf.3666888.xyz
 www.dg22.top:443#www.dg22.top
-mming.ggff.net:443#mming.ggff.net
+cloudflare.182682.xyz:443#cloudflare.182682.xyz
+chrono24.com:443#chrono24.com
 www.mc.js.cool:443#www.mc.js.cool
 cdn.091224.xyz:443#cdn.091224.xyz
-chrono24.com:443#chrono24.com
 www.visa.com.sg:443#www.visa.com.sg
 nexusmods.com:443#nexusmods.com
 cf.v8.longsays.com:443#cf.v8.longsays.com
 ct.877774.xyz:443#ct.877774.xyz
-123.cf.3666888.xyz:443#123.cf.3666888.xyz
 yidong.19931101.xyz:443#yidong.19931101.xyz
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 y508.com:443#y508.com
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 tajikistan.mfa.gov.ua:443#tajikistan.mfa.gov.ua
 www.fastsoso.cn:443#www.fastsoso.cn
-cloudflare.idc.rocks:443#cloudflare.idc.rocks
 virtualcommtraining.verizon.com:443#virtualcommtraining.verizon.com
 www.leics.police.uk:443#www.leics.police.uk
 cfdl.3666888.xyz:443#cfdl.3666888.xyz
@@ -49,4 +47,6 @@ yyurl.cc:443#yyurl.cc
 ping.pe:443#ping.pe
 cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
 cu.877774.xyz:443#cu.877774.xyz
+cfyx.qdqqd.com:443#cfyx.qdqqd.com
+yg5.ygkkk.dpdns.org:443#yg5.ygkkk.dpdns.org
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
