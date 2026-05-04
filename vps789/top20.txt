@@ -1,5 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP20 | 05-05 05:10 | YouTube@真香定律
-www.jimdo.com:443#www.jimdo.com
+saas.sin.fan:443#▼ 优选域名 TOP20 | 05-05 05:40 | YouTube@真香定律
 cdn.cf.3666888.xyz:443#cdn.cf.3666888.xyz
 keji.cf.3666888.xyz:443#keji.cf.3666888.xyz
 vip.cf.3666888.xyz:443#vip.cf.3666888.xyz
@@ -10,7 +9,6 @@ yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
 baka.fun:443#baka.fun
 www.akasantech.com:443#www.akasantech.com
 yyurl.cc:443#yyurl.cc
-staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 hk.cf.3666888.xyz:443#hk.cf.3666888.xyz
 adnjv.cf.3666888.xyz:443#adnjv.cf.3666888.xyz
 hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
@@ -19,4 +17,6 @@ www.nexusmods.com:443#www.nexusmods.com
 ahblog.cn:443#ahblog.cn
 cf.090227.xyz:443#cf.090227.xyz
 cdns.doon.eu.org:443#cdns.doon.eu.org
+dnew.cc:443#dnew.cc
+cf.mubaiovo.top:443#cf.mubaiovo.top
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
