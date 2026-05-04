@@ -1,27 +1,23 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-04 20:10 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-04 20:40 | YouTube@真香定律
 10.cf.3666888.xyz:443#10.cf.3666888.xyz
 yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
 keji.cf.3666888.xyz:443#keji.cf.3666888.xyz
 yg5.ygkkk.dpdns.org:443#yg5.ygkkk.dpdns.org
-cmcc.cc.cd:443#cmcc.cc.cd
-cdns.doon.eu.org:443#cdns.doon.eu.org
 hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
 www.xiaoshuofen.com:443#www.xiaoshuofen.com
+cmcc.cc.cd:443#cmcc.cc.cd
 dongbanghong.com:443#dongbanghong.com
+cdns.doon.eu.org:443#cdns.doon.eu.org
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
 www.sage.com:443#www.sage.com
-cfyx.qdqqd.com:443#cfyx.qdqqd.com
 3.cf.3666888.xyz:443#3.cf.3666888.xyz
 www.giannidelprete.it:443#www.giannidelprete.it
 www.jimdo.com:443#www.jimdo.com
 4.cf.3666888.xyz:443#4.cf.3666888.xyz
-kniu.cc:443#kniu.cc
 cnllm.com:443#cnllm.com
-www.bangbenjiaju.com:443#www.bangbenjiaju.com
 5.cf.3666888.xyz:443#5.cf.3666888.xyz
 6.cf.3666888.xyz:443#6.cf.3666888.xyz
-cfvip.cf.3666888.xyz:443#cfvip.cf.3666888.xyz
 cfsaas.080112.xyz:443#cfsaas.080112.xyz
 hk.cf.3666888.xyz:443#hk.cf.3666888.xyz
 yyurl.cc:443#yyurl.cc
@@ -29,17 +25,17 @@ cdn.2020111.xyz:443#cdn.2020111.xyz
 a.lma.de5.net:443#a.lma.de5.net
 cf.1o.ee:443#cf.1o.ee
 www.nexusmods.com:443#www.nexusmods.com
+cfvip.cf.3666888.xyz:443#cfvip.cf.3666888.xyz
 yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
 eii.at:443#eii.at
 cdn.091224.xyz:443#cdn.091224.xyz
-staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 2.cf.3666888.xyz:443#2.cf.3666888.xyz
 qocu.cf.3666888.xyz:443#qocu.cf.3666888.xyz
 eteaf.cf.3666888.xyz:443#eteaf.cf.3666888.xyz
 11.cf.3666888.xyz:443#11.cf.3666888.xyz
 cloudflare.468123.xyz:443#cloudflare.468123.xyz
-cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
 cu.877774.xyz:443#cu.877774.xyz
+cloudflare-dl.cnae.top:443#cloudflare-dl.cnae.top
 store.ubi.com:443#store.ubi.com
 www.fastsoso.cn:443#www.fastsoso.cn
 sanwang.cf.3666888.xyz:443#sanwang.cf.3666888.xyz
@@ -49,4 +45,8 @@ cf.cf.3666888.xyz:443#cf.cf.3666888.xyz
 youxuan.cf.636949.xyz:443#youxuan.cf.636949.xyz
 123.cf.3666888.xyz:443#123.cf.3666888.xyz
 1.cf.3666888.xyz:443#1.cf.3666888.xyz
+www.swowd.com:443#www.swowd.com
+y508.com:443#y508.com
+hzytjy.cn:443#hzytjy.cn
+www.sloomb.com:443#www.sloomb.com
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
