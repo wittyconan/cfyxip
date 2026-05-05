@@ -1,14 +1,12 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-05 08:10 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-05 08:40 | YouTube@真香定律
 cdn.cf.3666888.xyz:443#cdn.cf.3666888.xyz
 vip.cf.3666888.xyz:443#vip.cf.3666888.xyz
 8.cf.3666888.xyz:443#8.cf.3666888.xyz
 www.akasantech.com:443#www.akasantech.com
-keji.cf.3666888.xyz:443#keji.cf.3666888.xyz
 adnjv.cf.3666888.xyz:443#adnjv.cf.3666888.xyz
 4.cf.3666888.xyz:443#4.cf.3666888.xyz
 www.nexusmods.com:443#www.nexusmods.com
 cdns.doon.eu.org:443#cdns.doon.eu.org
-dnew.cc:443#dnew.cc
 cf.mubaiovo.top:443#cf.mubaiovo.top
 youxuan.cf.3666888.xyz:443#youxuan.cf.3666888.xyz
 10.cf.3666888.xyz:443#10.cf.3666888.xyz
@@ -22,10 +20,6 @@ cf.v8.longsays.com:443#cf.v8.longsays.com
 jp.cf.3666888.xyz:443#jp.cf.3666888.xyz
 cfyx.qdqqd.com:443#cfyx.qdqqd.com
 www.xiaoshuofen.com:443#www.xiaoshuofen.com
-isp.qzz.io:443#isp.qzz.io
-www.giannidelprete.it:443#www.giannidelprete.it
-uac.cf.3666888.xyz:443#uac.cf.3666888.xyz
-3.cf.3666888.xyz:443#3.cf.3666888.xyz
 api.gzcrtw.com:443#api.gzcrtw.com
 www.mlkj888.com:443#www.mlkj888.com
 my.dnshe.com:443#my.dnshe.com
@@ -34,19 +28,25 @@ mskcc.org:443#mskcc.org
 mogas.com:443#mogas.com
 www.sofi.com:443#www.sofi.com
 y508.com:443#y508.com
-ys2046.cv:443#ys2046.cv
 hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
 china.mfa.gov.ua:443#china.mfa.gov.ua
 yg6.ygkkk.dpdns.org:443#yg6.ygkkk.dpdns.org
+ys2046.cv:443#ys2046.cv
 chrono24.com:443#chrono24.com
 cdn.2158.cc:443#cdn.2158.cc
-yyurl.cc:443#yyurl.cc
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
 www.visa.com.tw:443#www.visa.com.tw
 cloudflare-dl.cnae.top:443#cloudflare-dl.cnae.top
+bbs.alipansou.com:443#bbs.alipansou.com
 saas.072159.xyz:443#saas.072159.xyz
 5.cf.3666888.xyz:443#5.cf.3666888.xyz
 yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
 cdn.091224.xyz:443#cdn.091224.xyz
+cf1.v8.longsays.com:443#cf1.v8.longsays.com
+saas.sin.fan:443#saas.sin.fan
+store.ubi.com:443#store.ubi.com
+cf.godns.cc:443#cf.godns.cc
+youxuan.cf.636949.xyz:443#youxuan.cf.636949.xyz
+www.swowd.com:443#www.swowd.com
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
