@@ -1,21 +1,20 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-06 04:11 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-06 04:41 | YouTube@真香定律
 www.mlkj888.com:443#www.mlkj888.com
 cdn.2020111.xyz:443#cdn.2020111.xyz
+cnllm.com:443#cnllm.com
 zeas.top:443#zeas.top
-openai.com:443#openai.com
 youxuan.cf.3666888.xyz:443#youxuan.cf.3666888.xyz
 cf.cf.3666888.xyz:443#cf.cf.3666888.xyz
 5.cf.3666888.xyz:443#5.cf.3666888.xyz
-7.cf.3666888.xyz:443#7.cf.3666888.xyz
 www.nexusmods.com:443#www.nexusmods.com
-www.swowd.com:443#www.swowd.com
 fw8je9.cf.3666888.xyz:443#fw8je9.cf.3666888.xyz
 www.xiaoshuofen.com:443#www.xiaoshuofen.com
 cf.090227.xyz:443#cf.090227.xyz
 virtualcommtraining.verizon.com:443#virtualcommtraining.verizon.com
+www.mfyx.cn:443#www.mfyx.cn
 01-qq.com:443#01-qq.com
 kniu.cc:443#kniu.cc
-cf.v8.longsays.com:443#cf.v8.longsays.com
+cf.godns.cc:443#cf.godns.cc
 dango.co:443#dango.co
 sg.cf.3666888.xyz:443#sg.cf.3666888.xyz
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
@@ -23,7 +22,6 @@ cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
 cloudflare.cfgo.cc:443#cloudflare.cfgo.cc
 jp.cf.3666888.xyz:443#jp.cf.3666888.xyz
 www.cdzxdz.com:443#www.cdzxdz.com
-www.mfyx.cn:443#www.mfyx.cn
 101yaoye.com:443#101yaoye.com
 www.visa.com.sg:443#www.visa.com.sg
 my.dnshe.com:443#my.dnshe.com
@@ -32,21 +30,23 @@ youxuan.cf.636949.xyz:443#youxuan.cf.636949.xyz
 uac.cf.3666888.xyz:443#uac.cf.3666888.xyz
 cloudflare.182682.xyz:443#cloudflare.182682.xyz
 01-cctv.com:443#01-cctv.com
+digitalocean.com:443#digitalocean.com
 i.111666.best:443#i.111666.best
 vip.cf.3666888.xyz:443#vip.cf.3666888.xyz
+openai.com:443#openai.com
 store.ubi.com:443#store.ubi.com
 yg4.ygkkk.dpdns.org:443#yg4.ygkkk.dpdns.org
-cnllm.com:443#cnllm.com
-digitalocean.com:443#digitalocean.com
+www.swowd.com:443#www.swowd.com
 9.cf.3666888.xyz:443#9.cf.3666888.xyz
+freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
 www.shopify.com:443#www.shopify.com
 cloudflare-dl.cnae.top:443#cloudflare-dl.cnae.top
 dnew.cc:443#dnew.cc
+adnjv.cf.3666888.xyz:443#adnjv.cf.3666888.xyz
 china.mfa.gov.ua:443#china.mfa.gov.ua
 cf-ip-node.vov.moe:443#cf-ip-node.vov.moe
 www.galgamex.net:443#www.galgamex.net
+ys2046.cv:443#ys2046.cv
 sunkist.com:443#sunkist.com
 6.cf.3666888.xyz:443#6.cf.3666888.xyz
-freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
-www.5199dy.com:443#www.5199dy.com
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
