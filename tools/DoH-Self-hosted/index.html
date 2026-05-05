@@ -14,9 +14,7 @@
             --border-color: rgba(255, 255, 255, 0.08);
             --step-num-bg: linear-gradient(135deg, #3b82f6, #2563eb);
         }
-
         * { box-sizing: border-box; margin: 0; padding: 0; }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-color);
@@ -28,17 +26,14 @@
             display: flex;
             justify-content: center;
         }
-
         .container {
             max-width: 700px;
             width: 100%;
         }
-
         header {
             text-align: center;
             margin-bottom: 40px;
         }
-
         h1 {
             font-size: 2rem;
             font-weight: 800;
@@ -47,97 +42,102 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 10px;
         }
-
         .sub-title {
             color: var(--text-muted);
             font-size: 0.9rem;
             letter-spacing: 1px;
         }
-
-        /* EDT 风格卡片 */
-        .step-card {
+        /* 方案大卡片 */
+        .plan-card {
             background: var(--card-bg);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 24px;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        .plan-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .plan-title::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: var(--accent-blue);
+            border-radius: 2px;
+        }
+        /* 方案1内部的步骤 */
+        .inner-step {
             margin-bottom: 20px;
-            position: relative;
-            transition: transform 0.3s ease;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
-
-        .step-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(59, 130, 246, 0.3);
+        .inner-step:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
         }
-
         .step-header {
             display: flex;
             align-items: center;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             gap: 12px;
         }
-
         .step-number {
             background: var(--step-num-bg);
             color: white;
-            width: 28px;
-            height: 28px;
-            border-radius: 8px;
+            width: 24px;
+            height: 24px;
+            border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 0.9rem;
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+            font-size: 0.8rem;
         }
-
         .step-title {
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #fff;
         }
-
         .step-content {
             color: var(--text-muted);
-            font-size: 0.95rem;
-            padding-left: 40px;
+            font-size: 0.9rem;
+            padding-left: 36px;
         }
-
         .link-btn {
             color: var(--accent-blue);
             text-decoration: none;
             border-bottom: 1px dashed var(--accent-blue);
             transition: 0.2s;
         }
-
         .link-btn:hover {
             opacity: 0.8;
         }
-
         .img-container {
-            margin-top: 20px;
+            margin-top: 15px;
             border-radius: 12px;
             overflow: hidden;
             border: 1px solid var(--border-color);
-            background: rgba(0,0,0,0.2);
         }
-
         .img-container img {
             width: 100%;
             display: block;
-            opacity: 0.9;
         }
-
         .highlight {
             color: #e2e8f0;
             background: rgba(255,255,255,0.05);
             padding: 2px 6px;
             border-radius: 4px;
-            margin: 0 2px;
         }
-
         footer {
             text-align: center;
             margin-top: 40px;
@@ -150,45 +150,55 @@
 
 <div class="container">
     <header>
-        <h1>DoH 自建</h1>
+        <h1>DoH 自建教程</h1>
         <div class="sub-title">白嫖 CLOUDFLARE ZERO TRUST 免费服务</div>
     </header>
 
-    <!-- 步骤 1 -->
-    <div class="step-card">
-        <div class="step-header">
-            <div class="step-number">1</div>
-            <div class="step-title">访问Cloudflare</div>
-        </div>
-        <div class="step-content">
-            点击 <a href="https://dash.cloudflare.com/" target="_blank" class="link-btn">https://dash.cloudflare.com/</a> 进入 Cloudflare 管理面板
-        </div>
-    </div>
-
-    <!-- 步骤 2 -->
-    <div class="step-card">
-        <div class="step-header">
-            <div class="step-number">2</div>
-            <div class="step-title">路径</div>
-        </div>
-        <div class="step-content">
-            通过左侧导航栏依次找到：<br><br>
-            <span class="highlight">保护和连接</span> – <span class="highlight">Zero Trust</span> – <span class="highlight">网络</span> – <span class="highlight">解析程序和代理</span> – <span class="highlight">添加位置</span>
-        </div>
-    </div>
-
-    <!-- 步骤 3 -->
-    <div class="step-card">
-        <div class="step-header">
-            <div class="step-number">3</div>
-            <div class="step-title">创建DoH</div>
-        </div>
-        <div class="step-content">
-            随便输入一个名称 – 勾选 <span class="highlight">DoH</span> – 点击继续 – 点击完成 – <span style="color: var(--accent-blue);">最后点击 复制 DoH 链接</span>
-            <div class="img-container">
-                <!-- 这里替换成你的图片链接 -->
-                <img src="1.png" alt="Gateway DoH 配置示意图" onerror="this.alt='此处为步骤3配置示意图';">
+    <!-- 方案 1 -->
+    <div class="plan-card">
+        <div class="plan-title">方案 1：官方 Gateway 直连</div>
+        
+        <div class="inner-step">
+            <div class="step-header">
+                <div class="step-number">1</div>
+                <div class="step-title">访问 Cloudflare</div>
             </div>
+            <div class="step-content">
+                点击 <a href="https://dash.cloudflare.com/" target="_blank" class="link-btn">https://dash.cloudflare.com/</a> 进入 Cloudflare 管理面板
+            </div>
+        </div>
+
+        <div class="inner-step">
+            <div class="step-header">
+                <div class="step-number">2</div>
+                <div class="step-title">进入路径</div>
+            </div>
+            <div class="step-content">
+                通过左侧导航栏依次找到：<br>
+                <span class="highlight">保护和连接</span> – <span class="highlight">Zero Trust</span> – <span class="highlight">网络</span> – <span class="highlight">解析程序和代理</span> – <span class="highlight">添加位置</span>
+            </div>
+        </div>
+
+        <div class="inner-step">
+            <div class="step-header">
+                <div class="step-number">3</div>
+                <div class="step-title">创建并获取链接</div>
+            </div>
+            <div class="step-content">
+                随便输入一个名称 – 勾选 <span class="highlight">DoH</span> – 点击继续 – 点击完成 – <span style="color: var(--accent-blue);">复制 DoH 链接</span>
+                <div class="img-container">
+                    <img src="1.png" alt="Gateway DoH 配置示意图" onerror="this.style.display='none';">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 方案 2 -->
+    <div class="plan-card">
+        <div class="plan-title">方案 2：反代多合一部署</div>
+        <div class="step-content" style="padding-left: 0; color: var(--text-main);">
+            <p style="margin-bottom: 15px;">点击 <a href="_worker.zip" class="link-btn">下载 JS 脚本</a>，将 zip 压缩包上传至 <span class="highlight">Cloudflare Pages</span> 进行部署。</p>
+            <p>部署完成后，直接访问 Pages 自动分配的域名，即可查看多合一反代 DoH 地址列表。</p>
         </div>
     </div>
 

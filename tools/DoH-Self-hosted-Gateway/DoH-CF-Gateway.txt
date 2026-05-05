@@ -1,4 +1,0 @@
-步骤
-1.https://dash.cloudflare.com/进入Cloudflare管理面板
-2.导航栏  保护和连接 - Zero Trust – 网络 – 解析程序和代理 – 添加位置
-3.随便输入名称 – 勾选DoH – 点击继续 – 点击完成 – 复制DoH链接
