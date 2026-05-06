@@ -39,7 +39,7 @@
 		.tag { display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; padding: 0 5px; height: 18px; border-radius: 4px; font-weight: 600; color: var(--accent-blue); border: 1px solid rgba(59, 130, 246, 0.4); line-height: 1; background: rgba(59, 130, 246, 0.1); vertical-align: middle; }
 		.tag-featured { background-color: var(--accent-blue); color: #fff; border: none; height: 18px; }
 		.action-area { display: flex; align-items: center; gap: 12px; }
-		.url-box { flex: 1; background-color: var(--code-bg); padding: 0 16px; height: 42px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; }
+		.url-box { flex: 1; background-color: var(--code-bg); padding: 0 16px; height: 42px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; position: relative; min-width: 0; }
 		.url-text { font-family: ui-monospace, SFMono-Regular, Monaco, Consolas, monospace; font-size: 1rem; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; user-select: all; width: 100%; }
 		.copy-btn, .open-btn { background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); border: 1px solid rgba(59, 130, 246, 0.4); height: 42px; padding: 0 20px; border-radius: 8px; cursor: pointer; font-size: 0.9rem; font-weight: 700; transition: all 0.3s; white-space: nowrap; display: flex; align-items: center; justify-content: center; text-decoration: none; }
 		.copy-btn:hover, .open-btn:hover { background: var(--accent-blue); color: #fff; box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); }
@@ -398,6 +398,13 @@
 		<div class="group-card">
             <div class="group-name">天诚 <span class="tag">暂时断更</span></div>
             <div class="link-row">
+                <div class="item-header"><span class="item-title">临时过渡</span></div>
+                <div class="action-area">
+                    <div class="url-box"><span class="url-text">https://raw.githubusercontent.com/gshtwy/CF-DNS-Clone/refs/heads/main/wetest-cloudflare-v4.txt</span></div>
+                    <button class="copy-btn" onclick="copy(this, 'https://raw.githubusercontent.com/gshtwy/CF-DNS-Clone/refs/heads/main/wetest-cloudflare-v4.txt')">复制链接</button>
+                </div>
+            </div>            
+			<div class="link-row">
                 <div class="item-header"><span class="item-title">多地区全量版</span></div>
                 <div class="action-area">
                     <div class="url-box"><span class="url-text">https://bestcf.pages.dev/tiancheng/all.txt</span></div>
