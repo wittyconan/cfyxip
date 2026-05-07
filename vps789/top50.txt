@@ -1,7 +1,6 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-07 11:09 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-07 11:39 | YouTube@真香定律
 jp.cf.3666888.xyz:443#jp.cf.3666888.xyz
 hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
-11.cf.3666888.xyz:443#11.cf.3666888.xyz
 api.gzcrtw.com:443#api.gzcrtw.com
 cdn.091224.xyz:443#cdn.091224.xyz
 www.vastnovel.com:443#www.vastnovel.com
@@ -10,8 +9,6 @@ yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
 bbs.alipansou.com:443#bbs.alipansou.com
 fw8je9.cf.3666888.xyz:443#fw8je9.cf.3666888.xyz
 5.cf.3666888.xyz:443#5.cf.3666888.xyz
-cloudflare.182682.xyz:443#cloudflare.182682.xyz
-kniu.cc:443#kniu.cc
 fk.hshwk.org:443#fk.hshwk.org
 www.speedtest.net:443#www.speedtest.net
 cmcc.vvvv.ee:443#cmcc.vvvv.ee
@@ -22,7 +19,7 @@ dnew.cc:443#dnew.cc
 cf.cf.3666888.xyz:443#cf.cf.3666888.xyz
 2.cf.3666888.xyz:443#2.cf.3666888.xyz
 eteaf.cf.3666888.xyz:443#eteaf.cf.3666888.xyz
-cm.880849.xyz:443#cm.880849.xyz
+kniu.cc:443#kniu.cc
 yyurl.cc:443#yyurl.cc
 cfyx.qdqqd.com:443#cfyx.qdqqd.com
 cloudflare.cfgo.cc:443#cloudflare.cfgo.cc
@@ -43,10 +40,13 @@ adnjv.cf.3666888.xyz:443#adnjv.cf.3666888.xyz
 7.cf.3666888.xyz:443#7.cf.3666888.xyz
 8.cf.3666888.xyz:443#8.cf.3666888.xyz
 10.cf.3666888.xyz:443#10.cf.3666888.xyz
+11.cf.3666888.xyz:443#11.cf.3666888.xyz
 www.cdzxdz.com:443#www.cdzxdz.com
 ys2046.cv:443#ys2046.cv
+cm.880849.xyz:443#cm.880849.xyz
 www.sloomb.com:443#www.sloomb.com
 dongbanghong.com:443#dongbanghong.com
 www.dg22.top:443#www.dg22.top
 www.giannidelprete.it:443#www.giannidelprete.it
+www.visa.cn:443#www.visa.cn
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
