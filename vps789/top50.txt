@@ -1,5 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-08 05:40 | YouTube@真香定律
-api.gzcrtw.com:443#api.gzcrtw.com
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-08 06:10 | YouTube@真香定律
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 www.shopify.com:443#www.shopify.com
 bbs.alipansou.com:443#bbs.alipansou.com
@@ -17,6 +16,7 @@ tajikistan.mfa.gov.ua:443#tajikistan.mfa.gov.ua
 a.lma.de5.net:443#a.lma.de5.net
 cfvip.cf.3666888.xyz:443#cfvip.cf.3666888.xyz
 yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
+api.gzcrtw.com:443#api.gzcrtw.com
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
 cdn.2020111.xyz:443#cdn.2020111.xyz
 cf.3666888.xyz:443#cf.3666888.xyz

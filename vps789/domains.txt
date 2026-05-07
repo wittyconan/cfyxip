@@ -1,4 +1,3 @@
-api.gzcrtw.com
 cloudflare-ip.mofashi.ltd
 www.shopify.com
 bbs.alipansou.com
@@ -16,6 +15,7 @@ tajikistan.mfa.gov.ua
 a.lma.de5.net
 cfvip.cf.3666888.xyz
 yg1.ygkkk.dpdns.org
+api.gzcrtw.com
 freeyx.cloudflare88.eu.org
 cdn.2020111.xyz
 cf.3666888.xyz
@@ -98,9 +98,9 @@ my.dnshe.com
 cf.godns.cc
 networksolutions.com
 store.epicgames.com
-vip.cf.3666888.xyz
 cfyx.qdqqd.com
 isp.254301.xyz
+cfip.1323123.xyz
 stackoverflow.com
 cloudflare.rainyfall.com
 cf.090227.xyz
@@ -118,6 +118,7 @@ youxuan.cf.3666888.xyz
 mming.ggff.net
 cf.zhetengsha.eu.org
 dianomi.com
+yg3.ygkkk.dpdns.org
 101yaoye.com
 china-telecom.cname.cloudflare.468123.xyz
 yidong.19931101.xyz
@@ -125,7 +126,6 @@ nrt.xxxxxxxx.nyc.mn
 mfa.gov.ua
 www.whoer.net
 china.mfa.gov.ua
-yg3.ygkkk.dpdns.org
 www.bangbenjiaju.com
 china-unicom.cname.cloudflare.468123.xyz
 cfgo.timelate.com
@@ -136,7 +136,9 @@ www.speedtest.net
 ping.pe
 i.111666.best
 www.epicgames.com
+www.5199dy.com
 serviceshub.samsclub.com
+vip.cf.3666888.xyz
 www.xiaoshuofen.com
 visa.com.tw
 2x.nz
@@ -145,7 +147,6 @@ visa.com
 www.visa.com.hk
 shanghai.mfa.gov.ua
 liantong.19931101.xyz
-www.5199dy.com
 redis.io
 avido.cf.3666888.xyz
 china-mobile.cname.cloudflare.468123.xyz
@@ -157,6 +158,7 @@ cdn.tzpro.xyz
 cloudflare-dl.cnae.top
 cfyx.dnspod.20237737.xyz
 jobsdb.com
+cfdl.3666888.xyz
 cf.998866.top
 run.254301.xyz
 www.6i5.com
@@ -165,26 +167,25 @@ qy.cf.727672.xyz
 www.visa.cn
 nrtcfdns.zone.id
 da.mfa.gov.ua
+www.ox.ac.uk
 stlouiscountymo.gov
 www.sofi.com
-cf1.v8.longsays.com
 xn--b6gac.eu.org
-cfdl.3666888.xyz
 yapuyapu.com
-www.ox.ac.uk
 email.lg.com
 qualitytraining.zeiss.com
 sunkist.com
 eason.cf.lma.de5.net
 yg13.ygkkk.dpdns.org
 ahblog.cn
+cf1.v8.longsays.com
 ip.skk.moe
-cf.130519.xyz
 linear.app
 dynadot.com
 spring.io
 www.adbcardpay.xyz
 dev.graco.com
+aftership.com
 unpkg.com
 g.lma.de5.net
 6.cf.3666888.xyz
@@ -197,4 +198,3 @@ chinwa.cf.090227.xyz
 newsroom.avalara.com
 yx.cfcdn.bbroot.com
 www.xflash.vip
-www.dg22.top
