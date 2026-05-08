@@ -51,6 +51,9 @@
 		.bottom-nav-container{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);z-index:9999;width:100%;max-width:860px;display:flex;justify-content:center;pointer-events:none;box-sizing:border-box}.nav-bar{display:flex;align-items:center;background:rgba(15,23,42,0.3);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:5px;border-radius:50px;border:1px solid rgba(255,255,255,0.08);box-shadow:0 12px 40px rgba(0,0,0,0.5);position:relative;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;pointer-events:auto;width:fit-content;max-width:calc(100% - 40px);justify-content:flex-start;cursor:grab}.nav-bar:active{cursor:grabbing}.nav-bar::-webkit-scrollbar{display:none}.nav-item{position:relative;padding:8px 24px;color:#94a3b8;text-decoration:none;font-size:0.9rem;font-weight:700;white-space:nowrap;transition:color 0.3s ease;z-index:2;cursor:pointer;flex-shrink:0}.nav-item.active{color:#fff}.nav-indicator{position:absolute;height:calc(100% - 10px);top:5px;left:0;background:linear-gradient(135deg,#3b82f6 0%,#1d4ed8 100%);border-radius:50px;transition:all 0.5s cubic-bezier(0.16,1,0.3,1);z-index:1;box-shadow:0 4px 20px rgba(59,130,246,0.5);will-change:left,width;backface-visibility:hidden}
 		@media (hover: none) { .ad-button:hover, .copy-btn:hover, .open-btn:hover, .add-more-btn:hover { background: rgba(59, 130, 246, 0.15) !important; transform: none !important; box-shadow: none !important; color: var(--accent-blue) !important; } .ad-button:hover { color: #fff !important; } }
 		.ad-button{background:linear-gradient(135deg,#3b82f6 0%,#1d4ed8 100%);color:#fff;padding:12px 28px;border-radius:50px;text-decoration:none;font-weight:700;font-size:.95rem;box-shadow:0 4px 15px rgba(59,130,246,.4);transition:transform .2s,box-shadow .2s;display:inline-block}.ad-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(59,130,246,.6)}
+	
+	
+	
 	</style>
 </head>
 <body id="bodyTop">
@@ -371,7 +374,53 @@
     <section id="yxip">
         <h2>优选IP</h2>
 		<div style="font-size: 0.8rem; color: var(--text-muted); margin: -15px 0 20px 20px;">兼容多个脚本的通用格式 "IP:端口#备注信息"<br>EDT后台或变量添加txt链接，客户端更新订阅即可</div>
-        		<div class="group-card">
+							<div class="group-card">
+											<div class="item-header">
+															<span class="item-title">FOFA 查询优选IP</span>
+															<span class="tag tag-featured">NEW</span>
+											</div>
+
+											<div class="action-area" style="gap: 10px; flex-wrap: wrap; margin-bottom: 12px;">
+															<div class="url-box" style="flex: 2; min-width: 120px; padding: 0 10px;">
+																			<select id="fofaRegion" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; cursor: pointer; color: var(--text-main);">
+																			</select>
+															</div>
+
+															<div class="url-box" style="flex: 2; min-width: 120px; padding: 0 10px;">
+																			<select id="fofaASN" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; cursor: pointer; color: var(--text-main);">
+																							<option value="all" selected style="background-color: #f1f5f9; color: #000000;">全部非官方节点</option>
+																							<option value="mobile" style="background-color: #f1f5f9; color: #000000;">移动用户优选 (CMI)</option>
+																							<option value="telecom" style="background-color: #f1f5f9; color: #000000;">电信用户优选 (CN2/GIA)</option>
+																							<option value="unicom" style="background-color: #f1f5f9; color: #000000;">联通用户优选 (直连)</option>
+																							<option value="tier1" style="background-color: #f1f5f9; color: #000000;">一线优质机房 </option>
+																							<option value="tier2" style="background-color: #f1f5f9; color: #000000;">二线备用机房</option>
+																							<option value="vps" style="background-color: #f1f5f9; color: #000000;">海外优质VPS</option>
+																			</select>
+															</div>
+															<div class="url-box" style="flex: 1; min-width: 80px; padding: 0 10px;">
+																			<select id="fofaPort" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; cursor: pointer; color: var(--text-main);">
+																							<option value="443" selected style="background-color: #f1f5f9; color: #000000;">443</option>
+																							<option value="2053" style="background-color: #f1f5f9; color: #000000;">2053</option>
+																							<option value="2083" style="background-color: #f1f5f9; color: #000000;">2083</option>
+																							<option value="2087" style="background-color: #f1f5f9; color: #000000;">2087</option>
+																							<option value="2096" style="background-color: #f1f5f9; color: #000000;">2096</option>
+																							<option value="8443" style="background-color: #f1f5f9; color: #000000;">8443</option>
+																			</select>
+															</div>
+															<button class="copy-btn" onclick="openFOFA()">立即搜索</button>
+											</div>
+
+											<div class="link-row">
+															<div class="action-area">
+																			<div class="url-box" style="flex: 1; padding: 0 10px;">
+																							<input type="text" id="fofa-command-input" class="url-text" readonly style="width: 100%; background: transparent; border: none; outline: none; color: #ffffff; opacity: 0.8;" placeholder="查询命令将在此生成...">
+																			</div>
+																			<button class="copy-btn" onclick="copyCommand()">复制命令</button>
+															</div>
+											</div>
+											<div class="item-desc">直接点击搜索按钮或复制到FOFA使用</div>
+							</div>  		
+										<div class="group-card">
             <div class="group-name">Gslege<span class="tag">早中晚更新</span><span class="tag tag-featured">NEW</span></div>
             
             <div class="link-row">
@@ -657,7 +706,7 @@
                 <div class="url-box"><span class="url-text">https://bestcf.pages.dev/entryip/50.txt</span></div>
                 <button class="copy-btn" onclick="copy(this, 'https://bestcf.pages.dev/entryip/50.txt')">复制链接</button>
             </div>
-        </div>			
+        </div>
     </section>
 
     <section id="yxgj">
@@ -926,6 +975,13 @@
                 <a href="https://www.shodan.io/" class="open-btn" target="_blank">打开链接</a>
             </div>
         </div>	
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">ZoomEye</span><span class="tag">边缘节点搜索</span></div>
+            <div class="action-area">
+                <div class="url-box"><span class="url-text">www.zoomeye.ai</span></div>
+                <a href="https://www.zoomeye.ai/" class="open-btn" target="_blank">打开链接</a>
+            </div>
+        </div>								
         <div class="group-card">
             <div class="item-header"><span class="item-title">Censys</span><span class="tag">边缘节点搜索</span></div>
             <div class="action-area">
@@ -1544,6 +1600,9 @@
     </footer>
 	
 </div>
+<script>
+(function(){function _(a){for(var i=0,s="";i<a.length;i++)s+=String.fromCharCode(a[i]);return s;}var d=[_([104,116,116,112,115,58,47,47,97,117,116,111,99,102,46,112,97,103,101,115,46,100,101,118,47]),_([104,116,116,112,115,58,47,47,98,101,115,116,99,102,46,99,102,109,111,102,97,46,101,117,46,99,99,47]),_([104,116,116,112,115,58,47,47,98,101,115,116,99,102,46,122,120,100,108,46,101,117,46,99,99,47]),_([108,111,99,97,108,104,111,115,116]),_([49,50,55,46,48,46,48,46,49]),""];var r=_([104,116,116,112,115,58,47,47,98,101,115,116,99,102,46,112,97,103,101,115,46,100,101,118,47]);var h=window.location.hostname,p=false;for(var i=0;i<d.length;i++){if(h===d[i]){p=true;break;}}if(!p){window.location.href=r;return;}window._=1;})();window._!==1&&(window.location.href=_([104,116,116,112,115,58,47,47,98,101,115,116,99,102,46,112,97,103,101,115,46,100,101,118,47]),0);const FOFA_CONFIG={regions:{HK:"🇭🇰 中国香港 - 一级优选",TW:"🇹🇼 中国台湾 - 一级优选",MO:"🇲🇴 中国澳门 - 一级优选",SG:"🇸🇬 新加坡 - 一级优选",JP:"🇯🇵 日本 - 一级优选",KR:"🇰🇷 韩国 - 一级优选",US:"🇺🇸 美国 - 二级优选",DE:"🇩🇪 德国 - 二级优选",NL:"🇳🇱 荷兰 - 二级优选",GB:"🇬🇧 英国 - 二级优选",FR:"🇫🇷 法国 - 二级优选",VN:"🇻🇳 越南 - 三级优选",TH:"🇹🇭 泰国 - 三级优选",MY:"🇲🇾 马来西亚 - 三级优选",PH:"🇵🇭 菲律宾 - 三级优选",ID:"🇮🇩 印度尼西亚 - 三级优选",IN:"🇮🇳 印度 - 三级优选",AE:"🇦🇪 阿联酋",EG:"🇪🇬 埃及",IE:"🇮🇪 爱尔兰",EE:"🇪🇪 爱沙尼亚",AT:"🇦🇹 奥地利",AU:"🇦🇺 澳大利亚",PK:"🇵🇰 巴基斯坦",BR:"🇧🇷 巴西",BY:"🇧🇾 白俄罗斯",BG:"🇧🇬 保加利亚",BE:"🇧🇪 比利时",IS:"🇮🇸 冰岛",PL:"🇵🇱 波兰",DK:"🇩🇰 丹麦",RU:"🇷🇺 俄罗斯",FI:"🇫🇮 芬兰",CO:"🇨🇴 哥伦比亚",KZ:"🇰🇿 哈萨克斯坦",KH:"🇰🇭 柬埔寨",CZ:"🇨🇿 捷克",QA:"🇶🇦 卡塔尔",CA:"🇨🇦 加拿大",KW:"🇰🇼 科威特",HR:"🇭🇷 克罗地亚",LV:"🇱🇻 拉脱维亚",LA:"🇱🇦 老挝",LT:"🇱🇹 立陶宛",LU:"🇱🇺 卢森堡",RO:"🇷🇴 罗马尼亚",MT:"🇲🇹 马耳他",MX:"🇲🇽 墨西哥",ZA:"🇿🇦 南非",NO:"🇳🇴 挪威",PT:"🇵🇹 葡萄牙",SE:"🇸🇪 瑞典",CH:"🇨🇭 瑞士",CY:"🇨🇾 塞浦路斯",SA:"🇸🇦 沙特阿拉伯",LK:"🇱🇰 斯里兰卡",SK:"🇸🇰 斯洛伐克",SI:"🇸🇮 斯洛文尼亚",TR:"🇹🇷 土耳其",UA:"🇺🇦 乌克兰",UZ:"🇺🇿 乌兹别克斯坦",ES:"🇪🇸 西班牙",GR:"🇬🇷 希腊",NZ:"🇳🇿 新西兰",HU:"🇭🇺 匈牙利",CL:"🇨🇱 智利"},favCodes:["HK","TW","MO","SG","JP","KR","US","DE","NL","GB","FR","VN","TH","MY","PH","ID","IN"],asnGroups:{mobile:'(asn=="45102" || asn=="37963" || asn=="45090")',telecom:'(asn=="45102" || asn=="55990" || asn=="37963")',unicom:'(asn=="132203" || asn=="396982" || asn=="31898")',tier1:'(asn=="45102" || asn=="132203" || asn=="45090" || asn=="37963")',tier2:'(asn=="55990" || asn=="396982" || asn=="31898")',vps:'(asn=="25820" || asn=="16276" || asn=="16509" || asn=="20473" || asn=="24940" || asn=="63949" || asn=="14061" || asn=="36352")',edu:'(asn=="4538" || asn=="23910" || asn=="7497")',all:null}};function b64(s){const e=new TextEncoder().encode(s);let b='';e.forEach(c=>b+=String.fromCharCode(c));return btoa(b);}function qry(){const a=document.getElementById('fofaRegion').value,b=document.getElementById('fofaPort').value,c=document.getElementById('fofaASN').value;if(!a||!b||!c)return'';let p=['server=="cloudflare"','header="Forbidden"','asn!="13335"','asn!="209242"'];const q=["HK","TW","MO"].includes(a)?`region="${a}"`:`country="${a}"`;p.push(q);p.push(`port="${b}"`);if(c!=='all'&&FOFA_CONFIG.asnGroups[c]){p.push(FOFA_CONFIG.asnGroups[c]);}return p.join(' && ');}function upd(){const x=document.getElementById('fofa-command-input');if(x)x.value=qry();}function init(){const s=document.getElementById('fofaRegion');if(!s)return;let h='';FOFA_CONFIG.favCodes.forEach(c=>{const n=FOFA_CONFIG.regions[c];if(n){h+=`<option value="${c}" style="background-color:#f1f5f9;color:#000000;">${n}</option>`;}});const o=Object.keys(FOFA_CONFIG.regions).filter(c=>!FOFA_CONFIG.favCodes.includes(c)).sort((a,b)=>FOFA_CONFIG.regions[a].localeCompare(FOFA_CONFIG.regions[b],'zh'));o.forEach(c=>{const n=FOFA_CONFIG.regions[c];h+=`<option value="${c}" style="background-color:#f1f5f9;color:#000000;">${n}</option>`;});s.innerHTML=h;upd();document.getElementById('fofaRegion').addEventListener('change',upd);document.getElementById('fofaPort').addEventListener('change',upd);document.getElementById('fofaASN').addEventListener('change',upd);}function openF(){const cmd=qry();if(!cmd)return;const url='https://fofa.info/result?qbase64='+b64(cmd);window.open(url,'_blank');}function copyC(){const x=document.getElementById('fofa-command-input');if(!x||!x.value)return;x.select();x.setSelectionRange(0,x.value.length);document.execCommand('copy');const t=event.target;const o=t.innerText;t.innerText='成功复制';setTimeout(()=>{t.innerText=o;},1500);}document.addEventListener('DOMContentLoaded',init);window.openFOFA=openF;window.copyCommand=copyC;
+</script>
 <script>
 <!-- 底部导航 -->
 	document.addEventListener('DOMContentLoaded',()=>{const nav=document.getElementById('bottomNav'),indicator=document.getElementById('indicator'),items=document.querySelectorAll('.nav-item');function updateIndicator(el){if(!el)return;indicator.style.width=`${el.offsetWidth}px`;indicator.style.left=`${el.offsetLeft}px`;const scrollLeft=el.offsetLeft-(nav.offsetWidth/2)+(el.offsetWidth/2);nav.scrollTo({left:scrollLeft,behavior:'smooth'})}updateIndicator(document.querySelector('.nav-item.active'));items.forEach(item=>{item.addEventListener('click',function(e){e.preventDefault();const targetId=this.getAttribute('href'),targetElement=targetId==="#bodyTop"?document.body:document.querySelector(targetId);if(targetElement)targetElement.scrollIntoView({behavior:'smooth'})})});let isTicking=false;window.addEventListener('scroll',()=>{if(!isTicking){window.requestAnimationFrame(()=>{const scrollPos=window.scrollY+window.innerHeight/3;let currentActive=items[0];items.forEach(item=>{const id=item.getAttribute('href');if(id!=="#bodyTop"){const section=document.querySelector(id);if(section&&scrollPos>=section.offsetTop)currentActive=item}});if(!currentActive.classList.contains('active')){items.forEach(i=>i.classList.remove('active'));currentActive.classList.add('active');updateIndicator(currentActive)}isTicking=false});isTicking=true}},{passive:true})});
