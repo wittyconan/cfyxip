@@ -1,6 +1,5 @@
 cloudflare-ip.mofashi.ltd
 www.shopify.com
-bbs.alipansou.com
 keji.cf.3666888.xyz
 4.cf.3666888.xyz
 cf-ip-node.vov.moe
@@ -18,13 +17,13 @@ freeyx.cloudflare88.eu.org
 cdn.2020111.xyz
 cdn.cf.3666888.xyz
 cdn.091224.xyz
-cfsaas.080112.xyz
 cdn.262832.xyz
 dnew.cc
 youxuan.cf.636949.xyz
 fk.hshwk.org
 yyurl.cc
 cdns.doon.eu.org
+cfsaas.080112.xyz
 staticdelivery.nexusmods.com
 cmcc.vvvv.ee
 nexusmods.com
@@ -38,10 +37,12 @@ www.vastnovel.com
 saas.sin.fan
 us.cloudflare.cnae.top
 yg7.ygkkk.dpdns.org
+cf.553314.xyz
 cloudflare.182682.xyz
 openai.com
 store.ubi.com
 cf.3666888.xyz
+bbs.alipansou.com
 www.jimdo.com
 cf1s.cf.3666888.xyz
 2.cf.3666888.xyz
@@ -63,7 +64,6 @@ zeas.top
 cdn.31514926.xyz
 www.sloomb.com
 www.akasantech.com
-cf.553314.xyz
 markmonitor.com
 www.giannidelprete.it
 cf.0sm.com
@@ -100,7 +100,6 @@ my.dnshe.com
 cf.godns.cc
 store.epicgames.com
 cfyx.qdqqd.com
-stackoverflow.com
 cloudflare.rainyfall.com
 cf.090227.xyz
 bestcfv4.030101.xyz
@@ -120,17 +119,18 @@ dianomi.com
 china-telecom.cname.cloudflare.468123.xyz
 yidong.19931101.xyz
 nrt.xxxxxxxx.nyc.mn
-cnllm.com
 mming.ggff.net
 mfa.gov.ua
 www.whoer.net
 china.mfa.gov.ua
+cnllm.com
 www.bangbenjiaju.com
 china-unicom.cname.cloudflare.468123.xyz
 cfgo.timelate.com
 athome.com
 www.ntu.edu.sg
 www.speedtest.net
+liantong.19931101.xyz
 i.111666.best
 www.epicgames.com
 serviceshub.samsclub.com
@@ -142,7 +142,6 @@ prompt.gzcrtw.com
 visa.com
 www.visa.com.hk
 shanghai.mfa.gov.ua
-liantong.19931101.xyz
 ping.pe
 redis.io
 mogas.com
@@ -160,6 +159,7 @@ www.sofi.com
 run.254301.xyz
 www.6i5.com
 investor.apple.com
+www.xflash.vip
 www.visa.cn
 nrtcfdns.zone.id
 www.ox.ac.uk
@@ -171,6 +171,7 @@ cdn.tzpro.xyz
 xn--b6gac.eu.org
 dynadot.com
 cfyx.aliyun.20237737.xyz
+cf1.v8.longsays.com
 yapuyapu.com
 da.mfa.gov.ua
 qualitytraining.zeiss.com
@@ -191,9 +192,8 @@ hzytjy.cn
 chinwa.cf.090227.xyz
 newsroom.avalara.com
 yx.cfcdn.bbroot.com
-cf1.v8.longsays.com
 a.cloudflare.182682.xyz
-www.xflash.vip
+cdn.2x.nz
 www.dg22.top
 ct.877774.xyz
 cloudflare-dl.byoip.top
