@@ -70,6 +70,7 @@ jobs:
             }
 
             # 执行任务
+            generate_top 100
             generate_top 50
             generate_top 20
             generate_top 10
