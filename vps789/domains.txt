@@ -112,8 +112,8 @@ www.visa.com.sg
 www.visa.com
 mskcc.org
 youxuan.cf.3666888.xyz
-mming.ggff.net
 cf.zhetengsha.eu.org
+www.5199dy.com
 dianomi.com
 7.cf.3666888.xyz
 101yaoye.com
@@ -121,9 +121,9 @@ china-telecom.cname.cloudflare.468123.xyz
 yidong.19931101.xyz
 nrt.xxxxxxxx.nyc.mn
 cnllm.com
+mming.ggff.net
 mfa.gov.ua
 www.whoer.net
-www.5199dy.com
 china.mfa.gov.ua
 www.bangbenjiaju.com
 china-unicom.cname.cloudflare.468123.xyz
@@ -141,7 +141,6 @@ visa.com.tw
 prompt.gzcrtw.com
 visa.com
 www.visa.com.hk
-b3.cfyx.20237737.xyz
 shanghai.mfa.gov.ua
 liantong.19931101.xyz
 ping.pe
@@ -156,6 +155,8 @@ cloudflare-dl.cnae.top
 cfyx.dnspod.20237737.xyz
 jobsdb.com
 cfdl.3666888.xyz
+cf.998866.top
+www.sofi.com
 run.254301.xyz
 www.6i5.com
 investor.apple.com
@@ -163,21 +164,17 @@ www.visa.cn
 nrtcfdns.zone.id
 www.ox.ac.uk
 stlouiscountymo.gov
+eason.cf.lma.de5.net
 qy.cf.727672.xyz
 cfip.1323123.xyz
 cdn.tzpro.xyz
 xn--b6gac.eu.org
 dynadot.com
 cfyx.aliyun.20237737.xyz
-sunkist.com
-cf.998866.top
-www.sofi.com
-auto.dolby.dpdns.org
 yapuyapu.com
 da.mfa.gov.ua
-email.lg.com
 qualitytraining.zeiss.com
-eason.cf.lma.de5.net
+sunkist.com
 yg13.ygkkk.dpdns.org
 ahblog.cn
 img.dexbug.com
@@ -190,6 +187,7 @@ g.lma.de5.net
 yg2.ygkkk.dpdns.org
 www.galgamex.net
 ikankeji.com
+hzytjy.cn
 chinwa.cf.090227.xyz
 newsroom.avalara.com
 yx.cfcdn.bbroot.com
@@ -198,3 +196,5 @@ a.cloudflare.182682.xyz
 www.xflash.vip
 www.dg22.top
 ct.877774.xyz
+cloudflare-dl.byoip.top
+yong.880805.xyz
