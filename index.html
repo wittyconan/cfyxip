@@ -329,48 +329,48 @@
     <section id="yxip">
         <h2>优选IP</h2>
 		<div style="font-size: 0.8rem; color: var(--text-muted); margin: -15px 0 20px 20px;">兼容多个脚本的通用格式 "IP:端口#备注信息"<br>EDT后台或变量添加txt链接，客户端更新订阅即可</div>
-							<div class="group-card">
-							<div class="group-name">FOFA 搜索优选IP<span class="tag">有T0</span><span class="tag">轻薅</span><span class="tag tag-featured">NEW</span></div>
-											<div class="action-area" style="gap: 10px; flex-wrap: wrap; margin-bottom: 12px;">
-															<div class="url-box" style="flex: 2; min-width: 120px; padding: 0 10px;">
-																			<select id="fofaRegion" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; cursor: pointer; color: var(--text-main);">
-																			</select>
-															</div>
+							<!-- <div class="group-card"> -->
+							<!-- <div class="group-name">FOFA 搜索优选IP<span class="tag">有T0</span><span class="tag">轻薅</span><span class="tag tag-featured">NEW</span></div> -->
+											<!-- <div class="action-area" style="gap: 10px; flex-wrap: wrap; margin-bottom: 12px;"> -->
+															<!-- <div class="url-box" style="flex: 2; min-width: 120px; padding: 0 10px;"> -->
+																			<!-- <select id="fofaRegion" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; cursor: pointer; color: var(--text-main);"> -->
+																			<!-- </select> -->
+															<!-- </div> -->
 
-															<div class="url-box" style="flex: 2; min-width: 120px; padding: 0 10px;">
-																			<select id="fofaASN" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; cursor: pointer; color: var(--text-main);">
-																							<option value="mobile" style="background-color: #f1f5f9; color: #000000;">移动用户优选 (CMI)</option>
-																							<option value="unicom" style="background-color: #f1f5f9; color: #000000;">联通用户优选 (直连)</option>
-																							<option value="telecom" style="background-color: #f1f5f9; color: #000000;">电信用户优选 (CN2/GIA)</option>
-																							<option value="tier1" selected style="background-color: #f1f5f9; color: #000000;">一线优质机房 (默认/通用)</option>
-																							<option value="tier2" style="background-color: #f1f5f9; color: #000000;">二线备用机房</option>
-																							<option value="vps" style="background-color: #f1f5f9; color: #000000;">海外优质VPS</option>
-																							<option value="all" style="background-color: #f1f5f9; color: #000000;">全部 (排除官方 = ProxyIP)</option>
-																			</select>
-															</div>
-															<div class="url-box" style="flex: 1; min-width: 80px; padding: 0 10px;">
-																			<select id="fofaPort" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; cursor: pointer; color: var(--text-main);">
-																							<option value="443" selected style="background-color: #f1f5f9; color: #000000;">443</option>
-																							<option value="2096" style="background-color: #f1f5f9; color: #000000;">2096</option>
-																							<option value="8443" style="background-color: #f1f5f9; color: #000000;">8443</option>																								
-																							<option value="2053" style="background-color: #f1f5f9; color: #000000;">2053</option>
-																							<option value="2083" style="background-color: #f1f5f9; color: #000000;">2083</option>
-																							<option value="2087" style="background-color: #f1f5f9; color: #000000;">2087</option>																						
-																							<option value="nonstandard" style="background-color: #f1f5f9; color: #000000;">非标端口 (排除13个官方端口)</option>
-																			</select>
-															</div>
-															<button class="copy-btn" onclick="openFOFA()">立即搜索</button>
-											</div>
-											<div class="link-row">
-															<div class="action-area">
-																			<div class="url-box" style="flex: 1; padding: 0 10px;">
-																							<input type="text" id="fofa-command-input" class="url-text" readonly style="width: 100%; background: transparent; border: none; outline: none; color: #ffffff; opacity: 0.8;" placeholder="查询语法将在此生成...">
-																			</div>
-																			<button class="copy-btn" onclick="copyCommand()">复制语法</button>
-															</div>
-											</div>
-											<div class="item-desc">直接点击搜索按钮或复制到FOFA使用</div>
-							</div>  		
+															<!-- <div class="url-box" style="flex: 2; min-width: 120px; padding: 0 10px;"> -->
+																			<!-- <select id="fofaASN" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; cursor: pointer; color: var(--text-main);"> -->
+																							<!-- <option value="mobile" style="background-color: #f1f5f9; color: #000000;">移动用户优选 (CMI)</option> -->
+																							<!-- <option value="unicom" style="background-color: #f1f5f9; color: #000000;">联通用户优选 (直连)</option> -->
+																							<!-- <option value="telecom" style="background-color: #f1f5f9; color: #000000;">电信用户优选 (CN2/GIA)</option> -->
+																							<!-- <option value="tier1" selected style="background-color: #f1f5f9; color: #000000;">一线优质机房 (默认/通用)</option> -->
+																							<!-- <option value="tier2" style="background-color: #f1f5f9; color: #000000;">二线备用机房</option> -->
+																							<!-- <option value="vps" style="background-color: #f1f5f9; color: #000000;">海外优质VPS</option> -->
+																							<!-- <option value="all" style="background-color: #f1f5f9; color: #000000;">全部 (排除官方 = ProxyIP)</option> -->
+																			<!-- </select> -->
+															<!-- </div> -->
+															<!-- <div class="url-box" style="flex: 1; min-width: 80px; padding: 0 10px;"> -->
+																			<!-- <select id="fofaPort" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; cursor: pointer; color: var(--text-main);"> -->
+																							<!-- <option value="443" selected style="background-color: #f1f5f9; color: #000000;">443</option> -->
+																							<!-- <option value="2096" style="background-color: #f1f5f9; color: #000000;">2096</option> -->
+																							<!-- <option value="8443" style="background-color: #f1f5f9; color: #000000;">8443</option>																								 -->
+																							<!-- <option value="2053" style="background-color: #f1f5f9; color: #000000;">2053</option> -->
+																							<!-- <option value="2083" style="background-color: #f1f5f9; color: #000000;">2083</option> -->
+																							<!-- <option value="2087" style="background-color: #f1f5f9; color: #000000;">2087</option>																						 -->
+																							<!-- <option value="nonstandard" style="background-color: #f1f5f9; color: #000000;">非标端口 (排除13个官方端口)</option> -->
+																			<!-- </select> -->
+															<!-- </div> -->
+															<!-- <button class="copy-btn" onclick="openFOFA()">立即搜索</button> -->
+											<!-- </div> -->
+											<!-- <div class="link-row"> -->
+															<!-- <div class="action-area"> -->
+																			<!-- <div class="url-box" style="flex: 1; padding: 0 10px;"> -->
+																							<!-- <input type="text" id="fofa-command-input" class="url-text" readonly style="width: 100%; background: transparent; border: none; outline: none; color: #ffffff; opacity: 0.8;" placeholder="查询语法将在此生成..."> -->
+																			<!-- </div> -->
+																			<!-- <button class="copy-btn" onclick="copyCommand()">复制语法</button> -->
+															<!-- </div> -->
+											<!-- </div> -->
+											<!-- <div class="item-desc">直接点击搜索按钮或复制到FOFA使用</div> -->
+							<!-- </div>  		 -->
 										<div class="group-card">
             <div class="group-name">Gslege<span class="tag">早中晚更新</span><span class="tag tag-featured">NEW</span></div>
             
