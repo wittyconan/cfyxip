@@ -27,7 +27,8 @@ jobs:
             "zhixuanwang.yml|20"
             "xinyitang3.yml|60"
             "vps789.yml|60"
-            "tiancheng.yml|0"
+            "tiancheng.yml|50"
+            "tiancheng-sn.yml|0"
           )
 
           for item in "${WORKFLOWS[@]}"; do
