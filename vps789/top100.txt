@@ -1,9 +1,8 @@
-saas.sin.fan:443#▼ 优选域名 TOP100 | 05-10 05:09 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP100 | 05-10 05:39 | YouTube@真香定律
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 cf1s.cf.3666888.xyz:443#cf1s.cf.3666888.xyz
 eii.at:443#eii.at
 www.swowd.com:443#www.swowd.com
-test2.509666.xyz:443#test2.509666.xyz
 cloudflare.182682.xyz:443#cloudflare.182682.xyz
 cdns.doon.eu.org:443#cdns.doon.eu.org
 openai.com:443#openai.com
@@ -13,12 +12,10 @@ jp.cf.3666888.xyz:443#jp.cf.3666888.xyz
 hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
 8.cf.3666888.xyz:443#8.cf.3666888.xyz
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
-www.xiaoshuofen.com:443#www.xiaoshuofen.com
 cdn.091224.xyz:443#cdn.091224.xyz
 zeas.top:443#zeas.top
 dongbanghong.com:443#dongbanghong.com
 store.ubi.com:443#store.ubi.com
-www.mc.js.cool:443#www.mc.js.cool
 www.jimdo.com:443#www.jimdo.com
 123.cf.3666888.xyz:443#123.cf.3666888.xyz
 baka.fun:443#baka.fun
@@ -28,16 +25,13 @@ y508.com:443#y508.com
 cf.553314.xyz:443#cf.553314.xyz
 www.5h.com:443#www.5h.com
 f.lma.de5.net:443#f.lma.de5.net
-vip.cf.3666888.xyz:443#vip.cf.3666888.xyz
 01-qq.com:443#01-qq.com
 cf.3666888.xyz:443#cf.3666888.xyz
 hk.cf.3666888.xyz:443#hk.cf.3666888.xyz
 www.leics.police.uk:443#www.leics.police.uk
 www.bangbenjiaju.com:443#www.bangbenjiaju.com
-cloudflare.cfgo.cc:443#cloudflare.cfgo.cc
 cloudflare.cnae.top:443#cloudflare.cnae.top
 www.sage.com:443#www.sage.com
-youxuan.cf.636949.xyz:443#youxuan.cf.636949.xyz
 avido.cf.3666888.xyz:443#avido.cf.3666888.xyz
 isp.254301.xyz:443#isp.254301.xyz
 6.cf.3666888.xyz:443#6.cf.3666888.xyz
@@ -45,7 +39,6 @@ www.sloomb.com:443#www.sloomb.com
 dnew.cc:443#dnew.cc
 china-unicom.cname.cloudflare.468123.xyz:443#china-unicom.cname.cloudflare.468123.xyz
 cloudflare.468123.xyz:443#cloudflare.468123.xyz
-ys2046.cv:443#ys2046.cv
 api.gzcrtw.com:443#api.gzcrtw.com
 yxip.xxxxxxxx.tk:443#yxip.xxxxxxxx.tk
 www.whoer.net:443#www.whoer.net
@@ -54,28 +47,31 @@ store.epicgames.com:443#store.epicgames.com
 yg11.ygkkk.dpdns.org:443#yg11.ygkkk.dpdns.org
 www.nexusmods.com:443#www.nexusmods.com
 athome.com:443#athome.com
-www.visa.com:443#www.visa.com
 my.dnshe.com:443#my.dnshe.com
 cloudflare-dl.byoip.top:443#cloudflare-dl.byoip.top
 www.5199dy.com:443#www.5199dy.com
 tajikistan.mfa.gov.ua:443#tajikistan.mfa.gov.ua
+bbs.alipansou.com:443#bbs.alipansou.com
 stlouiscountymo.gov:443#stlouiscountymo.gov
 qocu.cf.3666888.xyz:443#qocu.cf.3666888.xyz
 www.vastnovel.com:443#www.vastnovel.com
 prompt.gzcrtw.com:443#prompt.gzcrtw.com
+test2.509666.xyz:443#test2.509666.xyz
 nrtcfdns.zone.id:443#nrtcfdns.zone.id
-ping.pe:443#ping.pe
 www.shopify.com:443#www.shopify.com
 mfa.gov.ua:443#mfa.gov.ua
 saas.sin.fan:443#saas.sin.fan
 dynadot.com:443#dynadot.com
+www.mc.js.cool:443#www.mc.js.cool
 uac.cf.3666888.xyz:443#uac.cf.3666888.xyz
 fw8je9.cf.3666888.xyz:443#fw8je9.cf.3666888.xyz
+eteaf.cf.3666888.xyz:443#eteaf.cf.3666888.xyz
 4.cf.3666888.xyz:443#4.cf.3666888.xyz
 9.cf.3666888.xyz:443#9.cf.3666888.xyz
 test.509666.xyz:443#test.509666.xyz
 yg5.ygkkk.dpdns.org:443#yg5.ygkkk.dpdns.org
 yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
+www.xiaoshuofen.com:443#www.xiaoshuofen.com
 cmcc.cc.cd:443#cmcc.cc.cd
 yyurl.cc:443#yyurl.cc
 www.visa.com.hk:443#www.visa.com.hk
@@ -83,7 +79,6 @@ keji.cf.3666888.xyz:443#keji.cf.3666888.xyz
 cu.877774.xyz:443#cu.877774.xyz
 cf.godns.cc:443#cf.godns.cc
 www.fastsoso.cn:443#www.fastsoso.cn
-bbs.alipansou.com:443#bbs.alipansou.com
 da.mfa.gov.ua:443#da.mfa.gov.ua
 cdn.262832.xyz:443#cdn.262832.xyz
 nexusmods.com:443#nexusmods.com
@@ -91,7 +86,6 @@ cloudflare.idc.rocks:443#cloudflare.idc.rocks
 a.lma.de5.net:443#a.lma.de5.net
 cdn.cf.3666888.xyz:443#cdn.cf.3666888.xyz
 adnjv.cf.3666888.xyz:443#adnjv.cf.3666888.xyz
-eteaf.cf.3666888.xyz:443#eteaf.cf.3666888.xyz
 5.cf.3666888.xyz:443#5.cf.3666888.xyz
 7.cf.3666888.xyz:443#7.cf.3666888.xyz
 10.cf.3666888.xyz:443#10.cf.3666888.xyz
@@ -99,4 +93,10 @@ eteaf.cf.3666888.xyz:443#eteaf.cf.3666888.xyz
 www.cdzxdz.com:443#www.cdzxdz.com
 www.mfyx.cn:443#www.mfyx.cn
 www.akasantech.com:443#www.akasantech.com
+fk.hshwk.org:443#fk.hshwk.org
+cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
+www.visa.com.sg:443#www.visa.com.sg
+cdn.7zz.cn:443#cdn.7zz.cn
+visa.com.tw:443#visa.com.tw
+cf.mubaiovo.top:443#cf.mubaiovo.top
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
