@@ -917,7 +917,56 @@
 																	</div>
 													</div>
 													<div class="item-desc">选择运营商后会推荐地区排序，直接点击搜索或复制到FOFA使用</div>
-									</div>
+									</div>								
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">Shodan</span><span class="tag">边缘节点搜索</span></div>
+            <div class="action-area">
+                <div class="url-box"><span class="url-text">shodan.io</span></div>
+                <a href="https://www.shodan.io/" class="open-btn" target="_blank">打开链接</a>
+            </div>
+        </div>	
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">ZoomEye</span><span class="tag">边缘节点搜索</span></div>
+            <div class="action-area">
+                <div class="url-box"><span class="url-text">www.zoomeye.ai</span></div>
+                <a href="https://www.zoomeye.ai/" class="open-btn" target="_blank">打开链接</a>
+            </div>
+        </div>								
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">Censys</span><span class="tag">边缘节点搜索</span></div>
+            <div class="action-area">
+                <div class="url-box"><span class="url-text">search.censys.io</span></div>
+                <a href="https://search.censys.io/" class="open-btn" target="_blank">打开链接</a>
+            </div>
+        </div>
+        <div class="group-card">
+            <div class="item-header"><span class="item-title">Builtwith</span><span class="tag">CF CDN 全球客户</span></div>
+            <div class="action-area">
+                <div class="url-box"><span class="url-text">trends.builtwith.com/cdns/Cloudflare-CDN</span></div>
+                <a href="https://trends.builtwith.com/cdns/Cloudflare-CDN" class="open-btn" target="_blank">打开链接</a>
+            </div>
+        </div>  		
+    </section>
+    <section id="proxyip">
+        <h2>ProxyIP</h2>		
+								<div class="group-card">
+												<div class="group-name">合集<span class="tag">有效性检测</span></div>
+												<div class="action-area" style="gap: 10px; flex-wrap: wrap; margin-bottom: 12px;">
+																<div class="url-box" style="flex: 3; min-width: 200px; padding: 0 10px;">
+																				<select id="proxyipSelect" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; cursor: pointer; color: var(--text-main);">
+																				</select>
+																</div>
+																<button id="proxyipCheckBtn" class="copy-btn">立即检测</button>
+												</div>
+												<div class="link-row">
+																<div class="action-area">
+																				<div class="url-box" style="flex: 1; padding: 0 10px;">
+																								<span id="proxyipResultSpan" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; color: #ffffff; opacity: 0.8; display: inline-block;">等待检测</span>
+																				</div>
+																				<button id="proxyipCopyBtn" class="copy-btn">复制地址</button>
+																</div>
+												</div>
+								</div>
 									<div class="group-card">
 													<div class="group-name">FOFA<span class="tag">搜索 ProxyIP</span></div>
 													<div class="action-area" style="gap: 10px; flex-wrap: wrap; margin-bottom: 12px;">
@@ -954,35 +1003,13 @@
 													</div>
 									</div>									
         <div class="group-card">
-            <div class="item-header"><span class="item-title">Shodan</span><span class="tag">边缘节点搜索</span></div>
+            <div class="item-header"><span class="item-title">Xgonce/ProxyIP</span><span class="tag">每6小时更新</span></div>
             <div class="action-area">
-                <div class="url-box"><span class="url-text">shodan.io</span></div>
-                <a href="https://www.shodan.io/" class="open-btn" target="_blank">打开链接</a>
+                <div class="url-box"><span class="url-text">raw.githubusercontent.com/xgonce/Cloudflare_IP/refs/heads/main/result.csv</span></div>
+                <a href="https://raw.githubusercontent.com/xgonce/Cloudflare_IP/refs/heads/main/result.csv" class="open-btn" target="_blank">打开链接</a>
             </div>
         </div>	
-        <div class="group-card">
-            <div class="item-header"><span class="item-title">ZoomEye</span><span class="tag">边缘节点搜索</span></div>
-            <div class="action-area">
-                <div class="url-box"><span class="url-text">www.zoomeye.ai</span></div>
-                <a href="https://www.zoomeye.ai/" class="open-btn" target="_blank">打开链接</a>
-            </div>
-        </div>								
-        <div class="group-card">
-            <div class="item-header"><span class="item-title">Censys</span><span class="tag">边缘节点搜索</span></div>
-            <div class="action-area">
-                <div class="url-box"><span class="url-text">search.censys.io</span></div>
-                <a href="https://search.censys.io/" class="open-btn" target="_blank">打开链接</a>
-            </div>
-        </div>
-        <div class="group-card">
-            <div class="item-header"><span class="item-title">Builtwith</span><span class="tag">CF CDN 全球客户</span></div>
-            <div class="action-area">
-                <div class="url-box"><span class="url-text">trends.builtwith.com/cdns/Cloudflare-CDN</span></div>
-                <a href="https://trends.builtwith.com/cdns/Cloudflare-CDN" class="open-btn" target="_blank">打开链接</a>
-            </div>
-        </div>  		
-    </section>
-
+    </section>		
     <section id="csgj">
         <h2>测速工具</h2>
         <div class="group-card">
@@ -1619,7 +1646,7 @@
                     <a href="https://sing-box.sagernet.org/zh/" class="open-btn" target="_blank">打开链接</a>
                 </div>
             </div> 			
-        </div>		
+        </div>			
     </section>
 
     <footer>
@@ -1638,6 +1665,10 @@
 <!-- EDT面板 -->
 	document.addEventListener('DOMContentLoaded',()=>{const f=[{id:'edt-url-input',btn:'clear-url-btn',key:'edt_panel_url'},{id:'edt-pwd-input',btn:'clear-pwd-btn',key:'edt_panel_pwd'}];f.forEach(s=>{const e=document.getElementById(s.id),t=document.getElementById(s.btn),n=localStorage.getItem(s.key);n&&(e.value=n,t.style.display='block');e.addEventListener('input',()=>{const n=e.value.trim();e.style.color='inherit',t.style.display=n?'block':'none',s.id==='edt-url-input'?(isValidUrl(n)?localStorage.setItem(s.key,n):localStorage.removeItem(s.key)):localStorage.setItem(s.key,n)});t.onmouseenter=()=>t.style.opacity='1';t.onmouseleave=()=>t.style.opacity='0.6'});loadExtraPanels()});function clearField(e,t){const n=document.getElementById(e);localStorage.removeItem(t),n.value='',document.getElementById(e==='edt-url-input'?'clear-url-btn':'clear-pwd-btn').style.display='none',n.focus()}function copyPwd(e){const t=document.getElementById('edt-pwd-input'),n=t.value.trim();if(!n)return showInputError('edt-pwd-input','⚠️ 请先输入密码');navigator.clipboard.writeText(n).then(()=>{const t=e.innerText;e.innerText='已经复制',setTimeout(()=>{e.innerText=t},1200)})}function isValidUrl(e){if(!e||/[\u4E00-\u9FA5]/.test(e))return!1;const t=e.includes('://')?e:'https://'+e;return/^(https?:\/\/)?(([a-zA-Z0-9][-a-zA-Z0-9]{0,62}\.)+[a-zA-Z]{2,20}|localhost|(\d{1,3}\.){3}\d{1,3})(:\d+)?(\/.*)?$/.test(t)}function showInputError(e,t){const n=document.getElementById(e),o=n.value;n.style.color='#ff4d4f',n.value=t,setTimeout(()=>{n.value=o,n.style.color='inherit'},1200)}function openEdtUrl(){const e=document.getElementById('edt-url-input'),t=e.value.trim();if(!t)return showInputError('edt-url-input','⚠️ 请输入链接地址');if(!isValidUrl(t))return showInputError('edt-url-input','❌ 请输入正确的链接格式');localStorage.setItem('edt_panel_url',t);const n=t.includes('://')?t:'https://'+t,o=document.createElement('a');o.href=n,o.target='_blank',o.rel='noopener noreferrer',document.body.appendChild(o),o.click(),document.body.removeChild(o)}function addNewGroup(e='',t=''){const n=document.getElementById('edt-panel-container'),o=n.querySelectorAll('.group-card').length,r=`<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`,s=`extra-panel-${Date.now()}`,l=`<div class="group-card extra-group" id="${s}"><div class="group-name">EDT 面板 ${o+1}</div><div class="link-row" style="margin-bottom: 12px;"><div class="action-area"><div class="url-box"><input type="text" class="more-url-input" placeholder="面板地址" value="${e}"><div class="clear-btn-common" onclick="clearMoreField(this)" style="${e?'display:block':''}">${r}</div></div><button class="open-btn" onclick="openMoreUrl(this)">进入面板</button></div></div><div class="link-row" style="margin-bottom: 12px;"><div class="action-area"><div class="url-box"><input type="text" class="more-pwd-input" placeholder="面板密码 或 提示" value="${t}"><div class="clear-btn-common" onclick="clearMoreField(this)" style="${t?'display:block':''}">${r}</div></div><button class="copy-btn" onclick="copyMorePwd(this)">复制密码</button></div></div></div>`;n.insertAdjacentHTML('beforeend',l);const i=document.getElementById(s);i.querySelectorAll('input').forEach(e=>{const b=e.nextElementSibling;e.oninput=()=>{b.style.display=e.value.trim()?'block':'none',saveExtraData()};if(b){b.onmouseenter=()=>b.style.opacity='1';b.onmouseleave=()=>b.style.opacity='0.6'}});if(!e&&!t)i.scrollIntoView({behavior:'smooth',block:'center'})}function clearMoreField(e){const t=e.closest('.url-box'),n=t.querySelector('input');n.value='',e.style.display='none',n.focus(),saveExtraData()}function saveExtraData(){const e=[];document.querySelectorAll('.extra-group').forEach(t=>{const n=t.querySelector('.more-url-input').value.trim(),o=t.querySelector('.more-pwd-input').value.trim();const r=isValidUrl(n)?n:'';if(r)e.push({url:r,pwd:o})});localStorage.setItem('edt_extra_panels_storage_v3',JSON.stringify(e))}function loadExtraPanels(){const e=localStorage.getItem('edt_extra_panels_storage_v3');if(e)try{JSON.parse(e).forEach(e=>addNewGroup(e.url,e.pwd))}catch(e){}}function openMoreUrl(e){const t=e.closest('.action-area').querySelector('input'),n=t.value.trim();if(!n)return showDynamicError(t,'⚠️ 请输入链接地址');if(!isValidUrl(n))return showDynamicError(t,'❌ 请输入正确的链接格式');const o=n.includes('://')?n:'https://'+n;window.open(o,'_blank','noopener noreferrer')}function copyMorePwd(e){const t=e.closest('.action-area').querySelector('input'),n=t.value.trim();if(!n)return showDynamicError(t,'⚠️ 请先输入密码');navigator.clipboard.writeText(n).then(()=>{const t=e.innerText;e.innerText='已经复制',setTimeout(()=>{e.innerText=t},1200)})}function showDynamicError(e,t){const n=e.value;e.style.color='#ff4d4f',e.value=t,setTimeout(()=>{e.value=n,e.style.color='inherit'},1200)}
 </script>
+<script>
+<!-- 检测ProxyIP -->
+ (function(){const e=["ProxyIP.CMLiussss.net","ProxyIP.HK.CMLiussss.net","ProxyIP.SG.CMLiussss.net","ProxyIP.JP.CMLiussss.net","ProxyIP.KR.CMLiussss.net","ProxyIP.IN.CMLiussss.net","ProxyIP.GB.CMLiussss.net","ProxyIP.FR.CMLiussss.net","ProxyIP.DE.CMLiussss.net","ProxyIP.NL.CMLiussss.net","ProxyIP.SE.CMLiussss.net","ProxyIP.FI.CMLiussss.net","ProxyIP.PL.CMLiussss.net","ProxyIP.RU.CMLiussss.net","ProxyIP.CH.CMLiussss.net","ProxyIP.LV.CMLiussss.net","ProxyIP.US.CMLiussss.net","ProxyIP.CA.CMLiussss.net","ProxyIP.US.fxxk.dedyn.io","ProxyIP.SG.fxxk.dedyn.io","ProxyIP.JP.fxxk.dedyn.io","ProxyIP.HK.fxxk.dedyn.io","ProxyIP.KR.fxxk.dedyn.io","ProxyIP.DE.tp2024.fxxk.dedyn.io","ProxyIP.Aliyun.fxxk.dedyn.io","ProxyIP.Oracle.fxxk.dedyn.io","ProxyIP.DigitalOcean.fxxk.dedyn.io","ProxyIP.Vultr.fxxk.dedyn.io","ProxyIP.Multacom.fxxk.dedyn.io","pyip.ygkkk.dpdns.org","kr.william.us.ci","tw.william.us.ci","proxy.xinyitang.dpdns.org"];const t=document.getElementById('proxyipSelect'),n=document.getElementById('proxyipCheckBtn'),o=document.getElementById('proxyipResultSpan'),r=document.getElementById('proxyipCopyBtn');e.forEach(e=>{const n=document.createElement('option');n.value=e,n.textContent=e,n.style.backgroundColor='#f1f5f9',n.style.color='#000000',t.appendChild(n)});t.options.length>0&&(t.selectedIndex=0);r.addEventListener('click',()=>{const e=t.value;if(!e)return;const n=document.createElement('textarea');n.value=e,document.body.appendChild(n),n.select(),document.execCommand('copy'),document.body.removeChild(n);const o=r.innerText;r.innerText='成功复制',setTimeout(()=>{r.innerText=o},1500)});async function i(e,i=0){try{const t=new AbortController,n=setTimeout(()=>t.abort(),15000),o=await fetch(`https://api.090227.xyz/check?proxyip=${encodeURIComponent(e)}`,{signal:t.signal});clearTimeout(n);return await o.json()}catch(t){return i<2?i(e,i+1):null}}n.addEventListener('click',async()=>{const e=t.value;if(!e)return;n.disabled=true,o.innerText='正在检测...';try{const t=await i(e);t&&t.success===true?(o.innerText=`有效可用 | ${t.probe_results?.ipv4?.exit?.country||'未知'} | ${t.probe_results?.ipv4?.exit?.ip||'未知'} | ${t.probe_results?.ipv4?.exit?.asOrganization||'未知'}`):o.innerText='检测无效'}catch(t){o.innerText='接口异常'}finally{n.disabled=false}})})();
+</script>			
 <!-- 更多面板<script> -->
 	<!-- const toggleAddMoreBtn=()=>{const e=document.getElementById('edt-url-input'),t=document.querySelector('.add-more-btn');if(t){const v=e?e.value.trim():'';t.style.display=(v&&isValidUrl(v))?'flex':'none'}};toggleAddMoreBtn();document.getElementById('edt-url-input').addEventListener('input',toggleAddMoreBtn);document.getElementById('clear-url-btn').addEventListener('click',()=>{setTimeout(toggleAddMoreBtn,50)});if(window.loadExtraPanels){const oldLoad=window.loadExtraPanels;window.loadExtraPanels=function(){oldLoad();toggleAddMoreBtn()}}else{setTimeout(toggleAddMoreBtn,100)} -->
 <!-- </script> -->
