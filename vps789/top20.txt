@@ -1,13 +1,11 @@
-saas.sin.fan:443#▼ 优选域名 TOP20 | 05-10 07:09 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP20 | 05-10 07:39 | YouTube@真香定律
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
-cf1s.cf.3666888.xyz:443#cf1s.cf.3666888.xyz
 www.swowd.com:443#www.swowd.com
 cdns.doon.eu.org:443#cdns.doon.eu.org
 openai.com:443#openai.com
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 sg.cf.3666888.xyz:443#sg.cf.3666888.xyz
 jp.cf.3666888.xyz:443#jp.cf.3666888.xyz
-hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
 8.cf.3666888.xyz:443#8.cf.3666888.xyz
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
 dongbanghong.com:443#dongbanghong.com
@@ -15,8 +13,10 @@ store.ubi.com:443#store.ubi.com
 www.jimdo.com:443#www.jimdo.com
 123.cf.3666888.xyz:443#123.cf.3666888.xyz
 baka.fun:443#baka.fun
-freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
+3.cf.3666888.xyz:443#3.cf.3666888.xyz
 www.mlkj888.com:443#www.mlkj888.com
 cf.553314.xyz:443#cf.553314.xyz
 www.5h.com:443#www.5h.com
+f.lma.de5.net:443#f.lma.de5.net
+cf.cf.3666888.xyz:443#cf.cf.3666888.xyz
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
