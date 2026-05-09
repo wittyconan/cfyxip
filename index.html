@@ -52,9 +52,8 @@
 		.bottom-nav-container{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);z-index:9999;width:100%;max-width:860px;display:flex;justify-content:center;pointer-events:none;box-sizing:border-box}.nav-bar{display:flex;align-items:center;background:rgba(15,23,42,0.3);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:5px;border-radius:50px;border:1px solid rgba(255,255,255,0.08);box-shadow:0 12px 40px rgba(0,0,0,0.5);position:relative;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;pointer-events:auto;width:fit-content;max-width:calc(100% - 40px);justify-content:flex-start;cursor:grab}.nav-bar:active{cursor:grabbing}.nav-bar::-webkit-scrollbar{display:none}.nav-item{position:relative;padding:8px 24px;color:#94a3b8;text-decoration:none;font-size:0.9rem;font-weight:700;white-space:nowrap;transition:color 0.3s ease;z-index:2;cursor:pointer;flex-shrink:0}.nav-item.active{color:#fff}.nav-indicator{position:absolute;height:calc(100% - 10px);top:5px;left:0;background:linear-gradient(135deg,#3b82f6 0%,#1d4ed8 100%);border-radius:50px;transition:all 0.5s cubic-bezier(0.16,1,0.3,1);z-index:1;box-shadow:0 4px 20px rgba(59,130,246,0.5);will-change:left,width;backface-visibility:hidden}
 		@media (hover: none) { .ad-button:hover, .copy-btn:hover, .open-btn:hover, .add-more-btn:hover { background: rgba(59, 130, 246, 0.15) !important; transform: none !important; box-shadow: none !important; color: var(--accent-blue) !important; } .ad-button:hover { color: #fff !important; } }
 		.ad-button{background:linear-gradient(135deg,#3b82f6 0%,#1d4ed8 100%);color:#fff;padding:12px 28px;border-radius:50px;text-decoration:none;font-weight:700;font-size:.95rem;box-shadow:0 4px 15px rgba(59,130,246,.4);transition:transform .2s,box-shadow .2s;display:inline-block}.ad-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(59,130,246,.6)}
-	
-	
-	
+		#customProxyInput::placeholder {color: #94a3b8 !important;opacity: 1;}
+		
 	</style>
 </head>
 <body id="bodyTop">
@@ -911,7 +910,7 @@
 													<div class="link-row">
 																	<div class="action-area">
 																					<div class="url-box" style="flex: 1; padding: 0 10px;">
-																									<input type="text" id="fofa-command-input" class="url-text" readonly style="width: 100%; background: transparent; border: none; outline: none; color: #ffffff; opacity: 0.8;" placeholder="查询语句将在此生成...">
+																									<input type="text" id="fofa-command-input" class="url-text" readonly style="width: 100%; background: transparent; border: none; outline: none; color: #94a3b8; opacity: 0.8;" placeholder="查询语句将在此生成...">
 																					</div>
 																					<button class="copy-btn" onclick="copyCommand()">复制语句</button>
 																	</div>
@@ -961,12 +960,29 @@
 												<div class="link-row">
 																<div class="action-area">
 																				<div class="url-box" style="flex: 1; padding: 0 10px;">
-																								<span id="proxyipResultSpan" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; color: #ffffff; opacity: 0.8; display: inline-block;">等待检测</span>
+																								<span id="proxyipResultSpan" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; color: #94a3b8; opacity: 0.8; display: inline-block;">检测结果</span>
 																				</div>
 																				<button id="proxyipCopyBtn" class="copy-btn">复制地址</button>
 																</div>
 												</div>
 								</div>
+								<div class="group-card">
+												<div class="group-name">自定义检测</div>
+												<div class="action-area" style="gap: 10px; flex-wrap: wrap; margin-bottom: 8px;">
+																<div class="url-box" style="flex: 3; min-width: 200px; padding: 0 10px;">
+																				<input type="text" id="customProxyInput" class="url-text" placeholder="在此输入ProxyIP" style="width: 100%; background: transparent; border: none; outline: none; color: var(--text-main);" onfocus="this.placeholder=''" onblur="this.placeholder='在此输入ProxyIP'">
+																</div>
+																<button id="customCheckBtn" class="copy-btn">立即检测</button>
+												</div>
+												<div class="link-row">
+																<div class="action-area">
+																				<div class="url-box" style="flex: 1; padding: 0 10px;">
+																								<span id="customResultSpan" class="url-text" style="width: 100%; background: transparent; border: none; outline: none; color: #94a3b8; opacity: 0.8; display: inline-block;">检测结果</span>
+																				</div>
+																				<button id="customCopyBtn" class="copy-btn">复制地址</button>
+																</div>
+												</div>
+								</div>									
 									<div class="group-card">
 													<div class="group-name">FOFA<span class="tag">搜索 ProxyIP</span></div>
 													<div class="action-area" style="gap: 10px; flex-wrap: wrap; margin-bottom: 12px;">
@@ -996,7 +1012,7 @@
 													<div class="link-row">
 																	<div class="action-area">
 																					<div class="url-box" style="flex: 1; padding: 0 10px;">
-																									<input type="text" id="proxy-command-input" class="url-text" readonly style="width: 100%; background: transparent; border: none; outline: none; color: #ffffff; opacity: 0.8;" placeholder="查询语句将在此生成...">
+																									<input type="text" id="proxy-command-input" class="url-text" readonly style="width: 100%; background: transparent; border: none; outline: none; color: #94a3b8; opacity: 0.8;" placeholder="查询语句将在此生成...">
 																					</div>
 																					<button class="copy-btn" onclick="copyProxyCommand()">复制语句</button>
 																	</div>
@@ -1667,8 +1683,8 @@
 </script>
 <script>
 <!-- 检测ProxyIP -->
- (function(){const e=["ProxyIP.CMLiussss.net","ProxyIP.HK.CMLiussss.net","ProxyIP.SG.CMLiussss.net","ProxyIP.JP.CMLiussss.net","ProxyIP.KR.CMLiussss.net","ProxyIP.IN.CMLiussss.net","ProxyIP.GB.CMLiussss.net","ProxyIP.FR.CMLiussss.net","ProxyIP.DE.CMLiussss.net","ProxyIP.NL.CMLiussss.net","ProxyIP.SE.CMLiussss.net","ProxyIP.FI.CMLiussss.net","ProxyIP.PL.CMLiussss.net","ProxyIP.RU.CMLiussss.net","ProxyIP.CH.CMLiussss.net","ProxyIP.LV.CMLiussss.net","ProxyIP.US.CMLiussss.net","ProxyIP.CA.CMLiussss.net","ProxyIP.US.fxxk.dedyn.io","ProxyIP.SG.fxxk.dedyn.io","ProxyIP.JP.fxxk.dedyn.io","ProxyIP.HK.fxxk.dedyn.io","ProxyIP.KR.fxxk.dedyn.io","ProxyIP.DE.tp2024.fxxk.dedyn.io","ProxyIP.Aliyun.fxxk.dedyn.io","ProxyIP.Oracle.fxxk.dedyn.io","ProxyIP.DigitalOcean.fxxk.dedyn.io","ProxyIP.Vultr.fxxk.dedyn.io","ProxyIP.Multacom.fxxk.dedyn.io","pyip.ygkkk.dpdns.org","kr.william.us.ci","tw.william.us.ci","proxy.xinyitang.dpdns.org"];const t=document.getElementById('proxyipSelect'),n=document.getElementById('proxyipCheckBtn'),o=document.getElementById('proxyipResultSpan'),r=document.getElementById('proxyipCopyBtn');e.forEach(e=>{const n=document.createElement('option');n.value=e,n.textContent=e,n.style.backgroundColor='#f1f5f9',n.style.color='#000000',t.appendChild(n)});t.options.length>0&&(t.selectedIndex=0);r.addEventListener('click',()=>{const e=t.value;if(!e)return;const n=document.createElement('textarea');n.value=e,document.body.appendChild(n),n.select(),document.execCommand('copy'),document.body.removeChild(n);const o=r.innerText;r.innerText='成功复制',setTimeout(()=>{r.innerText=o},1500)});async function i(e,i=0){try{const t=new AbortController,n=setTimeout(()=>t.abort(),15000),o=await fetch(`https://api.090227.xyz/check?proxyip=${encodeURIComponent(e)}`,{signal:t.signal});clearTimeout(n);return await o.json()}catch(t){return i<2?i(e,i+1):null}}n.addEventListener('click',async()=>{const e=t.value;if(!e)return;n.disabled=true,o.innerText='正在检测...';try{const t=await i(e);t&&t.success===true?(o.innerText=`有效可用 | ${t.probe_results?.ipv4?.exit?.country||'未知'} | ${t.probe_results?.ipv4?.exit?.ip||'未知'} | ${t.probe_results?.ipv4?.exit?.asOrganization||'未知'}`):o.innerText='检测无效'}catch(t){o.innerText='接口异常'}finally{n.disabled=false}})})();
-</script>			
+(function(){const proxyList=["ProxyIP.CMLiussss.net","ProxyIP.HK.CMLiussss.net","ProxyIP.SG.CMLiussss.net","ProxyIP.JP.CMLiussss.net","ProxyIP.KR.CMLiussss.net","ProxyIP.IN.CMLiussss.net","ProxyIP.GB.CMLiussss.net","ProxyIP.FR.CMLiussss.net","ProxyIP.DE.CMLiussss.net","ProxyIP.NL.CMLiussss.net","ProxyIP.SE.CMLiussss.net","ProxyIP.FI.CMLiussss.net","ProxyIP.PL.CMLiussss.net","ProxyIP.RU.CMLiussss.net","ProxyIP.CH.CMLiussss.net","ProxyIP.LV.CMLiussss.net","ProxyIP.US.CMLiussss.net","ProxyIP.CA.CMLiussss.net","ProxyIP.US.fxxk.dedyn.io","ProxyIP.SG.fxxk.dedyn.io","ProxyIP.JP.fxxk.dedyn.io","ProxyIP.HK.fxxk.dedyn.io","ProxyIP.KR.fxxk.dedyn.io","ProxyIP.DE.tp2024.fxxk.dedyn.io","ProxyIP.Aliyun.fxxk.dedyn.io","ProxyIP.Oracle.fxxk.dedyn.io","ProxyIP.DigitalOcean.fxxk.dedyn.io","ProxyIP.Vultr.fxxk.dedyn.io","ProxyIP.Multacom.fxxk.dedyn.io","pyip.ygkkk.dpdns.org","kr.william.us.ci","tw.william.us.ci","proxy.xinyitang.dpdns.org"];const select=document.getElementById('proxyipSelect');const checkBtn=document.getElementById('proxyipCheckBtn');const resultSpan=document.getElementById('proxyipResultSpan');const copyBtn=document.getElementById('proxyipCopyBtn');if(select){proxyList.forEach(item=>{const option=document.createElement('option');option.value=item;option.textContent=item;option.style.backgroundColor='#f1f5f9';option.style.color='#000000';select.appendChild(option);});if(select.options.length>0)select.selectedIndex=0;}async function checkProxyIP(target,retryCount=0){if(!target)return null;try{const controller=new AbortController();const timeoutId=setTimeout(()=>controller.abort(),15000);const response=await fetch(`https://api.090227.xyz/check?proxyip=${encodeURIComponent(target)}`,{signal:controller.signal});clearTimeout(timeoutId);return await response.json();}catch(error){if(retryCount<2){return await checkProxyIP(target,retryCount+1);}return null;}}async function performCheck(target,resultSpanEl,checkBtnEl){if(!target||!resultSpanEl)return;if(checkBtnEl)checkBtnEl.disabled=true;resultSpanEl.innerText='正在检测...';try{const data=await checkProxyIP(target);if(data&&data.success===true){const exit=data.probe_results?.ipv4?.exit;const country=exit?.country||'未知';const ip=exit?.ip||'未知';const asOrg=exit?.asOrganization||'未知';resultSpanEl.innerText=`有效可用 | ${country} | ${ip} | ${asOrg}`;}else{resultSpanEl.innerText='检测无效';}}catch(error){resultSpanEl.innerText='接口异常';}finally{if(checkBtnEl)checkBtnEl.disabled=false;}}if(checkBtn){checkBtn.addEventListener('click',()=>{const target=select?select.value:null;if(!target){resultSpan.innerText='请选择 ProxyIP';return;}performCheck(target,resultSpan,checkBtn);});}if(copyBtn){copyBtn.addEventListener('click',()=>{const val=select?select.value:null;if(!val)return;const textarea=document.createElement('textarea');textarea.value=val;document.body.appendChild(textarea);textarea.select();document.execCommand('copy');document.body.removeChild(textarea);const originalText=copyBtn.innerText;copyBtn.innerText='成功复制';setTimeout(()=>{copyBtn.innerText=originalText;},1500);});}const customInput=document.getElementById('customProxyInput');const customCheckBtn=document.getElementById('customCheckBtn');const customResultSpan=document.getElementById('customResultSpan');const customCopyBtn=document.getElementById('customCopyBtn');const previewSpan=document.getElementById('customSanitizedPreview');function extractHost(input){if(!input)return null;let cleaned=input.trim();cleaned=cleaned.replace(/^https?:\/\//i,'');cleaned=cleaned.split('/')[0];cleaned=cleaned.split(':')[0];if(!cleaned)return null;const domainPattern=/^[a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?(\.[a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?)+$/;const ipPattern=/^(\d{1,3}\.){3}\d{1,3}$/;if(domainPattern.test(cleaned)){const parts=cleaned.split('.');if(parts.some(p=>p.length>63))return null;if(cleaned.length>253)return null;return cleaned;}if(ipPattern.test(cleaned)){const parts=cleaned.split('.').map(Number);if(parts.every(p=>p>=0&&p<=255)){return cleaned;}}return null;}function updatePreview(){if(!customInput||!previewSpan)return;const raw=customInput.value;if(!raw){previewSpan.innerText='未输入';previewSpan.style.color='#94a3b8';return;}const host=extractHost(raw);if(host){previewSpan.innerText=host;previewSpan.style.color='#4ade80';}else{previewSpan.innerText='格式无效';previewSpan.style.color='#f87171';}}if(customInput){customInput.addEventListener('input',updatePreview);customInput.addEventListener('blur',function(){const raw=this.value;if(!raw)return;const cleaned=extractHost(raw);if(cleaned&&cleaned!==raw){this.value=cleaned;if(typeof updatePreview==='function')updatePreview();}});updatePreview();}if(customCheckBtn){customCheckBtn.addEventListener('click',()=>{const raw=customInput?customInput.value:'';if(!raw){customResultSpan.innerText='请输入ProxyIP';return;}const host=extractHost(raw);if(!host){customResultSpan.innerText='格式无效，请输入正确的ProxyIP';return;}performCheck(host,customResultSpan,customCheckBtn);});}if(customCopyBtn){customCopyBtn.addEventListener('click',()=>{const raw=customInput?customInput.value:'';if(!raw)return;const host=extractHost(raw);if(!host){customResultSpan.innerText='格式无效，无法复制';return;}const textarea=document.createElement('textarea');textarea.value=host;document.body.appendChild(textarea);textarea.select();document.execCommand('copy');document.body.removeChild(textarea);const originalText=customCopyBtn.innerText;customCopyBtn.innerText='成功复制';setTimeout(()=>{customCopyBtn.innerText=originalText;},1500);});}})();
+	</script>			
 <!-- 更多面板<script> -->
 	<!-- const toggleAddMoreBtn=()=>{const e=document.getElementById('edt-url-input'),t=document.querySelector('.add-more-btn');if(t){const v=e?e.value.trim():'';t.style.display=(v&&isValidUrl(v))?'flex':'none'}};toggleAddMoreBtn();document.getElementById('edt-url-input').addEventListener('input',toggleAddMoreBtn);document.getElementById('clear-url-btn').addEventListener('click',()=>{setTimeout(toggleAddMoreBtn,50)});if(window.loadExtraPanels){const oldLoad=window.loadExtraPanels;window.loadExtraPanels=function(){oldLoad();toggleAddMoreBtn()}}else{setTimeout(toggleAddMoreBtn,100)} -->
 <!-- </script> -->
