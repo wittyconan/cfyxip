@@ -1,4 +1,4 @@
-name: tiancheng-vl-new-python
+name: tiancheng-sn-new-python
 
 on:
   workflow_dispatch:
@@ -23,8 +23,8 @@ jobs:
 
       - name: Process and Compare
         run: |
-          # 1. 确保目标文件夹存在
-          mkdir -p tiancheng
+          # 1. 确保新目标文件夹存在
+          mkdir -p tiancheng2
           
           # 2. 使用 Python 脚本绕过 CF 5秒盾并抓取
           echo "正在通过 Python cloudscraper 抓取数据..."
@@ -41,7 +41,7 @@ jobs:
                       'desktop': True
                   }
               )
-              url = "https://vl.cm.soso.edu.kg/sub?host=123.com&uuid=456"
+              url = "https://sn1.skylee5.cloudns.ch/tset"
               try:
                   res = scraper.get(url, timeout=30)
                   if res.status_code == 200:
@@ -126,7 +126,7 @@ jobs:
             elif [[ "$remark" =~ "德国" || "$remark" =~ "DE" || "$remark" =~ "🇩🇪" ]]; then 
                 location="元首复活 | DE"
             else 
-                location="未知 | N/A"
+                location="未知领域 | N/A"
             fi
 
             if [[ ! -z "$host_port" ]]; then
@@ -135,7 +135,7 @@ jobs:
           done
 
           # 5. 对比、构建文件与备份
-          OLD_FILE="tiancheng/all.txt"
+          OLD_FILE="tiancheng2/all.txt"
           SHOULD_COMMIT=false
           if [ -f "$OLD_FILE" ]; then
             sed '1d;$d' "$OLD_FILE" > old_nodes.tmp
@@ -150,35 +150,35 @@ jobs:
 
           if [ "$SHOULD_COMMIT" = true ]; then
             BJ_TIME=$(TZ='Asia/Shanghai' date +'%m-%d %H:%M')
-            FOOTER="bestcf.030101.xyz:443#▲ 优选IP | 分享优选网 BestCF.pages.dev | 感谢天诚"
+            FOOTER="bestcf.030101.xyz:443#▲ 天诚优选 | 分享优选网 BestCF.pages.dev | 感谢天诚"
             
             # 备份
             if [ -f "$OLD_FILE" ]; then
-              mkdir -p tiancheng/old
-              cp "$OLD_FILE" "tiancheng/old/$(TZ='Asia/Shanghai' date +%Y-%m-%d-%H_%M_%S).txt"
+              mkdir -p tiancheng2/old
+              cp "$OLD_FILE" "tiancheng2/old/$(TZ='Asia/Shanghai' date +%Y-%m-%d-%H_%M_%S).txt"
             fi
             
-            rm -f tiancheng/hk.txt tiancheng/sg.txt tiancheng/jp.txt tiancheng/tw.txt tiancheng/kr.txt tiancheng/us.txt
+            rm -f tiancheng2/hk.txt tiancheng2/sg.txt tiancheng2/jp.txt tiancheng2/tw.txt tiancheng2/kr.txt tiancheng2/us.txt
 
             # 生成 All 版
-            echo "saas.sin.fan:443#▼ 优选IP 全量版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng/all.txt"
-            [ -f new_nodes.tmp ] && cat new_nodes.tmp >> "tiancheng/all.txt"
-            echo "$FOOTER" >> "tiancheng/all.txt"
+            echo "saas.sin.fan:443#▼ 天诚优选 全量版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng2/all.txt"
+            [ -f new_nodes.tmp ] && cat new_nodes.tmp >> "tiancheng2/all.txt"
+            echo "$FOOTER" >> "tiancheng2/all.txt"
 
             # 生成 Mini 版
-            echo "saas.sin.fan:443#▼ 优选IP 迷你版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng/mini.txt"
+            echo "saas.sin.fan:443#▼ 天诚优选 迷你版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng2/mini.txt"
             if [ -f new_nodes.tmp ]; then
-                awk -F'|' '{l=$2; c[l]++; if(c[l]<=3) print $0}' new_nodes.tmp >> "tiancheng/mini.txt"
+                awk -F'|' '{l=$2; c[l]++; if(c[l]<=3) print $0}' new_nodes.tmp >> "tiancheng2/mini.txt"
             fi
-            echo "$FOOTER" >> "tiancheng/mini.txt"
+            echo "$FOOTER" >> "tiancheng2/mini.txt"
 
             # 生成分地区版
             for loc in HK SG JP TW KR US; do
               f=$(echo "$loc" | tr '[:upper:]' '[:lower:]')
               if grep -q "| ${loc}" new_nodes.tmp 2>/dev/null; then
-                echo "saas.sin.fan:443#▼ 优选IP ${loc}版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng/${f}.txt"
-                grep "| ${loc}" new_nodes.tmp >> "tiancheng/${f}.txt"
-                echo "$FOOTER" >> "tiancheng/${f}.txt"
+                echo "saas.sin.fan:443#▼ 天诚优选 ${loc}版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng2/${f}.txt"
+                grep "| ${loc}" new_nodes.tmp >> "tiancheng2/${f}.txt"
+                echo "$FOOTER" >> "tiancheng2/${f}.txt"
               fi
             done
             
@@ -192,5 +192,5 @@ jobs:
         if: env.changes_detected == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "TianCheng ${{ env.COMMIT_TIME }}"
-          file_pattern: 'tiancheng/'
+          commit_message: "TianCheng2 ${{ env.COMMIT_TIME }}"
+          file_pattern: 'tiancheng2/'
