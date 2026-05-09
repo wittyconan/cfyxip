@@ -1,16 +1,15 @@
-saas.sin.fan:443#▼ 优选域名 TOP20 | 05-09 16:39 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP20 | 05-09 17:09 | YouTube@真香定律
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
 baka.fun:443#baka.fun
 api.gzcrtw.com:443#api.gzcrtw.com
 hk.cf.3666888.xyz:443#hk.cf.3666888.xyz
-hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
 www.xiaoshuofen.com:443#www.xiaoshuofen.com
 openai.com:443#openai.com
-cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
 cloudflare.cnae.top:443#cloudflare.cnae.top
 cfvip.cf.3666888.xyz:443#cfvip.cf.3666888.xyz
 123.cf.3666888.xyz:443#123.cf.3666888.xyz
+cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
 www.sage.com:443#www.sage.com
 2.cf.3666888.xyz:443#2.cf.3666888.xyz
 sanwang.cf.3666888.xyz:443#sanwang.cf.3666888.xyz
@@ -19,4 +18,5 @@ eteaf.cf.3666888.xyz:443#eteaf.cf.3666888.xyz
 6.cf.3666888.xyz:443#6.cf.3666888.xyz
 china-unicom.cname.cloudflare.468123.xyz:443#china-unicom.cname.cloudflare.468123.xyz
 zeas.top:443#zeas.top
+www.visa.com.sg:443#www.visa.com.sg
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
