@@ -26,7 +26,7 @@ jobs:
           response=""
 
           while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
-            response=$(curl -f -s "https://cm.soso.edu.kg/sub?host=123&uuid=456")
+            response=$(curl -f -s "https://vl.cm.soso.edu.kg/sub?host=123&uuid=456")
             
             if [ $? -eq 0 ] && [ -n "$response" ]; then
               echo "✅ 数据抓取成功！"
