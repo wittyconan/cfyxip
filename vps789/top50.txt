@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-10 06:39 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-10 07:09 | YouTube@真香定律
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 cf1s.cf.3666888.xyz:443#cf1s.cf.3666888.xyz
 www.swowd.com:443#www.swowd.com
@@ -10,7 +10,6 @@ jp.cf.3666888.xyz:443#jp.cf.3666888.xyz
 hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
 8.cf.3666888.xyz:443#8.cf.3666888.xyz
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
-zeas.top:443#zeas.top
 dongbanghong.com:443#dongbanghong.com
 store.ubi.com:443#store.ubi.com
 www.jimdo.com:443#www.jimdo.com
@@ -26,9 +25,9 @@ cf.cf.3666888.xyz:443#cf.cf.3666888.xyz
 cf.3666888.xyz:443#cf.3666888.xyz
 www.sage.com:443#www.sage.com
 www.leics.police.uk:443#www.leics.police.uk
-www.bangbenjiaju.com:443#www.bangbenjiaju.com
 isp.254301.xyz:443#isp.254301.xyz
 6.cf.3666888.xyz:443#6.cf.3666888.xyz
+www.bangbenjiaju.com:443#www.bangbenjiaju.com
 china-unicom.cname.cloudflare.468123.xyz:443#china-unicom.cname.cloudflare.468123.xyz
 cloudflare.468123.xyz:443#cloudflare.468123.xyz
 api.gzcrtw.com:443#api.gzcrtw.com
@@ -48,5 +47,6 @@ qocu.cf.3666888.xyz:443#qocu.cf.3666888.xyz
 eii.at:443#eii.at
 www.vastnovel.com:443#www.vastnovel.com
 prompt.gzcrtw.com:443#prompt.gzcrtw.com
-test2.509666.xyz:443#test2.509666.xyz
+nrtcfdns.zone.id:443#nrtcfdns.zone.id
+cloudflare.182682.xyz:443#cloudflare.182682.xyz
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
