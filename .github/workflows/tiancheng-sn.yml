@@ -168,7 +168,7 @@ jobs:
             # 生成 Mini 版
             echo "saas.sin.fan:443#▼ 天诚优选 迷你版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng2/mini.txt"
             if [ -f new_nodes.tmp ]; then
-                awk -F'|' '{l=$2; c[l]++; if(c[l]<=3) print $0}' new_nodes.tmp >> "tiancheng2/mini.txt"
+                awk -F'|' '{l=$2; c[l]++; if(c[l]<=5) print $0}' new_nodes.tmp >> "tiancheng2/mini.txt"
             fi
             echo "$FOOTER" >> "tiancheng2/mini.txt"
 
