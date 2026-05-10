@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP100 | 05-11 06:39 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP100 | 05-11 07:09 | YouTube@真香定律
 bbs.alipansou.com:443#bbs.alipansou.com
 cdn.262832.xyz:443#cdn.262832.xyz
 cf.mubaiovo.top:443#cf.mubaiovo.top
@@ -24,14 +24,13 @@ us.cloudflare.cnae.top:443#us.cloudflare.cnae.top
 cf.3666888.xyz:443#cf.3666888.xyz
 www.leics.police.uk:443#www.leics.police.uk
 my.dnshe.com:443#my.dnshe.com
+china-telecom.cname.cloudflare.468123.xyz:443#china-telecom.cname.cloudflare.468123.xyz
 athome.com:443#athome.com
 y508.com:443#y508.com
 www.sloomb.com:443#www.sloomb.com
-china-telecom.cname.cloudflare.468123.xyz:443#china-telecom.cname.cloudflare.468123.xyz
 china-mobile.cname.cloudflare.468123.xyz:443#china-mobile.cname.cloudflare.468123.xyz
 cdn.091224.xyz:443#cdn.091224.xyz
 www.trumpinternationalrealty.com:443#www.trumpinternationalrealty.com
-5.cf.3666888.xyz:443#5.cf.3666888.xyz
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
 cu.877774.xyz:443#cu.877774.xyz
 www.jimdo.com:443#www.jimdo.com
@@ -84,10 +83,12 @@ jp.cf.3666888.xyz:443#jp.cf.3666888.xyz
 uac.cf.3666888.xyz:443#uac.cf.3666888.xyz
 eteaf.cf.3666888.xyz:443#eteaf.cf.3666888.xyz
 hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
+5.cf.3666888.xyz:443#5.cf.3666888.xyz
 www.xiaoshuofen.com:443#www.xiaoshuofen.com
 101yaoye.com:443#101yaoye.com
 markmonitor.com:443#markmonitor.com
 cfip-avg.stoeaves.us.ci:443#cfip-avg.stoeaves.us.ci
+cfip.1323123.xyz:443#cfip.1323123.xyz
 www.5h.com:443#www.5h.com
 test.509666.xyz:443#test.509666.xyz
 www.bangbenjiaju.com:443#www.bangbenjiaju.com
@@ -98,5 +99,4 @@ store.epicgames.com:443#store.epicgames.com
 8.cf.3666888.xyz:443#8.cf.3666888.xyz
 dongbanghong.com:443#dongbanghong.com
 cf.553314.xyz:443#cf.553314.xyz
-cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
