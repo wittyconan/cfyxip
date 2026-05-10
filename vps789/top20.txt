@@ -1,8 +1,9 @@
-saas.sin.fan:443#▼ 优选域名 TOP20 | 05-10 18:40 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP20 | 05-10 19:10 | YouTube@真香定律
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 www.jimdo.com:443#www.jimdo.com
 vip.cf.3666888.xyz:443#vip.cf.3666888.xyz
 6.cf.3666888.xyz:443#6.cf.3666888.xyz
+www.akasantech.com:443#www.akasantech.com
 sg.cf.3666888.xyz:443#sg.cf.3666888.xyz
 yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
 cfyx.qdqqd.com:443#cfyx.qdqqd.com
@@ -18,5 +19,4 @@ www.5199dy.com:443#www.5199dy.com
 dnew.cc:443#dnew.cc
 cf1s.cf.3666888.xyz:443#cf1s.cf.3666888.xyz
 yg9.ygkkk.dpdns.org:443#yg9.ygkkk.dpdns.org
-www.swowd.com:443#www.swowd.com
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
