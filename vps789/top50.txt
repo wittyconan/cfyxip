@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-10 09:39 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-10 10:09 | YouTube@真香定律
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 sg.cf.3666888.xyz:443#sg.cf.3666888.xyz
@@ -13,9 +13,8 @@ cf.553314.xyz:443#cf.553314.xyz
 www.5h.com:443#www.5h.com
 cf.3666888.xyz:443#cf.3666888.xyz
 www.leics.police.uk:443#www.leics.police.uk
-isp.254301.xyz:443#isp.254301.xyz
 6.cf.3666888.xyz:443#6.cf.3666888.xyz
-www.bangbenjiaju.com:443#www.bangbenjiaju.com
+isp.254301.xyz:443#isp.254301.xyz
 china-unicom.cname.cloudflare.468123.xyz:443#china-unicom.cname.cloudflare.468123.xyz
 api.gzcrtw.com:443#api.gzcrtw.com
 cdn.091224.xyz:443#cdn.091224.xyz
@@ -23,7 +22,6 @@ www.whoer.net:443#www.whoer.net
 mskcc.org:443#mskcc.org
 store.epicgames.com:443#store.epicgames.com
 yg11.ygkkk.dpdns.org:443#yg11.ygkkk.dpdns.org
-cloudflare-dl.byoip.top:443#cloudflare-dl.byoip.top
 bbs.alipansou.com:443#bbs.alipansou.com
 cf1s.cf.3666888.xyz:443#cf1s.cf.3666888.xyz
 eii.at:443#eii.at
@@ -34,7 +32,9 @@ openai.com:443#openai.com
 cloudflare.182682.xyz:443#cloudflare.182682.xyz
 cdns.doon.eu.org:443#cdns.doon.eu.org
 www.shopify.com:443#www.shopify.com
+mfa.gov.ua:443#mfa.gov.ua
 saas.sin.fan:443#saas.sin.fan
+cloudflare-dl.byoip.top:443#cloudflare-dl.byoip.top
 dnew.cc:443#dnew.cc
 jobsdb.com:443#jobsdb.com
 uac.cf.3666888.xyz:443#uac.cf.3666888.xyz
