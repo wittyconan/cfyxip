@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-10 10:39 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-10 11:09 | YouTube@真香定律
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 sg.cf.3666888.xyz:443#sg.cf.3666888.xyz
@@ -10,7 +10,6 @@ www.jimdo.com:443#www.jimdo.com
 hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
 baka.fun:443#baka.fun
 www.mlkj888.com:443#www.mlkj888.com
-cf.553314.xyz:443#cf.553314.xyz
 cdn.091224.xyz:443#cdn.091224.xyz
 www.5h.com:443#www.5h.com
 cf.3666888.xyz:443#cf.3666888.xyz
@@ -23,13 +22,13 @@ www.whoer.net:443#www.whoer.net
 mskcc.org:443#mskcc.org
 store.epicgames.com:443#store.epicgames.com
 yg11.ygkkk.dpdns.org:443#yg11.ygkkk.dpdns.org
+nrtcfdns.zone.id:443#nrtcfdns.zone.id
 bbs.alipansou.com:443#bbs.alipansou.com
 cf1s.cf.3666888.xyz:443#cf1s.cf.3666888.xyz
 eii.at:443#eii.at
 www.swowd.com:443#www.swowd.com
 prompt.gzcrtw.com:443#prompt.gzcrtw.com
 cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
-nrtcfdns.zone.id:443#nrtcfdns.zone.id
 openai.com:443#openai.com
 cloudflare.182682.xyz:443#cloudflare.182682.xyz
 cdns.doon.eu.org:443#cdns.doon.eu.org
@@ -49,4 +48,5 @@ yg7.ygkkk.dpdns.org:443#yg7.ygkkk.dpdns.org
 www.nexusmods.com:443#www.nexusmods.com
 www.sofi.com:443#www.sofi.com
 www.xiaoshuofen.com:443#www.xiaoshuofen.com
+cmcc.cc.cd:443#cmcc.cc.cd
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测

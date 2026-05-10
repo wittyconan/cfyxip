@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP100 | 05-10 10:39 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP100 | 05-10 11:09 | YouTube@真香定律
 cloudflare-ip.mofashi.ltd:443#cloudflare-ip.mofashi.ltd
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
 sg.cf.3666888.xyz:443#sg.cf.3666888.xyz
@@ -10,7 +10,6 @@ www.jimdo.com:443#www.jimdo.com
 hfqek.cf.3666888.xyz:443#hfqek.cf.3666888.xyz
 baka.fun:443#baka.fun
 www.mlkj888.com:443#www.mlkj888.com
-cf.553314.xyz:443#cf.553314.xyz
 cdn.091224.xyz:443#cdn.091224.xyz
 www.5h.com:443#www.5h.com
 cf.3666888.xyz:443#cf.3666888.xyz
@@ -23,13 +22,13 @@ www.whoer.net:443#www.whoer.net
 mskcc.org:443#mskcc.org
 store.epicgames.com:443#store.epicgames.com
 yg11.ygkkk.dpdns.org:443#yg11.ygkkk.dpdns.org
+nrtcfdns.zone.id:443#nrtcfdns.zone.id
 bbs.alipansou.com:443#bbs.alipansou.com
 cf1s.cf.3666888.xyz:443#cf1s.cf.3666888.xyz
 eii.at:443#eii.at
 www.swowd.com:443#www.swowd.com
 prompt.gzcrtw.com:443#prompt.gzcrtw.com
 cf-cname.xingpingcn.top:443#cf-cname.xingpingcn.top
-nrtcfdns.zone.id:443#nrtcfdns.zone.id
 openai.com:443#openai.com
 cloudflare.182682.xyz:443#cloudflare.182682.xyz
 cdns.doon.eu.org:443#cdns.doon.eu.org
@@ -79,6 +78,7 @@ hzytjy.cn:443#hzytjy.cn
 01-qq.com:443#01-qq.com
 www.akasantech.com:443#www.akasantech.com
 fk.hshwk.org:443#fk.hshwk.org
+cf.553314.xyz:443#cf.553314.xyz
 yyurl.cc:443#yyurl.cc
 www.mc.js.cool:443#www.mc.js.cool
 cdn.7zz.cn:443#cdn.7zz.cn
@@ -91,7 +91,6 @@ www.xflash.vip:443#www.xflash.vip
 cfdl.3666888.xyz:443#cfdl.3666888.xyz
 cdn.2158.cc:443#cdn.2158.cc
 www.giannidelprete.it:443#www.giannidelprete.it
-zero-trust-client.cloudflareclient.com:443#zero-trust-client.cloudflareclient.com
 cloudflare.rainyfall.com:443#cloudflare.rainyfall.com
 cfyx.qdqqd.com:443#cfyx.qdqqd.com
 1.cf.3666888.xyz:443#1.cf.3666888.xyz
@@ -99,4 +98,5 @@ yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
 cf-ip-node.vov.moe:443#cf-ip-node.vov.moe
 store.ubisoft.com:443#store.ubisoft.com
 markmonitor.com:443#markmonitor.com
+cf.duun.eu.cc:443#cf.duun.eu.cc
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
