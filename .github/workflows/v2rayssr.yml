@@ -99,7 +99,7 @@ jobs:
 
                   bj_time = (datetime.datetime.utcnow() + datetime.timedelta(hours=8)).strftime('%m-%d %H:%M')
                   header = f"saas.sin.fan:443#▼ V2RaySSR优选IP | {bj_time} | YouTube@真香定律"
-                  footer = "bestcf.030101.xyz:443#▲ V2RaySSR优选IP | 分享优选网 Bestcf.pages.dev"
+                  footer = "bestcf.030101.xyz:443#▲ V2RaySSR优选IP | 分享免费优选网 Bestcf.pages.dev"
 
                   with open(output_path, "w", encoding="utf-8") as f:
                       f.write(header + "\n")

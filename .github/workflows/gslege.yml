@@ -79,7 +79,7 @@ jobs:
                 echo "-> 检测到实际内容变更，正在更新文件"
                 echo "saas.sin.fan:443#▼ 优选IP $REGION | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
                 cat "$TMP_NEW" >> "$TARGET_FILE"
-                echo "bestcf.030101.xyz:443#▲ 优选IP | 分享优选网 BestCF.pages.dev | 感谢Gslege" >> "$TARGET_FILE"
+                echo "bestcf.030101.xyz:443#▲ 优选IP | 分享免费优选网 BestCF.pages.dev | 感谢Gslege" >> "$TARGET_FILE"
             else
                 echo "-> 内容无实质变化，跳过"
             fi

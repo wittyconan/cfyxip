@@ -150,7 +150,7 @@ jobs:
 
           if [ "$SHOULD_COMMIT" = true ]; then
             BJ_TIME=$(TZ='Asia/Shanghai' date +'%m-%d %H:%M')
-            FOOTER="bestcf.030101.xyz:443#▲ 天诚优选 | 分享优选网 BestCF.pages.dev | 感谢天诚"
+            FOOTER="bestcf.030101.xyz:443#▲ 天诚优选 | 分享免费优选网 BestCF.pages.dev | 感谢天诚"
             
             # 备份
             if [ -f "$OLD_FILE" ]; then
