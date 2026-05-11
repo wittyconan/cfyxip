@@ -99,7 +99,7 @@ jobs:
 
                   bj_time = (datetime.datetime.utcnow() + datetime.timedelta(hours=8)).strftime('%m-%d %H:%M')
                   header = f"saas.sin.fan:443#▼ V2RaySSR优选IP | {bj_time} | YouTube@真香定律"
-                  footer = "bestcf.030101.xyz:443#▲ V2RaySSR优选IP | 分享优选网 bestcf.pages.dev"
+                  footer = "bestcf.030101.xyz:443#▲ V2RaySSR优选IP | 分享优选网 Bestcf.pages.dev"
 
                   with open(output_path, "w", encoding="utf-8") as f:
                       f.write(header + "\n")
@@ -127,5 +127,5 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Action"
           git add v2rayssr/all.txt
-          git commit -m "Update v2rayssr nodes: $(date +'%Y-%m-%d %H:%M')"
+          git commit -m "v2rayssr $(date +'%Y-%m-%d %H:%M')"
           git push
