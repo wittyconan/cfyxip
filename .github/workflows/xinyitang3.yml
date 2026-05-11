@@ -40,6 +40,7 @@ jobs:
                       'desktop': True
                   }
               )
+              # 新接口 https://sub.xinyitang.dpdns.org/iplist
               url = "https://sub.xinyitang.dpdns.org/sub?host=123&uuid=456"
               try:
                   res = scraper.get(url, timeout=10)
