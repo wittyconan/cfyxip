@@ -42,7 +42,7 @@ jobs:
               )
               url = "https://sub.xinyitang.dpdns.org/sub?host=123&uuid=456"
               try:
-                  res = scraper.get(url, timeout=30)
+                  res = scraper.get(url, timeout=10)
                   if res.status_code == 200:
                       return res.text.strip()
                   else:
