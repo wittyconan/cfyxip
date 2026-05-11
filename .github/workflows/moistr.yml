@@ -40,7 +40,7 @@ jobs:
                       'desktop': True
                   }
               )
-              url = "https://sub.xinyitang.dpdns.org/sub?host=123&uuid=456"
+              url = "https://owo.o00o.ooo/sub?host=123&uuid=456"
               try:
                   res = scraper.get(url, timeout=30)
                   if res.status_code == 200:
