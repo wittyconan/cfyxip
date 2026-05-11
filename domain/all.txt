@@ -47,4 +47,4 @@ cloudflare.byoip.top:443#更多选择 | NB
 yd.hhhhh.eu.org:443#更多选择 | 移动WuYa
 lt.hhhhh.eu.org:443#更多选择 | 联通WuYa
 dx.hhhhh.eu.org:443#更多选择 | 电信WuYa
-bestcf.030101.xyz:443#▲ 精选域名 | 5-8 | 分享优选网 bestcf.pages.dev
+bestcf.030101.xyz:443#▲ 精选域名 | 5月 | 分享免费优选网 Bestcf.pages.dev
