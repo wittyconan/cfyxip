@@ -1,4 +1,4 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-11 10:39 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-11 11:09 | YouTube@真香定律
 bbs.alipansou.com:443#bbs.alipansou.com
 cf.mubaiovo.top:443#cf.mubaiovo.top
 yyurl.cc:443#yyurl.cc
@@ -9,14 +9,14 @@ www.sage.com:443#www.sage.com
 cdn.7zz.cn:443#cdn.7zz.cn
 01-qq.com:443#01-qq.com
 adnjv.cf.3666888.xyz:443#adnjv.cf.3666888.xyz
-www.leics.police.uk:443#www.leics.police.uk
 my.dnshe.com:443#my.dnshe.com
+www.leics.police.uk:443#www.leics.police.uk
 china-telecom.cname.cloudflare.468123.xyz:443#china-telecom.cname.cloudflare.468123.xyz
 athome.com:443#athome.com
+www.visa.cn:443#www.visa.cn
 www.sloomb.com:443#www.sloomb.com
 cdn.091224.xyz:443#cdn.091224.xyz
 www.xflash.vip:443#www.xflash.vip
-www.visa.cn:443#www.visa.cn
 cu.877774.xyz:443#cu.877774.xyz
 cf.3666888.xyz:443#cf.3666888.xyz
 www.jimdo.com:443#www.jimdo.com
@@ -24,6 +24,7 @@ www.dg22.top:443#www.dg22.top
 fk.hshwk.org:443#fk.hshwk.org
 cfip-cm.stoeaves.us.ci:443#cfip-cm.stoeaves.us.ci
 www.shopify.com:443#www.shopify.com
+nexusmods.com:443#nexusmods.com
 freeyx.cloudflare88.eu.org:443#freeyx.cloudflare88.eu.org
 cdns.doon.eu.org:443#cdns.doon.eu.org
 saas.sin.fan:443#saas.sin.fan
@@ -42,7 +43,6 @@ www.vastnovel.com:443#www.vastnovel.com
 www.akasantech.com:443#www.akasantech.com
 api.gzcrtw.com:443#api.gzcrtw.com
 test2.509666.xyz:443#test2.509666.xyz
-nexusmods.com:443#nexusmods.com
 cloudflare.rainyfall.com:443#cloudflare.rainyfall.com
 yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
 cf.v8.longsays.com:443#cf.v8.longsays.com
