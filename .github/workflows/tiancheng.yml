@@ -43,7 +43,7 @@ jobs:
               )
               url = "https://vl.cm.soso.edu.kg/sub?host=123.com&uuid=456"
               try:
-                  res = scraper.get(url, timeout=30)
+                  res = scraper.get(url, timeout=10)
                   if res.status_code == 200:
                       html = res.text
                       if "<pre" in html:
@@ -146,7 +146,7 @@ jobs:
             elif [[ "$remark" =~ "荷兰" || "$remark" =~ "NL" || "$remark" =~ "🇳🇱" ]]; then 
                 location="风车郁金 | NL"    
             else 
-                location="未知 | N/A"
+                location="$remark"
             fi
 
             if [[ ! -z "$host_port" ]]; then

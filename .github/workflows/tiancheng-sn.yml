@@ -43,7 +43,7 @@ jobs:
               )
               url = "https://sn1.skylee5.cloudns.ch/tset"
               try:
-                  res = scraper.get(url, timeout=30)
+                  res = scraper.get(url, timeout=10)
                   if res.status_code == 200:
                       html = res.text
                       if "<pre" in html:
@@ -126,7 +126,7 @@ jobs:
             elif [[ "$remark" =~ "德国" || "$remark" =~ "DE" || "$remark" =~ "🇩🇪" ]]; then 
                 location="元首复活 | DE"
             else 
-                location="未知领域 | N/A"
+                location="$remark"
             fi
 
             if [[ ! -z "$host_port" ]]; then
