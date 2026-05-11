@@ -24,27 +24,27 @@ ln.edu.hk:443#教育域名 | 岭南大学
 www.ntu.edu.sg:443#教育域名 | 南洋理工
 www.ox.ac.uk:443#教育域名 | 牛津大学
 www.researchgate.net:443#教育域名 | ResearchGate
-www.visa.cn:443#VISA中国
-www.visa.com.hk:443#VISA香港
-usa.visa.com:443#VISA美国
-store.ubi.com:443#育碧商城
-cdn.jsdelivr.net:443#jsDelivr
-openai.com:443#OpenAI
-investor.apple.com:443#Apple
-virtualcommtraining.verizon.com:443#Verizon
-email.lg.com:443#LG
-qualitytraining.zeiss.com:443#蔡司
-icook.hk:443#爱料理香港
-staticdelivery.nexusmods.com:443#NexusMods
-markmonitor.com:443#MarkMonitor
-www.sage.com:443#Sage
-www.speedtest.net:443#SpeedTest
-livescore.co.kr:443#LiveScore
-csgo.com:443#CSGO
-cloudflare.182682.xyz:443#WeTest
-bestcf.top:443#VPS789
-cloudflare.byoip.top:443#NB
-yd.hhhhh.eu.org:443#移动WuYa
-lt.hhhhh.eu.org:443#联通WuYa
-dx.hhhhh.eu.org:443#电信WuYa
+www.visa.cn:443#更多选择 | VISA中国
+www.visa.com.hk:443#更多选择 | VISA香港
+usa.visa.com:443#更多选择 | VISA美国
+store.ubi.com:443#更多选择 | 育碧商城
+cdn.jsdelivr.net:443#更多选择 | jsDelivr
+openai.com:443#更多选择 | OpenAI
+investor.apple.com:443#更多选择 | Apple
+virtualcommtraining.verizon.com:443#更多选择 | Verizon
+email.lg.com:443#更多选择 | LG
+qualitytraining.zeiss.com:443#更多选择 | 蔡司
+icook.hk:443#更多选择 | 爱料理香港
+staticdelivery.nexusmods.com:443#更多选择 | NexusMods
+markmonitor.com:443#更多选择 | MarkMonitor
+www.sage.com:443#更多选择 | Sage
+www.speedtest.net:443#更多选择 | SpeedTest
+livescore.co.kr:443#更多选择 | LiveScore
+csgo.com:443#更多选择 | CSGO
+cloudflare.182682.xyz:443#更多选择 | WeTest
+bestcf.top:443#更多选择 | VPS789
+cloudflare.byoip.top:443#更多选择 | NB
+yd.hhhhh.eu.org:443#更多选择 | 移动WuYa
+lt.hhhhh.eu.org:443#更多选择 | 联通WuYa
+dx.hhhhh.eu.org:443#更多选择 | 电信WuYa
 bestcf.030101.xyz:443#▲ 精选域名 | 5-8 | 分享优选网 bestcf.pages.dev
