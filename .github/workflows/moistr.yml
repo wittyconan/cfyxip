@@ -89,15 +89,57 @@ jobs:
           
           echo "$decoded_data" | while IFS= read -r line; do
             if [[ -z "$line" ]]; then continue; fi
-            # 提取 @ 和 ? 之间内容
             ip_port=$(echo "$line" | grep -oP '(?<=@).*?(?=\?)')
-            # 提取 # 后的内容，并进行全量 URL 解码
             raw_tag=$(echo "$line" | awk -F'#' '{print $2}')
             tag=$(python3 -c "import urllib.parse, sys; print(urllib.parse.unquote(sys.argv[1]))" "$raw_tag")
             
+            # --- 注意可能要替换和过滤的#后面的字符 ---
+            remark="$tag"
+            if [[ "$remark" =~ "韩国" || "$remark" =~ "KR" || "$remark" =~ "🇰🇷" ]]; then 
+                location="泡菜欧巴 | KR"
+            elif [[ "$remark" =~ "香港" || "$remark" =~ "HK" || "$remark" =~ "🇭🇰" ]]; then 
+                location="港岛古惑 | HK"
+            elif [[ "$remark" =~ "新加坡" || "$remark" =~ "SG" || "$remark" =~ "🇸🇬" ]]; then 
+                location="坡县狮城 | SG"
+            elif [[ "$remark" =~ "日本" || "$remark" =~ "JP" || "$remark" =~ "🇯🇵" ]]; then 
+                location="小日本子 | JP"
+            elif [[ "$remark" =~ "台湾" || "$remark" =~ "TW" || "$remark" =~ "🇹🇼" ]]; then 
+                location="宝岛正妹 | TW"
+            elif [[ "$remark" =~ "美国" || "$remark" =~ "US" || "$remark" =~ "🇺🇸" ]]; then 
+                location="大漂亮国 | US"
+            elif [[ "$remark" =~ "英国" || "$remark" =~ "UK" || "$remark" =~ "🇬🇧" ]]; then 
+                location="大嘤帝国 | UK"
+            elif [[ "$remark" =~ "俄罗斯" || "$remark" =~ "RU" || "$remark" =~ "🇷🇺" ]]; then 
+                location="战斗民族 | RU"
+            elif [[ "$remark" =~ "德国" || "$remark" =~ "DE" || "$remark" =~ "🇩🇪" ]]; then 
+                location="元首复活 | DE"
+            elif [[ "$remark" =~ "马来西亚" || "$remark" =~ "MY" || "$remark" =~ "🇲🇾" ]]; then 
+                location="大马榴莲 | MY"
+            elif [[ "$remark" =~ "越南" || "$remark" =~ "VN" || "$remark" =~ "🇻🇳" ]]; then 
+                location="西贡咖啡 | VN"
+            elif [[ "$remark" =~ "菲律宾" || "$remark" =~ "PH" || "$remark" =~ "🇵🇭" ]]; then 
+                location="菲常好喝 | PH"
+            elif [[ "$remark" =~ "泰国" || "$remark" =~ "TH" || "$remark" =~ "🇹🇭" ]]; then 
+                location="萨瓦迪卡 | TH"
+            elif [[ "$remark" =~ "印度" || "$remark" =~ "IN" || "$remark" =~ "🇮🇳" ]]; then 
+                location="干净卫生 | IN"
+            elif [[ "$remark" =~ "法国" || "$remark" =~ "FR" || "$remark" =~ "🇫🇷" ]]; then 
+                location="浪漫铁塔 | FR"
+            elif [[ "$remark" =~ "加拿大" || "$remark" =~ "CA" || "$remark" =~ "🇨🇦" ]]; then 
+                location="枫叶之国 | CA"
+            elif [[ "$remark" =~ "土耳其" || "$remark" =~ "TR" || "$remark" =~ "🇹🇷" ]]; then 
+                location="烤肉火鸡 | TR"
+            elif [[ "$remark" =~ "澳大利亚" || "$remark" =~ "AU" || "$remark" =~ "🇦🇺" ]]; then 
+                location="土澳袋鼠 | AU"
+            elif [[ "$remark" =~ "荷兰" || "$remark" =~ "NL" || "$remark" =~ "🇳🇱" ]]; then 
+                location="风车郁金 | NL"    
+            else 
+                location="$tag"
+            fi
+            # -----------------------
+
             if [[ -n "$ip_port" ]]; then
-              # 格式：ip:port#tag | ip:port
-              echo "${ip_port}#${tag} | ${ip_port}" >> new_nodes.tmp
+              echo "${ip_port}#${location} | ${ip_port}" >> new_nodes.tmp
             fi
           done
 
