@@ -19,7 +19,6 @@ yg1.ygkkk.dpdns.org
 yg11.ygkkk.dpdns.org
 www.swowd.com
 y508.com
-www.dg22.top
 www.giannidelprete.it
 yyurl.cc
 cloudflare-ip.mofashi.ltd
@@ -32,13 +31,13 @@ cfyx.qdqqd.com
 china-mobile.cname.cloudflare.468123.xyz
 cfip-avg.stoeaves.us.ci
 avido.cf.3666888.xyz
-fw8je9.cf.3666888.xyz
 www.5199dy.com
 sg.cf.3666888.xyz
 adnjv.cf.3666888.xyz
 7.cf.3666888.xyz
 cdn.31514926.xyz
 www.leics.police.uk
+www.dg22.top
 staticdelivery.nexusmods.com
 hfqek.cf.3666888.xyz
 fk.hshwk.org
@@ -49,13 +48,13 @@ redis.io
 qocu.cf.3666888.xyz
 eteaf.cf.3666888.xyz
 3.cf.3666888.xyz
+www.epicgames.com
 nexusmods.com
 cdn.7zz.cn
 cdn.091224.xyz
 test2.509666.xyz
 cloudflare.182682.xyz
 www.visa.com.hk
-www.epicgames.com
 bbs.alipansou.com
 jp.cf.3666888.xyz
 4.cf.3666888.xyz
@@ -72,12 +71,12 @@ cdns.doon.eu.org
 nrt.xxxxxxxx.nyc.mn
 cfsaas.080112.xyz
 keji.cf.3666888.xyz
+fw8je9.cf.3666888.xyz
 cf-ip-node.vov.moe
 www.mfyx.cn
 www.sloomb.com
 www.vastnovel.com
 freeyx.cloudflare88.eu.org
-ping.pe
 www.visa.com.sg
 www.cdzxdz.com
 cf.090227.xyz
@@ -94,10 +93,11 @@ www.mlkj888.com
 01-qq.com
 zeas.top
 cf.0sm.com
+www.shopify.com
 hk.cf.3666888.xyz
 vip.cf.3666888.xyz
 my.dnshe.com
-www.shopify.com
+bestcfv4.030101.xyz
 cloudflare.idc.rocks
 dnew.cc
 qualitytraining.zeiss.com
@@ -106,8 +106,6 @@ yg7.ygkkk.dpdns.org
 baka.fun
 i.111666.best
 ys2046.cv
-bestcfv4.030101.xyz
-yapuyapu.com
 page.mercer.com
 cf.cf.3666888.xyz
 youxuan.cf.636949.xyz
@@ -115,6 +113,7 @@ youxuan.cf.636949.xyz
 uac.cf.3666888.xyz
 6.cf.3666888.xyz
 visa.com.tw
+yapuyapu.com
 stackoverflow.com
 cfgo.timelate.com
 cfip-cu.stoeaves.us.ci
@@ -127,7 +126,6 @@ store.ubisoft.com
 www.trumpgolf.com
 www.akasantech.com
 www.ntu.edu.sg
-11.cf.3666888.xyz
 china-telecom.cname.cloudflare.468123.xyz
 csgo.com
 hzytjy.cn
@@ -135,6 +133,7 @@ athome.com
 www.whoer.net
 cloudflare-dl.byoip.top
 sanwang.cf.3666888.xyz
+11.cf.3666888.xyz
 ahblog.cn
 www.trumpinternationalrealty.com
 2x.nz
@@ -144,7 +143,6 @@ www.visa.com
 mogas.com
 liantong.19931101.xyz
 bestcf.top
-yxip.xxxxxxxx.tk
 cmcc.877774.xyz
 envato.com
 cfvip.cf.3666888.xyz
@@ -174,7 +172,7 @@ dash.cloudflare.com
 ip.skk.moe
 666.cf.cname.vvhan.com
 nrtcfdns.zone.id
-777.ai7777777.xyz
+yxip.xxxxxxxx.tk
 cf.tencentapp.cn
 yongboss.cloudflare.byoip.top
 linear.app
@@ -198,3 +196,5 @@ cf.727672.xyz
 c-power.com.cn
 www.galgamex.net
 www.yutank.com
+so.360832.xyz
+op.chinwa.eu.cc
