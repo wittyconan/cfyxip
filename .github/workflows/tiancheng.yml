@@ -101,12 +101,12 @@ jobs:
           
           echo "$decoded_data" | while IFS= read -r line; do
             if [[ -z "$line" ]]; then continue; fi
-            host_port=$(echo "$line" | grep -oP '(?<=@).*?(?=\?)')
-            encoded_remark=$(echo "$line" | cut -d'#' -f2)
+            ip_port=$(echo "$line" | grep -oP '(?<=@).*?(?=\?)')
+            raw_tag=$(echo "$line" | awk -F'#' '{print $2}')
+            tag=$(python3 -c "import urllib.parse, sys; print(urllib.parse.unquote(sys.argv[1]))" "$raw_tag")
             
-            # URL 解码
-            remark=$(printf "$(echo -n "$encoded_remark" | sed 's/+/ /g;s/%\([0-9a-fA-F][0-9a-fA-F]\)/\\x\1/g')")
-
+            # --- 注意可能要替换和过滤的#后面的字符 ---
+            remark="$tag"
             if [[ "$remark" =~ "韩国" || "$remark" =~ "KR" || "$remark" =~ "🇰🇷" ]]; then 
                 location="泡菜欧巴 | KR"
             elif [[ "$remark" =~ "香港" || "$remark" =~ "HK" || "$remark" =~ "🇭🇰" ]]; then 
@@ -146,11 +146,12 @@ jobs:
             elif [[ "$remark" =~ "荷兰" || "$remark" =~ "NL" || "$remark" =~ "🇳🇱" ]]; then 
                 location="风车郁金 | NL"    
             else 
-                location="$remark"
+                location="$tag"
             fi
+            # -----------------------
 
-            if [[ ! -z "$host_port" ]]; then
-              echo "${host_port}#${location} | ${host_port}" >> new_nodes.tmp
+            if [[ -n "$ip_port" ]]; then
+              echo "${ip_port}#${location} | ${ip_port}" >> new_nodes.tmp
             fi
           done
 
@@ -170,7 +171,7 @@ jobs:
 
           if [ "$SHOULD_COMMIT" = true ]; then
             BJ_TIME=$(TZ='Asia/Shanghai' date +'%m-%d %H:%M')
-            FOOTER="bestcf.030101.xyz:443#▲ 优选IP | 分享免费优选网 BestCF.pages.dev | 感谢天诚"
+            FOOTER="bestcf.030101.xyz:443#▲ 天诚优选IP | 分享免费优选网 BestCF.pages.dev"
             
             # 备份
             if [ -f "$OLD_FILE" ]; then
@@ -181,12 +182,12 @@ jobs:
             rm -f tiancheng/hk.txt tiancheng/sg.txt tiancheng/jp.txt tiancheng/tw.txt tiancheng/kr.txt tiancheng/us.txt
 
             # 生成 All 版
-            echo "saas.sin.fan:443#▼ 优选IP 全量版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng/all.txt"
+            echo "saas.sin.fan:443#▼ 天诚优选IP 全量版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng/all.txt"
             [ -f new_nodes.tmp ] && cat new_nodes.tmp >> "tiancheng/all.txt"
             echo "$FOOTER" >> "tiancheng/all.txt"
 
             # 生成 Mini 版
-            echo "saas.sin.fan:443#▼ 优选IP 迷你版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng/mini.txt"
+            echo "saas.sin.fan:443#▼ 天诚优选IP 迷你版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng/mini.txt"
             if [ -f new_nodes.tmp ]; then
                 awk -F'|' '{l=$2; c[l]++; if(c[l]<=3) print $0}' new_nodes.tmp >> "tiancheng/mini.txt"
             fi
@@ -196,7 +197,7 @@ jobs:
             for loc in HK SG JP TW KR US; do
               f=$(echo "$loc" | tr '[:upper:]' '[:lower:]')
               if grep -q "| ${loc}" new_nodes.tmp 2>/dev/null; then
-                echo "saas.sin.fan:443#▼ 优选IP ${loc}版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng/${f}.txt"
+                echo "saas.sin.fan:443#▼ 天诚优选IP ${loc}版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng/${f}.txt"
                 grep "| ${loc}" new_nodes.tmp >> "tiancheng/${f}.txt"
                 echo "$FOOTER" >> "tiancheng/${f}.txt"
               fi

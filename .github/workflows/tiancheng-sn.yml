@@ -101,12 +101,12 @@ jobs:
           
           echo "$decoded_data" | while IFS= read -r line; do
             if [[ -z "$line" ]]; then continue; fi
-            host_port=$(echo "$line" | grep -oP '(?<=@).*?(?=\?)')
-            encoded_remark=$(echo "$line" | cut -d'#' -f2)
+            ip_port=$(echo "$line" | grep -oP '(?<=@).*?(?=\?)')
+            raw_tag=$(echo "$line" | awk -F'#' '{print $2}')
+            tag=$(python3 -c "import urllib.parse, sys; print(urllib.parse.unquote(sys.argv[1]))" "$raw_tag")
             
-            # URL 解码
-            remark=$(printf "$(echo -n "$encoded_remark" | sed 's/+/ /g;s/%\([0-9a-fA-F][0-9a-fA-F]\)/\\x\1/g')")
-
+            # --- 注意可能要替换和过滤的#后面的字符 ---
+            remark="$tag"
             if [[ "$remark" =~ "韩国" || "$remark" =~ "KR" || "$remark" =~ "🇰🇷" ]]; then 
                 location="泡菜欧巴 | KR"
             elif [[ "$remark" =~ "香港" || "$remark" =~ "HK" || "$remark" =~ "🇭🇰" ]]; then 
@@ -125,12 +125,33 @@ jobs:
                 location="战斗民族 | RU"
             elif [[ "$remark" =~ "德国" || "$remark" =~ "DE" || "$remark" =~ "🇩🇪" ]]; then 
                 location="元首复活 | DE"
+            elif [[ "$remark" =~ "马来西亚" || "$remark" =~ "MY" || "$remark" =~ "🇲🇾" ]]; then 
+                location="大马榴莲 | MY"
+            elif [[ "$remark" =~ "越南" || "$remark" =~ "VN" || "$remark" =~ "🇻🇳" ]]; then 
+                location="西贡咖啡 | VN"
+            elif [[ "$remark" =~ "菲律宾" || "$remark" =~ "PH" || "$remark" =~ "🇵🇭" ]]; then 
+                location="菲常好喝 | PH"
+            elif [[ "$remark" =~ "泰国" || "$remark" =~ "TH" || "$remark" =~ "🇹🇭" ]]; then 
+                location="萨瓦迪卡 | TH"
+            elif [[ "$remark" =~ "印度" || "$remark" =~ "IN" || "$remark" =~ "🇮🇳" ]]; then 
+                location="干净卫生 | IN"
+            elif [[ "$remark" =~ "法国" || "$remark" =~ "FR" || "$remark" =~ "🇫🇷" ]]; then 
+                location="浪漫铁塔 | FR"
+            elif [[ "$remark" =~ "加拿大" || "$remark" =~ "CA" || "$remark" =~ "🇨🇦" ]]; then 
+                location="枫叶之国 | CA"
+            elif [[ "$remark" =~ "土耳其" || "$remark" =~ "TR" || "$remark" =~ "🇹🇷" ]]; then 
+                location="烤肉火鸡 | TR"
+            elif [[ "$remark" =~ "澳大利亚" || "$remark" =~ "AU" || "$remark" =~ "🇦🇺" ]]; then 
+                location="土澳袋鼠 | AU"
+            elif [[ "$remark" =~ "荷兰" || "$remark" =~ "NL" || "$remark" =~ "🇳🇱" ]]; then 
+                location="风车郁金 | NL"    
             else 
-                location="$remark"
+                location="$tag"
             fi
+            # -----------------------
 
-            if [[ ! -z "$host_port" ]]; then
-              echo "${host_port}#${location} | ${host_port}" >> new_nodes.tmp
+            if [[ -n "$ip_port" ]]; then
+              echo "${ip_port}#${location} | ${ip_port}" >> new_nodes.tmp
             fi
           done
 
@@ -150,7 +171,7 @@ jobs:
 
           if [ "$SHOULD_COMMIT" = true ]; then
             BJ_TIME=$(TZ='Asia/Shanghai' date +'%m-%d %H:%M')
-            FOOTER="bestcf.030101.xyz:443#▲ 天诚优选 | 分享免费优选网 BestCF.pages.dev | 感谢天诚"
+            FOOTER="bestcf.030101.xyz:443#▲ 天诚优选2 | 分享免费优选网 BestCF.pages.dev"
             
             # 备份
             if [ -f "$OLD_FILE" ]; then
@@ -161,12 +182,12 @@ jobs:
             rm -f tiancheng2/hk.txt tiancheng2/sg.txt tiancheng2/jp.txt tiancheng2/tw.txt tiancheng2/kr.txt tiancheng2/us.txt
 
             # 生成 All 版
-            echo "saas.sin.fan:443#▼ 天诚优选 全量版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng2/all.txt"
+            echo "saas.sin.fan:443#▼ 天诚优选2 全量版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng2/all.txt"
             [ -f new_nodes.tmp ] && cat new_nodes.tmp >> "tiancheng2/all.txt"
             echo "$FOOTER" >> "tiancheng2/all.txt"
 
             # 生成 Mini 版
-            echo "saas.sin.fan:443#▼ 天诚优选 迷你版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng2/mini.txt"
+            echo "saas.sin.fan:443#▼ 天诚优选2 迷你版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng2/mini.txt"
             if [ -f new_nodes.tmp ]; then
                 awk -F'|' '{l=$2; c[l]++; if(c[l]<=5) print $0}' new_nodes.tmp >> "tiancheng2/mini.txt"
             fi
@@ -176,7 +197,7 @@ jobs:
             for loc in HK SG JP TW KR US; do
               f=$(echo "$loc" | tr '[:upper:]' '[:lower:]')
               if grep -q "| ${loc}" new_nodes.tmp 2>/dev/null; then
-                echo "saas.sin.fan:443#▼ 天诚优选 ${loc}版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng2/${f}.txt"
+                echo "saas.sin.fan:443#▼ 天诚优选2 ${loc}版 | ${BJ_TIME} | YouTube@真香定律" > "tiancheng2/${f}.txt"
                 grep "| ${loc}" new_nodes.tmp >> "tiancheng2/${f}.txt"
                 echo "$FOOTER" >> "tiancheng2/${f}.txt"
               fi
