@@ -1,6 +1,5 @@
-saas.sin.fan:443#▼ 优选域名 TOP20 | 05-11 11:09 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP20 | 05-11 11:38 | YouTube@真香定律
 bbs.alipansou.com:443#bbs.alipansou.com
-cf.mubaiovo.top:443#cf.mubaiovo.top
 yyurl.cc:443#yyurl.cc
 cloudflare.182682.xyz:443#cloudflare.182682.xyz
 a.lma.de5.net:443#a.lma.de5.net
@@ -19,4 +18,5 @@ cdn.091224.xyz:443#cdn.091224.xyz
 www.xflash.vip:443#www.xflash.vip
 cu.877774.xyz:443#cu.877774.xyz
 cf.3666888.xyz:443#cf.3666888.xyz
+www.jimdo.com:443#www.jimdo.com
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
