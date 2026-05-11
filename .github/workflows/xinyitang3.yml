@@ -12,68 +12,123 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.9'
 
       - name: Install dependencies
-        run: |
-          pip install playwright
-          playwright install chromium
-          playwright install-deps chromium
-
-      - name: Fetch Data using Playwright
-        run: python xinyitang3/fetch_xinyitang.py
+        run: pip install cloudscraper
 
       - name: Process and Compare
         run: |
-          TARGET_FILE="xinyitang3/ipv4.txt"
-          TMP_DECODED="xinyitang3/decoded_nodes.tmp"
-          TMP_NEW="new_processed.tmp"
+          # 1. 确保目标文件夹存在
+          mkdir -p xinyitang3
           
-          if [ ! -f "$TMP_DECODED" ]; then
-            echo "has_changes=false" >> $GITHUB_ENV
+          # 2. 生成 Python 抓取脚本
+          cat << 'EOF' > scraper.py
+          import cloudscraper
+          import sys
+          import re
+
+          def fetch_data():
+              scraper = cloudscraper.create_scraper(
+                  browser={
+                      'browser': 'chrome',
+                      'platform': 'windows',
+                      'desktop': True
+                  }
+              )
+              url = "https://sub.xinyitang.dpdns.org/sub?host=123&uuid=456"
+              try:
+                  res = scraper.get(url, timeout=30)
+                  if res.status_code == 200:
+                      return res.text.strip()
+                  else:
+                      print(f"Error: Status code {res.status_code}", file=sys.stderr)
+                      return None
+              except Exception as e:
+                  print(f"Exception: {str(e)}", file=sys.stderr)
+                  return None
+
+          data = fetch_data()
+          if data:
+              print(data)
+          else:
+              sys.exit(1)
+          EOF
+
+          # 最多重试 2 次
+          MAX_RETRIES=2
+          RETRY_COUNT=0
+          response=""
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            response=$(python3 scraper.py)
+            if [ $? -eq 0 ] && [ -n "$response" ]; then
+              echo "✅ 数据抓取成功！"
+              break
+            else
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              echo "⚠️ 抓取失败，第 $RETRY_COUNT 次重试..."
+              sleep 5
+            fi
+          done
+
+          if [ -z "$response" ]; then
+            echo "❌ 无法抓取数据，跳过执行。"
+            echo "changes_detected=false" >> $GITHUB_ENV
             exit 0
           fi
 
-          while IFS= read -r line; do
+          # 3. 解码并提取节点
+          decoded_data=$(echo "$response" | base64 -d 2>/dev/null)
+          rm -f new_nodes.tmp
+          touch new_nodes.tmp
+          
+          echo "$decoded_data" | while IFS= read -r line; do
             if [[ -z "$line" ]]; then continue; fi
+            # 提取 @ 和 ? 之间内容
             ip_port=$(echo "$line" | grep -oP '(?<=@).*?(?=\?)')
+            # 提取 # 后的标签并处理空格
             tag=$(echo "$line" | awk -F'#' '{print $2}' | sed 's/%20/ /g')
+            
             if [[ -n "$ip_port" ]]; then
-              echo "${ip_port}#${tag} | ${ip_port}" >> "$TMP_NEW"
+              # 格式：ip:port#tag | ip:port
+              echo "${ip_port}#${tag} | ${ip_port}" >> new_nodes.tmp
             fi
-          done < "$TMP_DECODED"
+          done
 
-          HAS_CHANGES=false
+          # 4. 对比内容变化
+          TARGET_FILE="xinyitang3/ipv4.txt"
+          SHOULD_COMMIT=false
           if [ -f "$TARGET_FILE" ]; then
             sed '1d;$d' "$TARGET_FILE" > old_nodes.tmp
-            if ! diff -q old_nodes.tmp "$TMP_NEW" > /dev/null; then
-              HAS_CHANGES=true
+            if ! diff -q old_nodes.tmp new_nodes.tmp > /dev/null; then
+              SHOULD_COMMIT=true
             fi
           else
-            HAS_CHANGES=true
+            SHOULD_COMMIT=true
           fi
 
-          if [ "$HAS_CHANGES" = true ]; then
+          # 5. 构建文件
+          if [ "$SHOULD_COMMIT" = true ]; then
             BJ_TIME=$(TZ='Asia/Shanghai' date +'%m-%d %H:%M')
-            echo "saas.sin.fan:443#▼ 优选IP | $BJ_TIME | YouTube@真香定律" > "$TARGET_FILE"
-            cat "$TMP_NEW" >> "$TARGET_FILE"
-            echo "bestcf.030101.xyz:443#▲ 优选IP | 分享优选网 BestCF.pages.dev | 感谢Xinyitang" >> "$TARGET_FILE"
-            echo "COMMIT_MSG=xinyitang3 $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')" >> $GITHUB_ENV
+            echo "saas.sin.fan:443#▼ Mia优选IP | ${BJ_TIME} | YouTube@真香定律" > "$TARGET_FILE"
+            cat new_nodes.tmp >> "$TARGET_FILE"
+            echo "bestcf.030101.xyz:443#▲ Mia优选IP | 分享优选网 BestCF.pages.dev" >> "$TARGET_FILE"
+            
+            echo "COMMIT_TIME=$BJ_TIME" >> $GITHUB_ENV
+            echo "changes_detected=true" >> $GITHUB_ENV
+          else
+            echo "内容未变动，无需更新。"
+            echo "changes_detected=false" >> $GITHUB_ENV
           fi
-
-          echo "has_changes=$HAS_CHANGES" >> $GITHUB_ENV
 
       - name: Commit and Push
-        if: env.has_changes == 'true'
+        if: env.changes_detected == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "${{ env.COMMIT_MSG }}"
-          file_pattern: 'xinyitang3/*.txt'
-          push_options: '--force'
-          branch: main
+          commit_message: "xinyitang3 update ${{ env.COMMIT_TIME }}"
+          file_pattern: 'xinyitang3/ipv4.txt'
