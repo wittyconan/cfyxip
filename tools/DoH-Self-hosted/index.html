@@ -218,7 +218,7 @@
         <div class="plan-title">方案 2：反代多合一部署</div>
         <div class="step-content" style="padding-left: 0; color: var(--text-main);">
             <p style="margin-bottom: 15px;">点击 <a href="_worker.zip" class="link-btn">下载 JS 脚本</a>，将 zip 压缩包上传至 <span class="highlight">Cloudflare Pages</span> 进行部署。</p>
-            <p>部署完成后，直接访问 Pages 自动分配的域名，即可查看多合一反代 DoH 地址列表。注意：由于是反代，会消耗每日请求用量（总量10万），一次解析消耗用量2，消耗完之后会导致反代DoH不可用，进而导致开启了ECH的节点不可用！</p>
+            <p>部署完成后，直接访问 Pages 自动分配的域名，即可查看多合一反代 DoH 地址列表。注意：由于是反代，会消耗每日请求用量（总量10万），一次解析消耗用量2（客户端1次+请求上游1次），消耗完之后会导致反代DoH不可用，进而导致开启了ECH的节点不可用！</p>
             <div class="img-container">
                 <img src="2.png" alt="Gateway DoH 配置示意图" onerror="this.style.display='none';">
             </div>
