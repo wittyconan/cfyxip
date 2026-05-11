@@ -42,7 +42,7 @@ jobs:
               )
               url = "https://owo.o00o.ooo/sub?host=123&uuid=456"
               try:
-                  res = scraper.get(url, timeout=30)
+                  res = scraper.get(url, timeout=10)
                   if res.status_code == 200:
                       return res.text.strip()
                   else:
@@ -91,8 +91,9 @@ jobs:
             if [[ -z "$line" ]]; then continue; fi
             # 提取 @ 和 ? 之间内容
             ip_port=$(echo "$line" | grep -oP '(?<=@).*?(?=\?)')
-            # 提取 # 后的标签并处理空格
-            tag=$(echo "$line" | awk -F'#' '{print $2}' | sed 's/%20/ /g')
+            # 提取 # 后的内容，并进行全量 URL 解码
+            raw_tag=$(echo "$line" | awk -F'#' '{print $2}')
+            tag=$(python3 -c "import urllib.parse, sys; print(urllib.parse.unquote(sys.argv[1]))" "$raw_tag")
             
             if [[ -n "$ip_port" ]]; then
               # 格式：ip:port#tag | ip:port
