@@ -1,6 +1,5 @@
-saas.sin.fan:443#▼ 优选域名 TOP50 | 05-11 11:09 | YouTube@真香定律
+saas.sin.fan:443#▼ 优选域名 TOP50 | 05-11 11:38 | YouTube@真香定律
 bbs.alipansou.com:443#bbs.alipansou.com
-cf.mubaiovo.top:443#cf.mubaiovo.top
 yyurl.cc:443#yyurl.cc
 cloudflare.182682.xyz:443#cloudflare.182682.xyz
 a.lma.de5.net:443#a.lma.de5.net
@@ -31,6 +30,7 @@ saas.sin.fan:443#saas.sin.fan
 store.ubi.com:443#store.ubi.com
 cdn.262832.xyz:443#cdn.262832.xyz
 virtualcommtraining.verizon.com:443#virtualcommtraining.verizon.com
+cf.mubaiovo.top:443#cf.mubaiovo.top
 avido.cf.3666888.xyz:443#avido.cf.3666888.xyz
 9.cf.3666888.xyz:443#9.cf.3666888.xyz
 10.cf.3666888.xyz:443#10.cf.3666888.xyz
@@ -41,12 +41,12 @@ baka.fun:443#baka.fun
 cmcc.cc.cd:443#cmcc.cc.cd
 www.vastnovel.com:443#www.vastnovel.com
 www.akasantech.com:443#www.akasantech.com
-api.gzcrtw.com:443#api.gzcrtw.com
 test2.509666.xyz:443#test2.509666.xyz
-cloudflare.rainyfall.com:443#cloudflare.rainyfall.com
+cfip-avg.stoeaves.us.ci:443#cfip-avg.stoeaves.us.ci
+www.fastsoso.cn:443#www.fastsoso.cn
 yg1.ygkkk.dpdns.org:443#yg1.ygkkk.dpdns.org
 cf.v8.longsays.com:443#cf.v8.longsays.com
 staticdelivery.nexusmods.com:443#staticdelivery.nexusmods.com
-www.fastsoso.cn:443#www.fastsoso.cn
 dnew.cc:443#dnew.cc
+www.mc.js.cool:443#www.mc.js.cool
 bestcf.030101.xyz:443#▲ 优选域名 | 分享优选网 BestCF.pages.dev | VPS789 7*24监测
